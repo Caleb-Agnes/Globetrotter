@@ -1,3 +1,4 @@
+// #region Firebase Setup
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc, deleteDoc, collection, getDocs, query, where, documentId, onSnapshot, arrayUnion, arrayRemove } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
 
@@ -12,8 +13,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+// #endregion
 
-//game info
+// #region Game Data
 const roles = [
     { role: "top", iconDim: "Role Icons/icon-position-top-disabled.png", iconHover: "Role Icons/icon-position-top-hover.png", iconSelected: "Role Icons/icon-position-top.png" },
     { role: "jng", iconDim: "Role Icons/icon-position-jungle-disabled.png", iconHover: "Role Icons/icon-position-jungle-hover.png", iconSelected: "Role Icons/icon-position-jungle.png" },
@@ -213,8 +215,9 @@ const champions = [
     { id: "yunara", name: "Yunara", regions: ["ionia"], iconPath: "Champion Icons/Yunara.png" },
     { id: "zaahen", name: "Zaahen", regions: [], iconPath: "Champion Icons/Zaahen.png" }
 ];
+// #endregion
 
-//variables for tracking where on the page the user is and what is being done
+// #region App State
 let currentFlow = null;       // modal currently in focus
 let currentPlayerName = null; // name being created, or player being edited
 let currentRegionIndex = 0;   // position in the regions array, for the new-player flow
@@ -223,8 +226,9 @@ let pendingPreferences = {};  // in-memory data collected before final save
 let selectedChampionId = null;// the champion currently chosen in the champion dropdown, or null if none picked yet
 let selectedRole = null;// the role currently chosen in the dropdown, or null if none picked yet
 let currentPlayerData = null; // full firestore doc for the player currently being edited
+// #endregion
 
-//HOMEPAGE FUNCTIONS
+// #region Homepage - Shared State & Caches
 
 //set up consts
 const regionButtons = document.querySelectorAll('.region-btn');
@@ -242,6 +246,9 @@ let latestTeamComp = null;
 let latestActivePlayersData = [];  // full preference docs for each active player, from getActivePlayersData()
 let compsByRegion = {};             // generateAllPossibleComps(...) per region id - only meaningful with exactly 5 active players
 let regionWillingness = {};         // hasEveryActivePlayerListedSomething(...) per region id - used with fewer than 5 active players
+// #endregion
+
+// #region Homepage - Roster & Cache Helpers
 
 //true if every currently active player has at least one preference logged for this region
 //(unlike isPossible, this doesn't need a full 5-player roster - it's the cheap check used to
@@ -275,6 +282,9 @@ async function refreshCache(activePlayers) {
         }
     });
 }
+// #endregion
+
+// #region Homepage - Players Column
 
 //re-renders the players column, called whenever activePlayers changes in firestore
 function refreshPlayers(activePlayers) {
@@ -317,6 +327,15 @@ function refreshPlayers(activePlayers) {
     });
 }
 
+//opens the new player modal when the add new player button is clicked
+document.querySelector('.add-player-btn').addEventListener('click', () => openNewPlayerModal(""))
+
+//opens the select-player modal in "edit" mode when the edit-preferences button is clicked
+document.querySelector('.edit-preferences-btn').addEventListener('click', () => openSelectPlayerModal("edit"))
+// #endregion
+
+// #region Homepage - Regions Column
+
 //true if this region currently has at least one valid setup for the active players -
 //compsByRegion only has real entries with exactly 5 active players, so this falls back to
 //the simpler regionWillingness cache otherwise. shared by refreshRegions, refreshComp, and
@@ -347,6 +366,31 @@ function refreshRegions(currentRegion) {
         button.classList.toggle('impossible', !isRegionPossible);
     });
 }
+
+//writes the clicked region to the shared game state, refreshRegions() then handles re-rendering
+regionButtons.forEach(button => {
+    button.addEventListener('click', async () => {
+        const regionId = button.dataset.regionId;
+        //nothing actually changed if this region was already the selected one, so skip the write
+        if (regionId === latestCurrentRegion?.selectedRegionId) {
+            return;
+        }
+        await setDoc(doc(db, "gameState", "currentRegion"), {
+            selectedRegionId: regionId
+        });
+        //update the local copy immediately, since generateComp() below needs to read the
+        //league region we just picked rather than waiting on this write's own listener round trip
+        latestCurrentRegion = { selectedRegionId: regionId };
+        await resetComp();
+        //skip the "Generate Comp" button step - jump straight to showing a comp
+        if (hasFullRoster() && isRegionCurrentlyPossible(regionId)) {
+            await generateComp();
+        }
+    });
+});
+// #endregion
+
+// #region Homepage - Comp Column
 
 //re-renders the team composition column
 //unlike the other two, this depends on all three shared docs, so it reads the latest
@@ -438,6 +482,10 @@ async function generateComp() {
         shownIndexes: [...shownIndexes, chosenIndex]
     });
 }
+// #endregion
+
+// #region Comp Generation Algorithm
+//pure logic - takes players/region data in, returns comps out, no DOM or firestore involved
 
 //counts each undecided player's and undecided role's remaining options in a preferences list.
 //every still-undecided name/role gets an entry - defaulting to 0 if it has no options left - so
@@ -551,6 +599,9 @@ function pickRandomComp(players, region) {
     const randomIndex = Math.floor(Math.random() * allComps.length)
     return allComps[randomIndex]
 }
+// #endregion
+
+// #region Homepage - Refresh Plumbing & Listeners
 
 //clears any previously generated comp, called whenever the players or region change since
 //a comp generated for the old set-up no longer applies
@@ -605,8 +656,9 @@ onSnapshot(doc(db, "gameState", "teamComp"), (snapshot) => {
     latestTeamComp = snapshot.data();
     refreshComp();
 });
+// #endregion
 
-//MODAL FUNCTIONS
+// #region Modal Helpers (show/hide)
 
 //shows a modal by adding the active class to its backdrop
 function showModal(backdrop) {
@@ -617,8 +669,9 @@ function showModal(backdrop) {
 function hideModal(backdrop) {
     backdrop.classList.remove("active");
 }
+// #endregion
 
-//NEW PLAYER MODAL
+// #region New Player Modal
 
 //set up consts
 const newPlayerBackdrop = document.getElementById("new-player-modal-backdrop");
@@ -698,10 +751,9 @@ newPlayerCloseBtn.addEventListener('click', async () => {
         await openSelectRegionModal(true);
     }
 });
+// #endregion
 
-
-
-//REGIONAL MODAL
+// #region Regional Modal
 
 //set up consts
 const regionalBackdrop = document.getElementById("region-modal-backdrop");
@@ -962,8 +1014,9 @@ regionCloseBtn.addEventListener('click', () => {
         }
     );
 });
+// #endregion
 
-//ARE YOU SURE MODAL
+// #region Are You Sure Modal
 
 //set up consts
 const areYouSureBackdrop = document.getElementById("are-you-sure-modal-backdrop");
@@ -1001,8 +1054,9 @@ areYouSureCancelBtn.addEventListener('click', () => {
 areYouSureCloseBtn.addEventListener('click', () => {
     hideModal(areYouSureBackdrop);
 });
+// #endregion
 
-//SELECT PLAYER MODAL
+// #region Select Player Modal
 
 //set up consts
 const selectPlayerBackdrop = document.getElementById("select-player-modal-backdrop");
@@ -1059,8 +1113,9 @@ async function populateSelectPlayerGrid(purpose) {
 selectPlayerCloseBtn.addEventListener('click', () => {
     hideModal(selectPlayerBackdrop);
 });
+// #endregion
 
-//SELECT REGION MODAL
+// #region Select Region Modal
 
 //set up consts
 const selectRegionBackdrop = document.getElementById("select-region-modal-backdrop");
@@ -1147,8 +1202,9 @@ deletePlayerBtn.addEventListener('click', () => {
         }
     );
 });
+// #endregion
 
-//PATCH NOTES MODAL
+// #region Patch Notes Modal
 
 //set up consts
 const patchNotesBackdrop = document.getElementById("patch-notes-modal-backdrop");
@@ -1198,38 +1254,9 @@ patchNotesBtn.addEventListener('click', openPatchNotesModal);
 patchNotesCloseBtn.addEventListener('click', () => {
     hideModal(patchNotesBackdrop);
 });
+// #endregion
 
-//HOMEPAGE
-
-//opens the new player modal when the add new player button is clicked
-document.querySelector('.add-player-btn').addEventListener('click', () => openNewPlayerModal(""))
-
-//opens the select-player modal in "edit" mode when the edit-preferences button is clicked
-document.querySelector('.edit-preferences-btn').addEventListener('click', () => openSelectPlayerModal("edit"))
-
-//writes the clicked region to the shared game state, refreshRegions() then handles re-rendering
-regionButtons.forEach(button => {
-    button.addEventListener('click', async () => {
-        const regionId = button.dataset.regionId;
-        //nothing actually changed if this region was already the selected one, so skip the write
-        if (regionId === latestCurrentRegion?.selectedRegionId) {
-            return;
-        }
-        await setDoc(doc(db, "gameState", "currentRegion"), {
-            selectedRegionId: regionId
-        });
-        //update the local copy immediately, since generateComp() below needs to read the
-        //league region we just picked rather than waiting on this write's own listener round trip
-        latestCurrentRegion = { selectedRegionId: regionId };
-        await resetComp();
-        //skip the "Generate Comp" button step - jump straight to showing a comp
-        if (hasFullRoster() && isRegionCurrentlyPossible(regionId)) {
-            await generateComp();
-        }
-    });
-});
-
-//HELPER FUNCTIONS INTERACTING WITH FIREBASE
+// #region Firebase Helper Functions
 
 //function to check if a name is taken
 async function isNameTaken(name) {
@@ -1315,3 +1342,4 @@ async function removePlayerFromList(name) {
     }, { merge: true });
     await resetComp();
 }
+// #endregion
