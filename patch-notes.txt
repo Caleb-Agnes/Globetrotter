@@ -1,3 +1,8 @@
+V1.1
+Player preferences can now be edited
+Player names can now be edited (just for you Diana)
+Players profiles can be deleted
+
 v1.0
 First public version
 Create players with saved region preferences
@@ -6,8 +11,3 @@ Update region options based on what is possible
 Selecting a possible region instantly generates a valid team comp
 Reroll through every possible comp before repeating
 Patch notes info
-
-V1.1
-Player preferences can now be edited
-Player names can now be edited (just for you Diana)
-Players profiles can be deleted
