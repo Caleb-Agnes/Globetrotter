@@ -412,3 +412,15 @@ h1 {
     width: 20px;
     height: 20px;
 }
+.edit-region-role-icon {
+    width: 20px;
+    height: 20px;
+}
+.preference-pair {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: 2px solid pink;
+    border-radius: 8px;
+    padding: 2px;
+}

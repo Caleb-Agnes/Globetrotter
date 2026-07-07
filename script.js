@@ -1145,17 +1145,23 @@ function renderEditRegionIcons() {
         const iconsContainer = button.querySelector('.edit-region-champ-icons');
         iconsContainer.innerHTML = '';
         const entries = currentPlayerData[region.indexNo] || [];
-        //one icon per unique champion picked for this region, not one per role
-        const uniqueChampionIds = [...new Set(entries.map(entry => entry.championId))];
-        uniqueChampionIds.forEach(championId => {
-            const champion = champions.find(c => c.id === championId);
-            //skip anything that no longer matches a real champion, rather than crashing here
-            //and silently preventing the whole modal from ever opening
-            if (!champion) return;
-            const icon = document.createElement('img');
-            icon.src = champion.iconPath;
-            icon.className = 'edit-region-champ-icon';
-            iconsContainer.appendChild(icon);
+        //the champion and role icon for each preference.
+        entries.forEach(preferencePair => {
+            const iconPair = document.createElement('div');
+            const champion = champions.find(c => c.id === preferencePair.championId);
+            const role = roles.find(r => r.role === preferencePair.role)
+            //skip anything that no longer matches a real champion or role
+            if (!champion || !role) return;
+            const championIcon = document.createElement('img');
+            const roleIcon = document.createElement('img');
+            championIcon.src = champion.iconPath;
+            championIcon.className = 'edit-region-champ-icon';
+            roleIcon.src = role.iconSelected;
+            roleIcon.className = 'edit-region-role-icon';
+            iconPair.className = 'preference-pair'
+            iconPair.appendChild(championIcon);
+            iconPair.appendChild(roleIcon);
+            iconsContainer.appendChild(iconPair);
         });
     });
 }
