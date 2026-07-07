@@ -222,6 +222,7 @@ let currentRegionId = null;   // the region the regional modal is currently open
 let pendingPreferences = {};  // in-memory data collected before final save
 let selectedChampionId = null;// the champion currently chosen in the champion dropdown, or null if none picked yet
 let selectedRole = null;// the role currently chosen in the dropdown, or null if none picked yet
+let currentPlayerData = null; // full firestore doc for the player currently being edited
 
 //HOMEPAGE FUNCTIONS
 
@@ -306,7 +307,7 @@ function refreshPlayers(activePlayers) {
             const addBtn = document.createElement('button');
             addBtn.className = 'player-slot-add-btn';
             addBtn.textContent = '+';
-            addBtn.addEventListener('click', () => openSelectPlayerModal());
+            addBtn.addEventListener('click', () => openSelectPlayerModal("add"));
 
             slot.appendChild(addBtn);
         } else {
@@ -571,19 +572,27 @@ async function deselectRegionIfNowImpossible() {
 
 //one listener per shared doc, so a change to one column never re-renders the others unnecessarily
 //the comp column depends on all three, so every listener updates its stored copy and calls refreshComp()
-onSnapshot(doc(db, "gameState", "activePlayers"), async (snapshot) => {
-    latestActivePlayers = snapshot.data();
-    refreshPlayers(latestActivePlayers);
+//rebuilds the comp cache and re-renders regions/comp - anything that can change which comps
+//are possible (the active roster changing, or an already-active player's preferences changing)
+//should call this so the rest of the app catches up, rather than going stale until the next
+//unrelated roster change happens to trigger it
+async function refreshAfterRosterOrDataChange() {
     await refreshCache(latestActivePlayers);
     await deselectRegionIfNowImpossible();
-    //if a region is still selected and still feasible with the new roster, regenerate a
-    //fresh comp for it immediately instead of leaving the user to click Generate Comp again
+    //if a region is still selected and still feasible, regenerate a fresh comp for it
+    //immediately instead of leaving the user to click Generate Comp again
     const regionId = latestCurrentRegion?.selectedRegionId;
     if (regionId && hasFullRoster() && isRegionCurrentlyPossible(regionId)) {
         await generateComp();
     }
     refreshRegions(latestCurrentRegion);
     refreshComp();
+}
+
+onSnapshot(doc(db, "gameState", "activePlayers"), async (snapshot) => {
+    latestActivePlayers = snapshot.data();
+    refreshPlayers(latestActivePlayers);
+    await refreshAfterRosterOrDataChange();
 });
 
 onSnapshot(doc(db, "gameState", "currentRegion"), (snapshot) => {
@@ -613,14 +622,18 @@ function hideModal(backdrop) {
 
 //set up consts
 const newPlayerBackdrop = document.getElementById("new-player-modal-backdrop");
+const newPlayerHeading = document.getElementById("new-player-heading");
 const newPlayerNameInput = document.getElementById("new-player-name-input");
 const newPlayerNextBtn = document.getElementById("new-player-next-btn");
 const newPlayerCloseBtn = document.getElementById("new-player-close-btn");
 const newPlayerNameError = document.getElementById('new-player-name-error');
 
 //function to start the modal
-function openNewPlayerModal(name) {
-    currentFlow = "new-player";
+//mode "edit" reuses this same modal to rename an existing player instead of creating a new one
+function openNewPlayerModal(name, mode) {
+    currentFlow = mode === "edit" ? "edit-name" : "new-player";
+    newPlayerHeading.textContent = mode === "edit" ? "Edit Name" : "New Player";
+    newPlayerNextBtn.textContent = mode === "edit" ? "Done" : "Next";
     newPlayerNameInput.value = name; //clears the input from any previous values
     newPlayerNameError.textContent = ''; //wipes any previous error message
     showModal(newPlayerBackdrop);
@@ -640,6 +653,24 @@ newPlayerNextBtn.addEventListener("click", async () => {
         }, 300);
         return;
     }
+
+    if (currentFlow === "edit-name") {
+        //renaming an existing player rather than creating a new one
+        if (name !== currentPlayerName) {
+            const taken = await isNameTaken(name);
+            if (taken) {
+                newPlayerNameError.textContent = 'That name is already taken.';
+                return;
+            }
+            await renamePlayer(currentPlayerName, name);
+            currentPlayerName = name;
+        }
+        hideModal(newPlayerBackdrop);
+        //currentPlayerData's preference content is unaffected by a rename, so skip re-fetching it
+        await openSelectRegionModal(true);
+        return;
+    }
+
     //check name doesnt already exist in the data base
     const taken = await isNameTaken(name);
     if (taken) {
@@ -655,13 +686,17 @@ newPlayerNextBtn.addEventListener("click", async () => {
     regions.forEach(region => {
         pendingPreferences[region.indexNo] = [];
     });
-    openRegionalModal(currentRegionIndex, "local");
+    openRegionalModal(currentRegionIndex);
 
 })
 
 //closes the modal when the close button is clicked
-newPlayerCloseBtn.addEventListener('click', () => {
+newPlayerCloseBtn.addEventListener('click', async () => {
     hideModal(newPlayerBackdrop);
+    if (currentFlow === "edit-name") {
+        //return to the select-region modal instead of abandoning at the homepage, matching Done
+        await openSelectRegionModal(true);
+    }
 });
 
 
@@ -686,15 +721,17 @@ const regionCloseBtn = document.getElementById("region-close-btn");
 
 
 //function to start the modal
-function openRegionalModal(regionIndex, source) {
-    currentFlow = "regions";
+//NOTE: doesn't touch currentFlow - it inherits whatever the caller already set ("new-player"
+//for the new-player loop, "select-region" for editing one existing region), so this function
+//and Done/Back/Close below can all tell which flow they're in without a separate variable
+function openRegionalModal(regionIndex) {
     currentRegionId = regions[regionIndex].id;
     regionModalHeading.textContent = "Region: " + regions[regionIndex].regionName;
-    if (source == "local") {
-        //set up the list of champs from pending preferences
-    } else if (source == "firestore") {
-        //set up the list of champs from requesting info from the database
+    if (currentFlow === "select-region") {
+        //editing an existing player: load this region's already-saved preferences
+        pendingPreferences[regionIndex] = currentPlayerData?.[regionIndex] ? [...currentPlayerData[regionIndex]] : [];
     }
+    //otherwise (the new-player flow) pendingPreferences was already populated by the caller
     //reset the champion dropdown back to its starting state for this region
     selectedChampionId = null;
     championDropdownToggle.innerHTML = "Select champion &#9662;";
@@ -859,10 +896,28 @@ regionAddBtn.addEventListener('click', () => {
 
 //saves the entries and moves on once done is clicked
 regionDoneBtn.addEventListener('click', async () => {
+    if (currentFlow === "select-region") {
+        //editing one region of an existing player: merge this region's edits into the full
+        //cached player data, save it, and return to the select-region-to-edit modal
+        currentPlayerData[currentRegionIndex] = pendingPreferences[currentRegionIndex];
+        await updateFireStore(currentPlayerName, currentPlayerData);
+        //this player's preferences just changed - if they're currently active, the comp
+        //cache/display need to catch up too, since nothing else would trigger that here.
+        //not awaited: it only affects the regions/comp columns, not this modal, so it can
+        //run in the background instead of holding up the transition back to this screen
+        if (latestActivePlayers?.names?.includes(currentPlayerName)) {
+            refreshAfterRosterOrDataChange();
+        }
+        hideModal(regionalBackdrop);
+        //currentPlayerData is already up to date (we just merged the edit into it ourselves),
+        //so skip re-fetching the very doc we just wrote
+        await openSelectRegionModal(true);
+        return;
+    }
     //update the saved list in pending prefereences
     if (currentRegionIndex < 12) {
         currentRegionIndex++;
-        openRegionalModal(currentRegionIndex, "local");
+        openRegionalModal(currentRegionIndex);
     } else {
         await updateFireStore(currentPlayerName, pendingPreferences);
         hideModal(regionalBackdrop);
@@ -871,44 +926,70 @@ regionDoneBtn.addEventListener('click', async () => {
 });
 
 //goes back to the previous step
-regionBackBtn.addEventListener('click', () => {
+regionBackBtn.addEventListener('click', async () => {
+    if (currentFlow === "select-region") {
+        //editing a single existing region: there's no "previous region" to step back through,
+        //so just discard any unsaved changes here and return to the region-select screen
+        hideModal(regionalBackdrop);
+        await openSelectRegionModal(true);
+        return;
+    }
     //return to the previous modal in the flow
     if (currentRegionIndex == 0) {
         hideModal(regionalBackdrop);
         openNewPlayerModal(currentPlayerName);
     } else {
         currentRegionIndex--;
-        openRegionalModal(currentRegionIndex, "local");
+        openRegionalModal(currentRegionIndex);
     }
 
 });
 
 //closes the modal when the close button is clicked
 regionCloseBtn.addEventListener('click', () => {
-    openAreYouSureModal();
+    //captured now, since openAreYouSureModal() overwrites currentFlow before the confirm
+    //callback below ever runs
+    const cameFromEditFlow = currentFlow === "select-region";
+    openAreYouSureModal(
+        "Are you sure you want to close without saving your changes?",
+        async () => {
+            hideModal(regionalBackdrop);
+            if (cameFromEditFlow) {
+                //editing an existing player: return to the select-region-to-edit modal instead
+                //of just closing everything down to the homepage
+                await openSelectRegionModal(true);
+            }
+        }
+    );
 });
 
 //ARE YOU SURE MODAL
 
 //set up consts
 const areYouSureBackdrop = document.getElementById("are-you-sure-modal-backdrop");
+const areYouSureMessage = document.getElementById("are-you-sure-message");
 const areYouSureConfirmBtn = document.getElementById("are-you-sure-confirm-btn");
 const areYouSureCancelBtn = document.getElementById("are-you-sure-cancel-btn");
 const areYouSureCloseBtn = document.getElementById("are-you-sure-close-btn");
 
-//function to start the modal
-function openAreYouSureModal() {
+let pendingConfirmAction = null; // what to run if "Yes" is clicked, set fresh each time this opens
+
+//function to start the modal - message is shown to the user, onConfirm runs if they click "Yes"
+function openAreYouSureModal(message, onConfirm) {
     currentFlow = "are-you-sure";
-    //clear any selections in the modal from previous uses
+    areYouSureMessage.textContent = message;
+    pendingConfirmAction = onConfirm;
     showModal(areYouSureBackdrop);
 }
 
 //functionality of each button
 
-//runs the pending action once confirmed
-areYouSureConfirmBtn.addEventListener('click', () => {
+//runs whatever action was pending once confirmed
+areYouSureConfirmBtn.addEventListener('click', async () => {
     hideModal(areYouSureBackdrop);
-    hideModal(regionalBackdrop);
+    if (pendingConfirmAction) {
+        await pendingConfirmAction();
+    }
 });
 
 //closes the modal when cancel is clicked
@@ -925,19 +1006,24 @@ areYouSureCloseBtn.addEventListener('click', () => {
 
 //set up consts
 const selectPlayerBackdrop = document.getElementById("select-player-modal-backdrop");
+const selectPlayerHeading = document.getElementById("select-player-heading");
 const selectPlayerGrid = document.getElementById("select-player-grid");
 const selectPlayerCloseBtn = document.getElementById("select-player-close-btn");
 
-//function to start the modal
-async function openSelectPlayerModal() {
+//function to start the modal - purpose is "add" (pick an existing player to bring into the
+//active game) or "edit" (pick a player to edit their region preferences)
+async function openSelectPlayerModal(purpose) {
     currentFlow = "select-player";
+    selectPlayerHeading.textContent = purpose === "edit" ? "Select Player to Edit" : "Select Player";
     //populate the list of existing players to choose from, then reveal the modal
-    await populateSelectPlayerGrid();
+    await populateSelectPlayerGrid(purpose);
     showModal(selectPlayerBackdrop);
 }
 
-//fills the grid with one button per existing player
-async function populateSelectPlayerGrid() {
+//fills the grid with one button per existing player, behaving differently per purpose:
+//"add" disables anyone already active and adds the pick to the active list; "edit" disables
+//nobody and opens the select-region-to-edit modal for the pick instead
+async function populateSelectPlayerGrid(purpose) {
     selectPlayerGrid.innerHTML = '';
     const playerNames = await getAllPlayerNames();
     const activeNames = latestActivePlayers?.names || [];
@@ -945,15 +1031,22 @@ async function populateSelectPlayerGrid() {
         const button = document.createElement('button');
         button.className = 'select-player-btn';
         button.textContent = name;
-        if (activeNames.includes(name)) {
+        if (purpose === "add" && activeNames.includes(name)) {
             //already on the active list, show it but don't let it be picked again
             button.classList.add('select-player-btn-disabled');
             button.disabled = true;
-        } else {
+        } else if (purpose === "add") {
             //picking a player closes the modal and adds them to the shared active-players list
             button.addEventListener('click', async () => {
                 hideModal(selectPlayerBackdrop);
                 await addPlayerToList(name);
+            });
+        } else {
+            //picking a player closes this modal and opens the select-region-to-edit modal
+            button.addEventListener('click', async () => {
+                hideModal(selectPlayerBackdrop);
+                currentPlayerName = name;
+                await openSelectRegionModal();
             });
         }
         selectPlayerGrid.appendChild(button);
@@ -971,26 +1064,88 @@ selectPlayerCloseBtn.addEventListener('click', () => {
 
 //set up consts
 const selectRegionBackdrop = document.getElementById("select-region-modal-backdrop");
-const selectRegionDoneBtn = document.getElementById("select-region-done-btn");
 const selectRegionCloseBtn = document.getElementById("select-region-close-btn");
+const selectRegionBackBtn = document.getElementById("select-region-back-btn");
+const editRegionButtons = document.querySelectorAll('.edit-region-btn');
 
 //function to start the modal
-function openSelectRegionModal() {
+//skipFetch: pass true when currentPlayerData is already known to be fresh (e.g. right after
+//saving an edit), to avoid a redundant re-fetch of the doc we just wrote ourselves
+async function openSelectRegionModal(skipFetch) {
     currentFlow = "select-region";
-    //populate the list of regions to choose from
+    if (!skipFetch) {
+        //fetch the full doc for the player being edited, then show each region's saved champ icons
+        const playerRef = doc(db, "players", currentPlayerName);
+        const snapshot = await getDoc(playerRef);
+        currentPlayerData = snapshot.data() || {};
+    }
+    renderEditRegionIcons();
     showModal(selectRegionBackdrop);
+}
+
+//fills each region button with icons for the champions currently picked in that region
+function renderEditRegionIcons() {
+    editRegionButtons.forEach(button => {
+        const region = regions.find(r => r.id === button.dataset.regionId);
+        const iconsContainer = button.querySelector('.edit-region-champ-icons');
+        iconsContainer.innerHTML = '';
+        const entries = currentPlayerData[region.indexNo] || [];
+        //one icon per unique champion picked for this region, not one per role
+        const uniqueChampionIds = [...new Set(entries.map(entry => entry.championId))];
+        uniqueChampionIds.forEach(championId => {
+            const champion = champions.find(c => c.id === championId);
+            //skip anything that no longer matches a real champion, rather than crashing here
+            //and silently preventing the whole modal from ever opening
+            if (!champion) return;
+            const icon = document.createElement('img');
+            icon.src = champion.iconPath;
+            icon.className = 'edit-region-champ-icon';
+            iconsContainer.appendChild(icon);
+        });
+    });
 }
 
 //functionality of each button
 
-//moves on once a region is selected and done is clicked
-selectRegionDoneBtn.addEventListener('click', () => {
-    //open the regional modal for the selected region
+//picking a region closes this modal and opens the regional modal for it, sourced from firestore
+editRegionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const regionIndex = regions.findIndex(r => r.id === button.dataset.regionId);
+        currentRegionIndex = regionIndex;
+        hideModal(selectRegionBackdrop);
+        openRegionalModal(regionIndex);
+    });
 });
 
 //closes the modal when the close button is clicked
 selectRegionCloseBtn.addEventListener('click', () => {
     hideModal(selectRegionBackdrop);
+});
+
+//goes back to the select-players modal
+selectRegionBackBtn.addEventListener('click', () => {
+    hideModal(selectRegionBackdrop);
+    openSelectPlayerModal("edit");
+});
+
+//opens the new-player modal in "edit" mode, pre-filled with the current name
+const editPlayerNameBtn = document.getElementById("edit-player-name-btn");
+editPlayerNameBtn.addEventListener('click', () => {
+    hideModal(selectRegionBackdrop);
+    openNewPlayerModal(currentPlayerName, "edit");
+});
+
+//opens the are-you-sure modal to confirm permanently deleting the player being edited
+const deletePlayerBtn = document.getElementById("delete-player-btn");
+deletePlayerBtn.addEventListener('click', () => {
+    openAreYouSureModal(
+        "Deleting a player profile is permanent and cannot be undone, do you still want to delete this profile?",
+        async () => {
+            await deletePlayer(currentPlayerName);
+            hideModal(selectRegionBackdrop);
+            openSelectPlayerModal("edit");
+        }
+    );
 });
 
 //PATCH NOTES MODAL
@@ -1049,6 +1204,9 @@ patchNotesCloseBtn.addEventListener('click', () => {
 //opens the new player modal when the add new player button is clicked
 document.querySelector('.add-player-btn').addEventListener('click', () => openNewPlayerModal(""))
 
+//opens the select-player modal in "edit" mode when the edit-preferences button is clicked
+document.querySelector('.edit-preferences-btn').addEventListener('click', () => openSelectPlayerModal("edit"))
+
 //writes the clicked region to the shared game state, refreshRegions() then handles re-rendering
 regionButtons.forEach(button => {
     button.addEventListener('click', async () => {
@@ -1061,7 +1219,7 @@ regionButtons.forEach(button => {
             selectedRegionId: regionId
         });
         //update the local copy immediately, since generateComp() below needs to read the
-        //region we just picked rather than waiting on this write's own listener round trip
+        //league region we just picked rather than waiting on this write's own listener round trip
         latestCurrentRegion = { selectedRegionId: regionId };
         await resetComp();
         //skip the "Generate Comp" button step - jump straight to showing a comp
@@ -1087,6 +1245,26 @@ async function updateFireStore(playerName, preferences) {
     //write the preferences object to that document
     //setDoc creates the document if it doesn't exist yet, or overwrites it if it does
     await setDoc(playerRef, preferences);
+}
+
+//renames a player - firestore has no rename operation, so this copies their doc under the new
+//name then deletes the old one, and fixes up the shared active-players list if they're on it
+async function renamePlayer(oldName, newName) {
+    await setDoc(doc(db, "players", newName), currentPlayerData);
+    await deleteDoc(doc(db, "players", oldName));
+    if (latestActivePlayers?.names?.includes(oldName)) {
+        const updatedNames = latestActivePlayers.names.map(name => name === oldName ? newName : name);
+        await setDoc(doc(db, "gameState", "activePlayers"), { names: updatedNames });
+    }
+}
+
+//permanently deletes a player's saved profile, removing them from the active list too if
+//they're currently on it (removePlayerFromList also clears any now-stale generated comp)
+async function deletePlayer(name) {
+    await deleteDoc(doc(db, "players", name));
+    if (latestActivePlayers?.names?.includes(name)) {
+        await removePlayerFromList(name);
+    }
 }
 
 //fetches the names of every player ever registered in firestore, not just the active ones for this session

@@ -109,7 +109,7 @@
     <div class="modal-backdrop" id="new-player-modal-backdrop">
         <div class="modal">
             <button class="modal-close-btn" id="new-player-close-btn">X</button>
-            <h2>New Player</h2>
+            <h2 id="new-player-heading">New Player</h2>
             <p>Enter your name</p>
             <input type="text" id="new-player-name-input" placeholder="Player Name">
             <div class="input-error" id="new-player-name-error"></div>
@@ -143,6 +143,7 @@
         <div class="modal compact-modal">
             <button class="modal-close-btn" id="are-you-sure-close-btn">X</button>
             <h2>Are you sure?</h2>
+            <p id="are-you-sure-message"></p>
             <button id="are-you-sure-confirm-btn">Yes</button>
             <button id="are-you-sure-cancel-btn">Cancel</button>
         </div>
@@ -150,15 +151,75 @@
     <div class="modal-backdrop" id="select-player-modal-backdrop">
         <div class="modal">
             <button class="modal-close-btn" id="select-player-close-btn">X</button>
-            <h2>Select Player</h2>
+            <h2 id="select-player-heading">Select Player</h2>
             <div class="select-player-grid" id="select-player-grid"></div>
         </div>
     </div>
     <div class="modal-backdrop" id="select-region-modal-backdrop">
         <div class="modal">
+            <button class="modal-back-btn" id="select-region-back-btn">←</button>
             <button class="modal-close-btn" id="select-region-close-btn">X</button>
-            <h2>Select Region to Edit</h2>
-            <button id="select-region-done-btn">Done</button>
+            <div class="edit-region-header">
+                <h2>Select Region to Edit</h2>
+                <div class="edit-player-actions">
+                    <button class="compact-btn" id="edit-player-name-btn">Edit Name</button>
+                    <button class="compact-btn" id="delete-player-btn">Delete Player</button>
+                </div>
+            </div>
+            <div class="edit-region-grid">
+                <button class="edit-region-btn" data-region-id="bandle-city">
+                    <span class="challenge-region">Bandle City</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="bilgewater">
+                    <span class="challenge-region">Bilgewater</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="demacia">
+                    <span class="challenge-region">Demacia</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="freljord">
+                    <span class="challenge-region">Freljord</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="ionia">
+                    <span class="challenge-region">Ionia</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="ixtal">
+                    <span class="challenge-region">Ixtal</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="noxus">
+                    <span class="challenge-region">Noxus</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="piltover">
+                    <span class="challenge-region">Piltover</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="shadow-isles">
+                    <span class="challenge-region">Shadow Isles</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="shurima">
+                    <span class="challenge-region">Shurima</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="targon">
+                    <span class="challenge-region">Targon</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="void">
+                    <span class="challenge-region">the Void</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+                <button class="edit-region-btn" data-region-id="zaun">
+                    <span class="challenge-region">Zaun</span>
+                    <div class="edit-region-champ-icons"></div>
+                </button>
+            </div>
         </div>
     </div>
     <div class="modal-backdrop" id="patch-notes-modal-backdrop">

@@ -8,10 +8,6 @@ h2 {
     background-color: blue;
     padding: 10px;
 }
-.edit-preferences-btn {
-    /* hidden until editing a player's preferences is actually implemented */
-    display: none;
-}
 button {
     width: 100%;
     background-color: chartreuse;
@@ -208,6 +204,13 @@ h1 {
 .modal-backdrop.active {
   display: flex;
 }
+#are-you-sure-modal-backdrop {
+  /* this one deliberately layers on top of whatever modal is still open underneath it
+     (rather than that modal being hidden first), so it needs to always win the stacking
+     order regardless of DOM position - otherwise whichever backdrop comes later in the
+     HTML would bury it */
+  z-index: 10;
+}
 .modal-close-btn {
     width: 20px;
     height: 20px;
@@ -215,6 +218,9 @@ h1 {
     top: 0;
     right:  0;
     cursor: pointer;
+    /* stay above any other positioned content added inside the modal later (e.g.
+       edit-region-header), which would otherwise paint over this since it comes later in the DOM */
+    z-index: 2;
 }
 .modal-back-btn {
     width: 20px;
@@ -222,7 +228,30 @@ h1 {
     position: absolute;
     top: 0;
     left:  0;
-    cursor: pointer; 
+    cursor: pointer;
+    z-index: 2;
+}
+.edit-region-header {
+    /* takes over h2's usual job of stretching full-width and bleeding to the modal's true edge,
+       since h2 itself is now nested a level deeper inside this wrapper */
+    position: relative;
+    align-self: stretch;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.edit-region-header h2 {
+    /* the wrapper above already bled to the edge - h2 shouldn't ALSO apply the general
+       .modal h2 bleed on top of that, or it'd overflow twice as far */
+    margin-left: 0;
+    margin-right: 0;
+}
+.edit-player-actions {
+    position: absolute;
+    top: 50%;
+    left: 36px;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 8px;
 }
 
 
@@ -355,4 +384,31 @@ h1 {
     background-color: darkgray;
     color: dimgray;
     cursor: not-allowed;
+}
+.edit-region-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 8px;
+    width: 100%;
+}
+.edit-region-btn {
+    border: 2px solid pink;
+    background-color: darkslategray;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.edit-region-champ-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+.edit-region-champ-icon {
+    width: 20px;
+    height: 20px;
 }
