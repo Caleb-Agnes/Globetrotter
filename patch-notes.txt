@@ -1,0 +1,8 @@
+v1.0
+First public version
+Create players with saved region preferences
+Add and remove players from the current game
+Update region options based on what is possible
+Selecting a possible region instantly generates a valid team comp
+Reroll through every possible comp before repeating
+Patch notes info

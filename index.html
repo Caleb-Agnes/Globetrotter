@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Globetrotter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <span class="version-tag">v1.0</span>
+            <button class="patch-notes-btn" id="patch-notes-btn">?</button>
+            <img src="favicon.png" alt="Globetrotter Logo" class="logo">
+            <h1>Globetrotter</h1>
+        </header>
+        <div class="columns">
+            <div class="players column">
+                <h2>Players</h2>
+
+                <div class="player-slot"></div>
+                <div class="player-slot"></div>
+                <div class="player-slot"></div>
+                <div class="player-slot"></div>
+                <div class="player-slot"></div>
+
+                <button class="add-player-btn">Add A New Player</button>
+                <button class="edit-preferences-btn">Edit A Players Preferences</button>
+            </div>
+            <div class="regions column">
+                <h2>Regions</h2>
+
+                <div class="region-grid">
+                    <button class="region-btn" data-region-id="bandle-city">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">5 Under 5'</span>
+                        <span class="challenge-region">Bandle City</span>
+                    </button>
+                    <button class="region-btn" data-region-id="bilgewater">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">All Hands on Deck</span>
+                        <span class="challenge-region">Bilgewater</span>
+                    </button>
+                    <button class="region-btn" data-region-id="demacia">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">FOR DEMACIA</span>
+                        <span class="challenge-region">Demacia</span>
+                    </button>
+                    <button class="region-btn" data-region-id="freljord">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Ice, Ice, Baby</span>
+                        <span class="challenge-region">Freljord</span>
+                    </button>
+                    <button class="region-btn" data-region-id="ionia">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Everybody was Wuju Fighting</span>
+                        <span class="challenge-region">Ionia</span>
+                    </button>
+                    <button class="region-btn" data-region-id="ixtal">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Elemental, My Dear Watson</span>
+                        <span class="challenge-region">Ixtal</span>
+                    </button>
+                    <button class="region-btn" data-region-id="noxus">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Strength Above All</span>
+                        <span class="challenge-region">Noxus</span>
+                    </button>
+                    <button class="region-btn" data-region-id="piltover">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Calculated</span>
+                        <span class="challenge-region">Piltover</span>
+                    </button>
+                    <button class="region-btn" data-region-id="shadow-isles">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Spooky Scary Skeletons</span>
+                        <span class="challenge-region">Shadow Isles</span>
+                    </button>
+                    <button class="region-btn" data-region-id="shurima">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">The Sun Disc Never Sets</span>
+                        <span class="challenge-region">Shurima</span>
+                    </button>
+                    <button class="region-btn" data-region-id="targon">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Peak Performance</span>
+                        <span class="challenge-region">Targon</span>
+                    </button>
+                    <button class="region-btn" data-region-id="void">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">(Inhuman Screeching Sounds)</span>
+                        <span class="challenge-region">the Void</span>
+                    </button>
+                    <button class="region-btn" data-region-id="zaun">
+                        <img src="button template.png" class="region-icon">
+                        <span class="challenge-name">Chemtech Comrades</span>
+                        <span class="challenge-region">Zaun</span>
+                    </button>
+                </div>
+            </div>
+            <div class="comp column">
+                <h2>Team Composition</h2>
+                <div class="comp-content" id="comp-content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="new-player-modal-backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" id="new-player-close-btn">X</button>
+            <h2>New Player</h2>
+            <p>Enter your name</p>
+            <input type="text" id="new-player-name-input" placeholder="Player Name">
+            <div class="input-error" id="new-player-name-error"></div>
+            <button class="modal-next-btn compact-btn" id="new-player-next-btn">Next</button>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="region-modal-backdrop">
+        <div class="modal">
+            <button class="modal-back-btn" id="region-back-btn">←</button>
+            <button class="modal-close-btn" id="region-close-btn">X</button>
+            <h2 id="region-modal-heading">Region: XXXXXXXX</h2>
+            <p>Enter any combination of champions and roles you want to play in this challenge</p>
+            <div class="list-addition-options">
+                <div class="custom-dropdown" id="champion-dropdown">
+                    <button class="dropdown-toggle" id="champion-dropdown-toggle">Select champion ▾</button>
+                    <div class="dropdown-list" id="champion-dropdown-list"></div>
+                </div>
+                <div class="custom-dropdown" id="role-dropdown">
+                    <button class="dropdown-toggle" id="role-dropdown-toggle">Select role ▾</button>
+                    <div class="dropdown-list" id="role-dropdown-list"></div>
+                </div>
+                <button class="compact-btn" id="region-add-btn">Add</button>
+            </div>
+            <div class="input-error" id="region-entries-error"></div>
+            <div class="region-entries-list" id="region-entries-list"></div>
+
+            <button class="compact-btn" id="region-done-btn">XXXXXXXX</button>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="are-you-sure-modal-backdrop">
+        <div class="modal compact-modal">
+            <button class="modal-close-btn" id="are-you-sure-close-btn">X</button>
+            <h2>Are you sure?</h2>
+            <button id="are-you-sure-confirm-btn">Yes</button>
+            <button id="are-you-sure-cancel-btn">Cancel</button>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="select-player-modal-backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" id="select-player-close-btn">X</button>
+            <h2>Select Player</h2>
+            <div class="select-player-grid" id="select-player-grid"></div>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="select-region-modal-backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" id="select-region-close-btn">X</button>
+            <h2>Select Region to Edit</h2>
+            <button id="select-region-done-btn">Done</button>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="patch-notes-modal-backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" id="patch-notes-close-btn">X</button>
+            <h2>Patch Notes</h2>
+            <div class="patch-notes-content" id="patch-notes-content"></div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
