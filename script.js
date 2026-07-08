@@ -410,11 +410,20 @@ function refreshComp() {
             const champion = champions.find(c => c.id === assignment.championId);
             const slot = document.createElement('div');
             slot.className = 'role-slot';
-            slot.innerHTML = `
-                <img src="${champion.iconPath}" class="region-entry-icon">
-                <span>${assignment.name}</span>
-                <img src="${role.iconSelected}" class="region-entry-icon">
-            `;
+            //built with createElement/textContent rather than innerHTML, since assignment.name
+            //is a player-entered name - interpolating it into innerHTML would let a name like
+            //"<img src=x onerror=...>" execute in every viewer's browser once a comp is generated
+            const championIcon = document.createElement('img');
+            championIcon.src = champion.iconPath;
+            championIcon.className = 'region-entry-icon';
+            const nameSpan = document.createElement('span');
+            nameSpan.textContent = assignment.name;
+            const roleIcon = document.createElement('img');
+            roleIcon.src = role.iconSelected;
+            roleIcon.className = 'region-entry-icon';
+            slot.appendChild(championIcon);
+            slot.appendChild(nameSpan);
+            slot.appendChild(roleIcon);
             compContent.appendChild(slot);
         });
 
@@ -694,6 +703,21 @@ function openNewPlayerModal(name, mode) {
 
 //functionality of each button
 
+//validates a player name before it's used as a firestore document id, and keeps it short
+//enough to fit in the player-slot/select-player UI - returns an error message to show the
+//user, or null if the name is fine
+function getNameValidationError(name) {
+    if (name.length > 25) return "Name can't be longer than 25 characters.";
+    //firestore document ids can't contain a forward slash, can't be exactly "." or "..", and
+    //can't match __*__ (reserved for firestore's own internal use) - since names are used as
+    //doc ids directly, a name that broke any of these would fail to save with a confusing
+    //firestore error instead of a clean validation message here
+    if (name.includes('/')) return "Name can't contain a / character.";
+    if (name === '.' || name === '..') return "That name isn't allowed.";
+    if (/^__.*__$/.test(name)) return "That name isn't allowed.";
+    return null;
+}
+
 //checks if there is a name and if its taken before continuing to the next modal once next is clicked
 newPlayerNextBtn.addEventListener("click", async () => {
     const name = newPlayerNameInput.value.trim();
@@ -704,6 +728,13 @@ newPlayerNextBtn.addEventListener("click", async () => {
         setTimeout(() => {
             newPlayerNameInput.classList.remove('shake');
         }, 300);
+        return;
+    }
+
+    //check the name against firestore/UI constraints - just show the message, no shake
+    const validationError = getNameValidationError(name);
+    if (validationError) {
+        newPlayerNameError.textContent = validationError;
         return;
     }
 
