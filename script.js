@@ -809,7 +809,10 @@ const regionCloseBtn = document.getElementById("region-close-btn");
 //and Done/Back/Close below can all tell which flow they're in without a separate variable
 function openRegionalModal(regionIndex) {
     currentRegionId = regions[regionIndex].id;
-    regionModalHeading.textContent = "Region: " + regions[regionIndex].regionName;
+    //the new-player flow steps through every region in order, so show progress through the
+    //full list - editing a single existing region isn't part of that sequence, so skip it there
+    const progress = currentFlow === "new-player" ? ` (${regionIndex + 1}/${regions.length})` : "";
+    regionModalHeading.textContent = "Region: " + regions[regionIndex].regionName + progress;
     if (currentFlow === "select-region") {
         //editing an existing player: load this region's already-saved preferences
         pendingPreferences[regionIndex] = currentPlayerData?.[regionIndex] ? [...currentPlayerData[regionIndex]] : [];
