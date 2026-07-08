@@ -1,3 +1,8 @@
+V1.2
+Displays all preferences, with roles included, in the edit screen
+Displays progress when first filling out regions for a new player
+Prevents messing with the firebase via the name input (the anti-Adam patch)
+
 V1.1
 Player preferences can now be edited
 Player names can now be edited (just for you Diana)
