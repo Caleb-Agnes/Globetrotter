@@ -1296,6 +1296,31 @@ patchNotesCloseBtn.addEventListener('click', () => {
 });
 // #endregion
 
+// #region Champion Role Stats
+// champion-roles.json is written by the scheduled "Update Champion Roles" GitHub Action
+// (scripts/update-champion-roles.js) - nothing here writes to it, this just keeps a local copy
+// fresh. Polled instead of fetched once, since the file can change underneath a tab that's been
+// open a while; soft-updated in memory rather than forcing a reload so it never interrupts
+// whatever the user is doing (e.g. mid-modal).
+//
+// not read anywhere yet - this is just the loading/polling infrastructure, ready for whatever
+// uses it once that's decided
+let championRoleStats = {};
+
+async function loadChampionRoleStats() {
+    try {
+        const response = await fetch('champion-roles.json?t=' + Date.now());
+        if (!response.ok) return; // the action may not have run yet
+        championRoleStats = await response.json();
+    } catch {
+        //network hiccup or missing file - keep whatever's already loaded and try again next poll
+    }
+}
+
+loadChampionRoleStats();
+setInterval(loadChampionRoleStats, 30 * 60 * 1000); // re-check every 30 minutes
+// #endregion
+
 // #region Firebase Helper Functions
 
 //function to check if a name is taken

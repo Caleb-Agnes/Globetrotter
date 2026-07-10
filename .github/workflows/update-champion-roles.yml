@@ -1,0 +1,31 @@
+name: Update Champion Roles
+
+on:
+  schedule:
+    - cron: '0 18 * * 3'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-champion-roles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update champion roles
+        run: node scripts/update-champion-roles.js
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+
+      - name: Commit updated champion role data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@github.com"
+          git add champion-roles.json
+          git diff --cached --quiet || git commit -m "Update champion role stats"
+          git push
