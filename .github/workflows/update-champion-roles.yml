@@ -10,7 +10,7 @@ permissions:
 
 concurrency:
   group: update-champion-roles
-  cancel-in-progress: false #let an in-progress run finish rather than killing it - just queue behind it
+  cancel-in-progress: false # means an in-progress run will finish and just queue the next run
 
 jobs:
   update-champion-roles:
@@ -33,4 +33,5 @@ jobs:
           git add role-frequency-table.json update-log.txt
           if [ -f champion-roles.json ]; then git add champion-roles.json; fi
           git diff --cached --quiet || git commit -m "Update champion role stats"
+          git pull --rebase
           git push
