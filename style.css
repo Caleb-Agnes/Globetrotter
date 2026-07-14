@@ -36,6 +36,15 @@ header {
     left: 8px;
     font-size: small;
 }
+.champion-stats-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: auto;
+    padding: 4px 8px;
+    font-size: small;
+    cursor: pointer;
+}
 .patch-notes-btn {
     position: absolute;
     top: 24px;

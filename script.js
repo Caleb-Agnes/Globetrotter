@@ -1352,7 +1352,7 @@ async function populateChampionStats() {
     }
     const state = await response.json();
     const entries = Object.values(state.frequencyTable)
-        .sort((a, b) => a.id.localeCompare(b.id));
+        .sort((a, b) => a.tally - b.tally);
 
     entries.forEach(entry => {
         championStatsContent.appendChild(buildChampionStatsRow(entry));

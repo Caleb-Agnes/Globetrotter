@@ -13,7 +13,7 @@ const PLATFORM_ROUTE = "euw1"; //used for league-v4 (rank lookups)
 const REGIONAL_ROUTE = "europe"; //used for match-v5 (match id and match detail lookups)
 const MAX_PAGE = 20; //decides the most pages that a player can be randomly sleceted from
 const DATASET_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000; //2 weeks - a completed dataset older than this gets reset
-const MAX_API_CALLS = 100; // 1000 calls took ~12 minutes
+const MAX_API_CALLS = 1000; // 1000 calls took ~12 minutes
 
 const roleNames = { TOP: "top", JUNGLE: "jng", MIDDLE: "mid", BOTTOM: "bot", UTILITY: "sup" };
 
@@ -257,11 +257,14 @@ function updateChampionTallies(matchInfo) {
             frequencyTable[championId][role]++;
             frequencyTable[championId].tally++;
             totalSamples++;
-            log(`${frequencyTable[championId].id} ${role} tally increased to ${frequencyTable[championId][role]}`);
+            log(`${frequencyTable[championId].id} ${role} -> ${frequencyTable[championId][role]}`);
             updateConfidenceForChampion(championId);
-            updateDoneForChampion(championId);
+            if (!frequencyTable[championId].done) {
+                updateDoneForChampion(championId);
+            }
         }
     });
+    log('----------------');
 }
 
 // standard normal CDF, via the Abramowitz & Stegun approximation of erf - copied and pasted
@@ -292,7 +295,6 @@ function updateConfidenceForChampion(championId) {
     const summedCount = adjustedLead + adjustedSecond;
     const z = (leadersShare - 0.5) * Math.sqrt(summedCount) / Math.sqrt(leadersShare * (1 - leadersShare));
     frequencyTable[championId].confidence = normalCDF(z);
-    log(`${frequencyTable[championId].id} confidence is now ${(frequencyTable[championId].confidence * 100).toFixed(1)}%`);
 }
 
 function updateDoneForChampion(championId) {
