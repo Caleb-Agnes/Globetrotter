@@ -13,7 +13,7 @@ const PLATFORM_ROUTE = "euw1"; //used for league-v4 (rank lookups)
 const REGIONAL_ROUTE = "europe"; //used for match-v5 (match id and match detail lookups)
 const MAX_PAGE = 20; //decides the most pages that a player can be randomly sleceted from
 const DATASET_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000; //2 weeks - a completed dataset older than this gets reset
-const MAX_API_CALLS = 2500; // 1000 calls took ~12 minutes
+const MAX_API_CALLS = 100; // 1000 calls took ~12 minutes
 
 const roleNames = { TOP: "top", JUNGLE: "jng", MIDDLE: "mid", BOTTOM: "bot", UTILITY: "sup" };
 
