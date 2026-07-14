@@ -13,6 +13,7 @@ const PLATFORM_ROUTE = "euw1"; //used for league-v4 (rank lookups)
 const REGIONAL_ROUTE = "europe"; //used for match-v5 (match id and match detail lookups)
 const MAX_PAGE = 20; //decides the most pages that a player can be randomly sleceted from
 const DATASET_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000; //2 weeks - a completed dataset older than this gets reset
+const MAX_API_CALLS = 2500; // 1000 calls took ~12 minutes
 
 const roleNames = { TOP: "top", JUNGLE: "jng", MIDDLE: "mid", BOTTOM: "bot", UTILITY: "sup" };
 
@@ -86,7 +87,7 @@ const startTime = Date.now();
 
 fs.writeFileSync(LOG_PATH, ''); //clear last run's log so this file only ever shows the last hour
 loadCurrentState();
-while (!isDoneCheck() && apiAccessCount < 1000) {
+while (!isDoneCheck() && apiAccessCount < MAX_API_CALLS) {
     await sampleAGame();
 }
 if (isDoneCheck()) {
@@ -154,9 +155,9 @@ async function riotFetch(url, errorContext) {
     apiAccessCount++;
     //log every sso many apri calls to mark progress when watching the log live
     if (apiAccessCount % 100 === 0) {
-        log('');
-        log(`${Math.round(apiAccessCount / 1000 * 100)}% THROUGH (${apiAccessCount}/1000 API CALLS)`);
-        log('');
+        log('-----------------------------------------------------------');
+        log(`${Math.round(apiAccessCount / MAX_API_CALLS * 100)}% THROUGH (${apiAccessCount}/${MAX_API_CALLS} API CALLS)`);
+        log('-----------------------------------------------------------');
     }
     if (response.status === 429) {
         //rate limited so waitrs the instructed time before trying again

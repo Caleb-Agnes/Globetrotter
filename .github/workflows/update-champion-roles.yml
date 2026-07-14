@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-champion-roles
+  cancel-in-progress: false #let an in-progress run finish rather than killing it - just queue behind it
+
 jobs:
   update-champion-roles:
     runs-on: ubuntu-latest
