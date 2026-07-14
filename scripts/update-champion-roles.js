@@ -9,7 +9,7 @@ const CHAMPION_ROLE_PATH = path.join(__dirname, '..', 'champion-roles.json'); //
 const ROLE_FREQUENCY_TABLE_PATH = path.join(__dirname, '..', 'role-frequency-table.json'); //internal progress between runs
 const LOG_PATH = path.join(__dirname, '..', 'update-log.txt'); //human-readable record of what happened this run
 const RIOT_API_KEY = process.env.RIOT_API_KEY;
-const PLATFORM_ROUTE = "euw1"; //used for league-v4/summoner-v4 (rank and puuid lookups)
+const PLATFORM_ROUTE = "euw1"; //used for league-v4 (rank lookups)
 const REGIONAL_ROUTE = "europe"; //used for match-v5 (match id and match detail lookups)
 const MAX_PAGE = 20; //decides the most pages that a player can be randomly sleceted from
 const DATASET_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000; //2 weeks - a completed dataset older than this gets reset
@@ -94,8 +94,7 @@ if (isDoneCheck()) {
 }
 writeFinalState();
 
-//only worth reporting timing if this run actually did something - a "database already
-//complete, nothing to do" run finishes almost instantly and isn't interesting to time
+//logs run time if any sampling was done
 if (apiAccessCount > 0) {
     const elapsedSeconds = ((Date.now() - startTime) / 1000).toFixed(1);
     log(`Run completed in ${elapsedSeconds}s (${apiAccessCount} API calls)`);
@@ -186,11 +185,11 @@ function getWeightedRandomRank() {
     return "error - no rank";
 }
 
-//fetch a player for a given rank, unique function for APEX
+//fetch a random player's puuid for a given rank, unique function for APEX 
 async function getPlayerWithRank(rank) {
-    let playerId;
+    let puuid;
     if (rank == "APEX") {
-        playerId = await getApexPlayer();
+        puuid = await getApexPlayer();
     } else {
         const division = divisions[Math.floor(Math.random() * divisions.length)];
         let entries;
@@ -203,9 +202,9 @@ async function getPlayerWithRank(rank) {
         } while (entries.length === 0);
 
         const entry = entries[Math.floor(Math.random() * entries.length)];
-        playerId = entry.summonerId;
+        puuid = entry.puuid;
     }
-    return playerId;
+    return puuid;
 }
 
 async function getApexPlayer() {
@@ -221,16 +220,7 @@ async function getApexPlayer() {
     }
 
     const entry = combinedEntries[Math.floor(Math.random() * combinedEntries.length)];
-    return entry.summonerId;
-}
-
-//fetch the PUUID for a give player ID
-async function getPuuidForPlayerId(playerId) {
-    const summoner = await riotFetch(
-        `https://${PLATFORM_ROUTE}.api.riotgames.com/lol/summoner/v4/summoners/${playerId}`,
-        `summoner for playerId ${playerId}`
-    );
-    return summoner.puuid;
+    return entry.puuid;
 }
 
 //fetch a random match with its players, champions and roles from the players match history
@@ -326,8 +316,7 @@ async function sampleAGame() {
     const rank = getWeightedRandomRank();
     let matchInfo;
     do {
-        const playerId = await getPlayerWithRank(rank);
-        const puuid = await getPuuidForPlayerId(playerId);
+        const puuid = await getPlayerWithRank(rank);
         matchInfo = usedPuuids.includes(puuid) ? null : await getMatchFromPuuid(puuid);
     } while (!matchInfo);
     updateChampionTallies(matchInfo);
