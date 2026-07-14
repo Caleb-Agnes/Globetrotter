@@ -1321,6 +1321,110 @@ loadChampionRoleStats();
 setInterval(loadChampionRoleStats, 30 * 60 * 1000); // re-check every 30 minutes
 // #endregion
 
+// #region Champion Stats Modal
+// temporary debug/tracking view of role-frequency-table.json - the full in-progress data
+// (tally/confidence/done per champion), not the simplified champion-roles.json above. Fetched
+// fresh only when opened, since this is a rarely-viewed debug tool, not something worth polling
+// in the background for every visitor.
+
+//set up consts
+const championStatsBackdrop = document.getElementById("champion-stats-modal-backdrop");
+const championStatsContent = document.getElementById("champion-stats-content");
+const championStatsBtn = document.getElementById("champion-stats-btn");
+const championStatsCloseBtn = document.getElementById("champion-stats-close-btn");
+
+//function to start the modal
+async function openChampionStatsModal() {
+    await populateChampionStats();
+    showModal(championStatsBackdrop);
+}
+
+//fetches role-frequency-table.json and renders one row per champion, sorted alphabetically
+async function populateChampionStats() {
+    championStatsContent.innerHTML = '';
+    const response = await fetch('role-frequency-table.json?t=' + Date.now());
+    if (!response.ok) {
+        //the scheduled job may not have run yet, or hasn't written this file yet
+        const message = document.createElement('p');
+        message.textContent = "No data yet - the scheduled job hasn't produced any results yet.";
+        championStatsContent.appendChild(message);
+        return;
+    }
+    const state = await response.json();
+    const entries = Object.values(state.frequencyTable)
+        .sort((a, b) => a.id.localeCompare(b.id));
+
+    entries.forEach(entry => {
+        championStatsContent.appendChild(buildChampionStatsRow(entry));
+    });
+}
+
+//builds one row: champ icon, name, sample size, most-played role icon, confidence, done tickbox
+function buildChampionStatsRow(entry) {
+    const champion = champions.find(c => c.id === entry.id);
+
+    //find whichever of the 5 roles currently has this champion's highest tally
+    let mostPlayedRole = null;
+    let highestTally = 0;
+    roles.forEach(role => {
+        if (entry[role.role] > highestTally) {
+            mostPlayedRole = role;
+            highestTally = entry[role.role];
+        }
+    });
+
+    const row = document.createElement('div');
+    row.className = 'champion-stats-entry';
+    row.classList.toggle('done', entry.done);
+
+    const icon = document.createElement('img');
+    icon.className = 'champion-stats-icon';
+    icon.src = champion.iconPath;
+
+    const name = document.createElement('span');
+    name.className = 'champion-stats-name';
+    name.textContent = champion.name;
+
+    const tally = document.createElement('span');
+    tally.className = 'champion-stats-tally';
+    tally.textContent = entry.tally;
+
+    const roleIcon = document.createElement('img');
+    roleIcon.className = 'champion-stats-role-icon';
+    //no role played yet - leave the icon blank rather than pointing at a role that isn't real
+    if (mostPlayedRole) roleIcon.src = mostPlayedRole.iconSelected;
+
+    const confidence = document.createElement('span');
+    confidence.className = 'champion-stats-confidence';
+    confidence.textContent = entry.confidence === null ? '—' : `${(entry.confidence * 100).toFixed(1)}%`;
+
+    const done = document.createElement('input');
+    done.type = 'checkbox';
+    done.className = 'champion-stats-done';
+    done.checked = entry.done;
+    done.disabled = true; //display only, not editable
+
+    row.appendChild(icon);
+    row.appendChild(name);
+    row.appendChild(tally);
+    row.appendChild(roleIcon);
+    row.appendChild(confidence);
+    row.appendChild(done);
+
+    return row;
+}
+
+//functionality of each button
+
+//opens the modal when the header button is clicked
+championStatsBtn.addEventListener('click', openChampionStatsModal);
+
+//closes the modal when the close button is clicked
+championStatsCloseBtn.addEventListener('click', () => {
+    hideModal(championStatsBackdrop);
+});
+// #endregion
+
 // #region Firebase Helper Functions
 
 //function to check if a name is taken

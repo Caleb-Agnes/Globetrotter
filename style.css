@@ -412,6 +412,46 @@ h1 {
     width: 20px;
     height: 20px;
 }
+
+.champion-stats-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.champion-stats-entry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    background-color: darkslategray;
+    border: 2px solid pink;
+    border-radius: 8px;
+}
+.champion-stats-entry.done {
+    border-color: gold;
+}
+.champion-stats-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.champion-stats-name {
+    flex: 1;
+    text-align: left;
+}
+.champion-stats-tally,
+.champion-stats-confidence {
+    width: 50px;
+    text-align: right;
+}
+.champion-stats-role-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
 .edit-region-role-icon {
     width: 20px;
     height: 20px;

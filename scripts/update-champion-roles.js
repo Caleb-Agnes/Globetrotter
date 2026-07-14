@@ -82,6 +82,8 @@ let apiAccessCount = 0;
 let totalSamples = 0;
 let datasetStartedAt = null;
 
+const startTime = Date.now();
+
 fs.writeFileSync(LOG_PATH, ''); //clear last run's log so this file only ever shows the last hour
 loadCurrentState();
 while (!isDoneCheck() && apiAccessCount < 1000) {
@@ -91,6 +93,13 @@ if (isDoneCheck()) {
     writeChampionRoleStats(frequencyTable);
 }
 writeFinalState();
+
+//only worth reporting timing if this run actually did something - a "database already
+//complete, nothing to do" run finishes almost instantly and isn't interesting to time
+if (apiAccessCount > 0) {
+    const elapsedSeconds = ((Date.now() - startTime) / 1000).toFixed(1);
+    log(`Run completed in ${elapsedSeconds}s (${apiAccessCount} API calls)`);
+}
 
 //gets the current information stored from previous runs
 function loadCurrentState() {
@@ -144,6 +153,12 @@ function log(message) {
 async function riotFetch(url, errorContext) {
     const response = await fetch(url, { headers: { "X-Riot-Token": RIOT_API_KEY } });
     apiAccessCount++;
+    //log every sso many apri calls to mark progress when watching the log live
+    if (apiAccessCount % 100 === 0) {
+        log('');
+        log(`${Math.round(apiAccessCount / 1000 * 100)}% THROUGH (${apiAccessCount}/1000 API CALLS)`);
+        log('');
+    }
     if (response.status === 429) {
         //rate limited so waitrs the instructed time before trying again
         const retryAfterSeconds = Number(response.headers.get("Retry-After")) || 1;
