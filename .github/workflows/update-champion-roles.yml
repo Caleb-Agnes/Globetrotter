@@ -2,7 +2,7 @@ name: Update Champion Roles
 
 on:
   schedule:
-    - cron: '0 18 * * 3'
+    - cron: '0 * * * *'   # hourly - cheap once the dataset is complete, since the script exits fast
   workflow_dispatch:
 
 permissions:
@@ -26,6 +26,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@github.com"
-          git add champion-roles.json
+          git add role-frequency-table.json update-log.txt
+          if [ -f champion-roles.json ]; then git add champion-roles.json; fi
           git diff --cached --quiet || git commit -m "Update champion role stats"
           git push
