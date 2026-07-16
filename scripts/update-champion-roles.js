@@ -251,6 +251,7 @@ function updateChampionTallies(matchInfo) {
         const puuid = player.puuid;
         const championId = player.championId;
         const role = roleNames[player.role];
+        if (!role) return; //ignore undefined roles
         if (!usedPuuids.includes(puuid)) {
             usedPuuids.push(puuid);
             frequencyTable[championId][role]++;

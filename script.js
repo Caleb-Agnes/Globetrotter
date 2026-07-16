@@ -842,8 +842,21 @@ function buildChampionOption(champion) {
         selectedChampionId = champion.id;
         championDropdownToggle.innerHTML = `<img src="${champion.iconPath}" class="dropdown-toggle-icon"><span>${champion.name}</span>`;
         championDropdownList.classList.remove('open');
+        const mostPlayedRole = championRoleStats[champion.id];
+        if (mostPlayedRole) {
+            selectRole(mostPlayedRole);
+        }
     });
     return option;
+}
+
+//shared by the role dropdown's own click handler and the champion-select auto-fill above
+function selectRole(roleCode) {
+    const role = roles.find(r => r.role === roleCode);
+    if (!role) return;
+    selectedRole = role.role;
+    roleDropdownToggle.innerHTML = `<img src="${role.iconSelected}" class="dropdown-toggle-icon">`;
+    roleDropdownList.classList.remove('open');
 }
 
 //builds one clickable row for a role, icon only
@@ -862,9 +875,7 @@ function buildRoleOption(role) {
     });
     //picking this role closes the dropdown and shows it, in its selected state, on the toggle button instead
     option.addEventListener('click', () => {
-        selectedRole = role.role;
-        roleDropdownToggle.innerHTML = `<img src="${role.iconSelected}" class="dropdown-toggle-icon">`;
-        roleDropdownList.classList.remove('open');
+        selectRole(role.role);
     });
     return option;
 }
@@ -872,11 +883,9 @@ function buildRoleOption(role) {
 //fills the dropdown list with every role, minus whichever is already selected
 function populateRoleDropdown() {
     roleDropdownList.innerHTML = '';
-    roles
-        .filter(role => role.role !== selectedRole)
-        .forEach(role => {
-            roleDropdownList.appendChild(buildRoleOption(role));
-        });
+    roles.forEach(role => {
+        roleDropdownList.appendChild(buildRoleOption(role));
+    });
 }
 
 //fills the dropdown list with every champ from the current region, minus whichever is already selected
