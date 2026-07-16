@@ -980,9 +980,9 @@ regionAddBtn.addEventListener('click', () => {
         regionEntriesError.textContent = "That champion and role combo is already on the list";
         return;
     }
-    //cant have more than 5 entries for a single region
-    if (pendingPreferences[currentRegionIndex].length >= 5) {
-        regionEntriesError.textContent = "Can't have more than 5 options, delete one to add more";
+    //cant have more than 10 entries for a single region
+    if (pendingPreferences[currentRegionIndex].length >= 10) {
+        regionEntriesError.textContent = "Can't have more than 10 options, delete one to add more";
         return;
     }
     pendingPreferences[currentRegionIndex].push({ championId: selectedChampionId, role: selectedRole });

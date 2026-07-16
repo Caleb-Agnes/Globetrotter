@@ -1,3 +1,7 @@
+V1.3 - the better input patch
+Automatically fills a champions role with its most played role when adding a champion (can still be changed)
+Now can have 10 options for each region (previously 5)
+
 V1.2
 Displays all preferences, with roles included, in the edit screen
 Displays progress when first filling out regions for a new player

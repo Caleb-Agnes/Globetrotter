@@ -356,10 +356,10 @@ h1 {
     border-radius: 8px;
     padding: 8px;
     margin-bottom: 16px;
-    /* holds the space for a full 5 entries up front, so the box doesn't grow as you add to it.
+    /* holds the space for a full 10 entries up front, so the box doesn't grow as you add to it.
        box-sizing:border-box means min-height must include this box's OWN padding/border too,
-       not just its children: 5 entries x 36px + 4 gaps x 4px + our own 16px padding + 4px border */
-    min-height: calc(5 * 36px + 4 * 4px + 2 * 8px + 2 * 2px);
+       not just its children: 10 entries x 36px + 9 gaps x 4px + our own 16px padding + 4px border */
+    min-height: calc(10 * 36px + 9 * 4px + 2 * 8px + 2 * 2px);
 }
 .region-entry {
     display: flex;
