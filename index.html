@@ -249,7 +249,8 @@
         fetch('patch-notes.txt?t=' + Date.now())
             .then(res => res.text())
             .then(text => {
-                const latestVersion = text.trim().split(/\n\s*\n/)[0].split('\n')[0].trim();
+                const rawVersion = text.trim().split(/\n\s*\n/)[0].split('\n')[0].trim();
+                const latestVersion = rawVersion.split(' - ')[0];
 
                 document.getElementById('version-tag').textContent = latestVersion;
                 document.getElementById('main-stylesheet').href = `style.css?v=${latestVersion}`;

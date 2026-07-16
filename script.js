@@ -422,6 +422,19 @@ function refreshRegionChampionGrid() {
         });
 }
 
+//recomputes --icon-size whenever the grid's available width changes: fits as many 50px-minimum
+//icons as possible across that width, then splits the leftover evenly across all of them - one
+//size computed from the container's width alone, so every region uses the same icon size
+//regardless of how many icons it actually has
+const regionChampionGridObserver = new ResizeObserver(entries => {
+    const width = entries[0].contentRect.width;
+    const iconCount = Math.floor(width / 50);
+    if (iconCount === 0) return;
+    const iconSize = width / iconCount;
+    regionChampionGrid.style.setProperty('--icon-size', `${iconSize}px`);
+});
+regionChampionGridObserver.observe(regionChampionGrid);
+
 function refreshComp() {
     compContent.innerHTML = '';
     refreshRegionChampionGrid();

@@ -37,8 +37,7 @@ header {
     font-size: small;
 }
 .champion-stats-btn {
-    /* debugging tool, not meant for regular visitors - hidden but still fully wired up,
-       open it from devtools with document.getElementById('champion-stats-btn').click() */
+    /* debugging tool */
     display: none;
     position: absolute;
     top: 8px;
@@ -148,18 +147,30 @@ h1 {
     font-weight: bold;
 }
 .region-champion-grid {
-    /* same auto-fill/stacking approach as .region-grid, just at half the cell size */
+    /* --icon-size is computed in JS (a ResizeObserver on this element) - fits as many 50px-
+       minimum icons as possible across the container's actual width, then splits the leftover
+       evenly across all of them. one size is computed from the container's width alone, so
+       it's the same for every region regardless of how many icons that region actually has -
+       the 50px fallback only matters before JS has run its first measurement */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fill, var(--icon-size, 50px));
     gap: 0;
     margin-top: 8px;
 }
 .region-champion-icon {
-    width: 50px;
-    height: 50px;
+    width: var(--icon-size, 50px);
+    height: var(--icon-size, 50px);
 }
 .challenge-region {
     font-size: small;
+}
+.edit-region-btn .challenge-region {
+    /* only the edit-preferences grid gets this treatment - the homepage's region-btn keeps
+       the plain .challenge-region styling above. line-height:16px here is also what the
+       min-height calc() on .edit-region-btn below relies on being an exact value */
+    line-height: 16px;
+    color: white;
+    font-weight: bold;
 }
 .comp-content {
     display: flex;
@@ -424,6 +435,17 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 6px;
+    /* reserves space for a full 10 preference-pairs, so every edit-region-btn reserves the
+       same height regardless of how many a given region actually has. each pair is 28px tall
+       (20px icon + 2px padding + 2px border, top and bottom) and only one fits per row at
+       this button's width - two together are wider than the space available, so they always
+       stack one per row rather than side by side. box-sizing:border-box means this also has
+       to include this button's own padding/border, not just its children:
+       10 pairs x 28px + 16px for the region-name text (an exact value, not an estimate, since
+       .challenge-region has its own explicit line-height:16px) + this button's own 8px
+       padding + 2px border (top and bottom of each) + the 6px gap between the name and the
+       first pair + 9 gaps x 2px between the 10 stacked pairs */
+    min-height: calc(10 * 28px + 16px + 2 * 8px + 2 * 2px + 6px + 9 * 2px);
 }
 .edit-region-champ-icons {
     display: flex;
