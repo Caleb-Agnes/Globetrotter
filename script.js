@@ -388,6 +388,17 @@ regionButtons.forEach(button => {
         }
     });
 });
+
+//picks a random currently-possible region and clicks it - reuses the click handler above
+//verbatim, including its own "already selected" no-op, so landing on the current region by
+//chance correctly does nothing rather than needing special-casing here
+const randomiseRegionBtn = document.getElementById("randomise-region-btn");
+randomiseRegionBtn.addEventListener('click', () => {
+    const possibleButtons = Array.from(regionButtons).filter(button => !button.disabled);
+    if (possibleButtons.length === 0) return;
+    const randomButton = possibleButtons[Math.floor(Math.random() * possibleButtons.length)];
+    randomButton.click();
+});
 // #endregion
 
 // #region Homepage - Comp Column
@@ -980,7 +991,6 @@ regionAddBtn.addEventListener('click', () => {
         regionEntriesError.textContent = "That champion and role combo is already on the list";
         return;
     }
-    //cant have more than 10 entries for a single region
     if (pendingPreferences[currentRegionIndex].length >= 10) {
         regionEntriesError.textContent = "Can't have more than 10 options, delete one to add more";
         return;
