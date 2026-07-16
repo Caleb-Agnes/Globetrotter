@@ -189,6 +189,18 @@ h1 {
 .comp-info-text {
     text-align: center;
 }
+.comp-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.comp-nav-btn {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
 
 /* for all modals*/
 .modal {

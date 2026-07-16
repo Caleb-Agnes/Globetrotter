@@ -277,7 +277,15 @@ async function refreshCache(activePlayers) {
 
     regions.forEach(region => {
         if (hasFullRoster()) {
-            compsByRegion[region.id] = generateAllPossibleComps(latestActivePlayersData, region);
+            //isolated per region - one region's data throwing (e.g. a player doc missing that
+            //region's key) must not blank out every other region's already-computed cache too,
+            //which is what an unguarded throw here would do since it aborts this whole forEach
+            try {
+                compsByRegion[region.id] = generateAllPossibleComps(latestActivePlayersData, region);
+            } catch (error) {
+                console.error(`Failed to generate comps for region "${region.id}":`, error);
+                compsByRegion[region.id] = [];
+            }
         } else {
             regionWillingness[region.id] = hasEveryActivePlayerListedSomething(latestActivePlayersData, region);
         }
@@ -440,9 +448,14 @@ function refreshComp() {
     refreshRegionChampionGrid();
 
     if (latestTeamComp) {
-        //a comp has already been generated: show it, the permutation count, and a reroll option
-        //the permutation count is just the cached comps list's length - no need to store it separately
+        //a comp has already been generated: show it, its ranking among every possible comp for
+        //this region, and the buttons to move to another one
+        //totalComps is just the cached comps list's length - no need to store it separately
         const totalComps = compsByRegion[latestCurrentRegion?.selectedRegionId]?.length || 0;
+        //compIndex is this comp's position in that same score-sorted list (0 = best) - stored
+        //by whichever generator function last wrote gameState/teamComp, so it works the same
+        //whether the comp shown was the best, the next-best, or a random pick
+        const compRank = (latestTeamComp.compIndex ?? 0) + 1;
 
         //iterate over roles (already ordered top/jng/mid/bot/sup) rather than latestTeamComp.comp,
         //whose order just depends on however the search happened to lock each player in
@@ -470,21 +483,36 @@ function refreshComp() {
 
         const infoText = document.createElement('span');
         infoText.className = 'info-text';
-        infoText.textContent = `Number of possible combinations: ${totalComps}`;
-        compContent.appendChild(infoText);
+        infoText.textContent = `Comp ${compRank}/${totalComps}`;
 
         if (totalComps > 1) {
-            const nextBestBtn = document.createElement('button');
-            nextBestBtn.className = 'randomise-btn';
-            nextBestBtn.textContent = 'Show Next Best Comp';
-            nextBestBtn.addEventListener('click', showNextBestComp);
-            compContent.appendChild(nextBestBtn);
+            //page-number style navigation: back arrow, the "Comp X/Y" text, forward arrow, all
+            //on the same row - steps through the score-sorted comps list one at a time
+            const pagination = document.createElement('div');
+            pagination.className = 'comp-pagination';
+
+            const backBtn = document.createElement('button');
+            backBtn.className = 'comp-nav-btn';
+            backBtn.textContent = '◀';
+            backBtn.addEventListener('click', showPreviousBestComp);
+
+            const forwardBtn = document.createElement('button');
+            forwardBtn.className = 'comp-nav-btn';
+            forwardBtn.textContent = '▶';
+            forwardBtn.addEventListener('click', showNextBestComp);
+
+            pagination.appendChild(backBtn);
+            pagination.appendChild(infoText);
+            pagination.appendChild(forwardBtn);
+            compContent.appendChild(pagination);
 
             const randomBtn = document.createElement('button');
             randomBtn.className = 'randomise-btn';
             randomBtn.textContent = 'Roll A Random Comp';
             randomBtn.addEventListener('click', generateRandomComp);
             compContent.appendChild(randomBtn);
+        } else {
+            compContent.appendChild(infoText);
         }
         return;
     }
@@ -520,22 +548,37 @@ async function generateComp() {
 
     await setDoc(doc(db, "gameState", "teamComp"), {
         comp: allComps[0],
-        bestIndex: 0
+        compIndex: 0
     });
 }
 
 //steps forward through the score-sorted comps list, wrapping back to the best comp once every
-//option has been shown - used by the "Show Next Best Comp" button
+//option has been shown - used by the pagination row's forward arrow
 async function showNextBestComp() {
     const regionId = latestCurrentRegion?.selectedRegionId;
     const allComps = compsByRegion[regionId] || [];
     if (allComps.length === 0) return;
 
-    const nextIndex = ((latestTeamComp?.bestIndex ?? -1) + 1) % allComps.length;
+    const nextIndex = ((latestTeamComp?.compIndex ?? -1) + 1) % allComps.length;
 
     await setDoc(doc(db, "gameState", "teamComp"), {
         comp: allComps[nextIndex],
-        bestIndex: nextIndex
+        compIndex: nextIndex
+    });
+}
+
+//steps backward through the score-sorted comps list, wrapping to the worst comp if you go back
+//past the best one - used by the pagination row's back arrow
+async function showPreviousBestComp() {
+    const regionId = latestCurrentRegion?.selectedRegionId;
+    const allComps = compsByRegion[regionId] || [];
+    if (allComps.length === 0) return;
+
+    const previousIndex = ((latestTeamComp?.compIndex ?? 0) - 1 + allComps.length) % allComps.length;
+
+    await setDoc(doc(db, "gameState", "teamComp"), {
+        comp: allComps[previousIndex],
+        compIndex: previousIndex
     });
 }
 
@@ -562,6 +605,7 @@ async function generateRandomComp() {
 
     await setDoc(doc(db, "gameState", "teamComp"), {
         comp: allComps[chosenIndex],
+        compIndex: chosenIndex,
         shownIndexes: [...shownIndexes, chosenIndex]
     });
 }
@@ -1617,8 +1661,12 @@ async function updateFireStore(playerName, preferences) {
     //get a reference to this player's document, using their name as the document id
     const playerRef = doc(db, "players", playerName);
     //write the preferences object to that document
-    //setDoc creates the document if it doesn't exist yet, or overwrites it if it does
-    await setDoc(playerRef, preferences);
+    //setDoc creates the document if it doesn't exist yet, or overwrites it if it does.
+    //merge:true so this only ever touches the region keys actually present in `preferences` -
+    //without it, a caller holding a stale/incomplete in-memory copy of this doc (e.g. from a
+    //getDoc that raced a delete, or any other bug) would silently wipe every region key it
+    //doesn't know about, since a non-merged setDoc replaces the whole document
+    await setDoc(playerRef, preferences, { merge: true });
 }
 
 //renames a player - firestore has no rename operation, so this copies their doc under the new
