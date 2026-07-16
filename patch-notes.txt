@@ -1,8 +1,10 @@
-V1.3 - the better input patch
-Automatically fills a champions role with its most played role when adding a champion (can still be changed)
-Now can have 10 options for each region (previously 5)
+V1.3 - The Better Input Patch
+Automatically fills a champions role with its most played role when adding a champion to you preferences (can still be changed)
+Now can have 10 preferences for each region (previously 5)
+Preferences for each region are now ranked and can be reordered by dragging
+Generated compositions now show in order of what maximises preferences people ranked highest
 Region can now be randomised with the randomise button
-Champions from the selected region are now displayed
+Champions from the selected region are now displayed along side the generated comp
 
 V1.2
 Displays all preferences, with roles included, in the edit screen
@@ -14,8 +16,7 @@ Player preferences can now be edited
 Player names can now be edited (just for you Diana)
 Players profiles can be deleted
 
-v1.0
-First public version
+v1.0 - First Public Version
 Create players with saved region preferences
 Add and remove players from the current game
 Update region options based on what is possible

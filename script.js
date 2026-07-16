@@ -474,11 +474,17 @@ function refreshComp() {
         compContent.appendChild(infoText);
 
         if (totalComps > 1) {
-            const rerollBtn = document.createElement('button');
-            rerollBtn.className = 'randomise-btn';
-            rerollBtn.textContent = 'Roll A Different Comp';
-            rerollBtn.addEventListener('click', generateComp);
-            compContent.appendChild(rerollBtn);
+            const nextBestBtn = document.createElement('button');
+            nextBestBtn.className = 'randomise-btn';
+            nextBestBtn.textContent = 'Show Next Best Comp';
+            nextBestBtn.addEventListener('click', showNextBestComp);
+            compContent.appendChild(nextBestBtn);
+
+            const randomBtn = document.createElement('button');
+            randomBtn.className = 'randomise-btn';
+            randomBtn.textContent = 'Roll A Random Comp';
+            randomBtn.addEventListener('click', generateRandomComp);
+            compContent.appendChild(randomBtn);
         }
         return;
     }
@@ -504,11 +510,38 @@ function refreshComp() {
     }
 }
 
-//stub: will compute a valid role assignment for the active players and write it to
-//gameState/teamComp as { assignments: [{name, role}, ...], permutationCount }
-//shared by both the Generate Comp and Reroll buttons - picks a comp for the currently selected
-// league region from the cache, avoiding any comp already shown until every option has been shown once
+//shows the single best (lowest-score) comp for the currently selected region - used for the
+//initial "Generate Comp" click and whenever the region/roster changes and a fresh comp needs
+//showing, since compsByRegion is always sorted best-first
 async function generateComp() {
+    const regionId = latestCurrentRegion?.selectedRegionId;
+    const allComps = compsByRegion[regionId] || [];
+    if (allComps.length === 0) return;
+
+    await setDoc(doc(db, "gameState", "teamComp"), {
+        comp: allComps[0],
+        bestIndex: 0
+    });
+}
+
+//steps forward through the score-sorted comps list, wrapping back to the best comp once every
+//option has been shown - used by the "Show Next Best Comp" button
+async function showNextBestComp() {
+    const regionId = latestCurrentRegion?.selectedRegionId;
+    const allComps = compsByRegion[regionId] || [];
+    if (allComps.length === 0) return;
+
+    const nextIndex = ((latestTeamComp?.bestIndex ?? -1) + 1) % allComps.length;
+
+    await setDoc(doc(db, "gameState", "teamComp"), {
+        comp: allComps[nextIndex],
+        bestIndex: nextIndex
+    });
+}
+
+//picks a uniformly random comp for the currently selected region, avoiding any comp already
+//shown until every option has been shown once - used by the "Roll A Random Comp" button
+async function generateRandomComp() {
     const regionId = latestCurrentRegion?.selectedRegionId;
     const allComps = compsByRegion[regionId] || [];
     if (allComps.length === 0) return;
@@ -569,8 +602,11 @@ function buildInitialState(players, region) {
     //entries - a player who refused this region's challenge just won't appear at all
     const preferences = []
     players.forEach(player => {
-        player[region.indexNo].forEach(item => {
-            preferences.push({ name: player.name, championId: item.championId, role: item.role })
+        //rank is this player's preference order for this entry (1 = most wanted) - carried
+        //through resolve() unchanged on every option object, so a finished comp's decisions
+        //still have it for scoring in compScore()
+        player[region.indexNo].forEach((item, itemIndex) => {
+            preferences.push({ name: player.name, championId: item.championId, role: item.role, rank: itemIndex + 1 })
         })
     })
 
@@ -636,11 +672,19 @@ function resolve(state, selection) {
     return allComps
 }
 
+//a comp's score is the sum of each player's rank (1 = most wanted) for the combo they got
+//assigned - lower is better, since it means everyone is closer to their top choice
+function compScore(comp) {
+    return comp.reduce((sum, decision) => sum + decision.rank, 0)
+}
+
 //returns every valid comp for this region: the exhaustive list of assignments with 5 unique roles
-//and 5 unique champions
+//and 5 unique champions, sorted best (lowest score) first
 function generateAllPossibleComps(players, region) {
     const initialState = buildInitialState(players, region)
-    return resolve(initialState, null)
+    const allComps = resolve(initialState, null)
+    allComps.sort((a, b) => compScore(a) - compScore(b))
+    return allComps
 }
 
 //draws one random comp out of every valid comp for this region
@@ -961,31 +1005,102 @@ roleDropdownToggle.addEventListener('click', () => {
     }
 });
 
-//builds one row for the entries list: champ icon, champ name, role icon, and a delete button
+//set while a row is being dragged - module-level since dragstart/dragover/dragend all fire on
+//different elements and need to agree on which row is currently being moved
+let draggedRow = null;
+
+//renumbers every row's rank label to match its current DOM position - called after the dragged
+//row physically moves, so the numbers update live as you drag rather than only once you drop
+function renumberEntryRows() {
+    Array.from(regionEntriesList.children).forEach((row, index) => {
+        row._rankEl.textContent = index + 1;
+    });
+}
+
+//writes pendingPreferences back out in whatever order the rows currently sit in the DOM - each
+//row kept a direct reference to its own entry object, so this doesn't need index bookkeeping
+function commitEntriesOrder() {
+    pendingPreferences[currentRegionIndex] = Array.from(regionEntriesList.children).map(row => row._entry);
+}
+
+//builds one row for the entries list: a rank number outside the box, then the box itself
+//(champ icon, champ name, role icon, delete button). draggable as a whole so the user can
+//reorder preferences from most to least wanted - the array order in pendingPreferences IS the
+//rank, so reordering here is just an array splice, no separate rank field needed
 function constructListElement(entry, entryIndex) {
     const champion = champions.find(c => c.id === entry.championId);
     const role = roles.find(r => r.role === entry.role);
 
     const row = document.createElement('div');
-    row.className = 'region-entry';
-    row.innerHTML = `
+    row.className = 'region-entry-row';
+    row.draggable = true;
+    //stashed directly on the element so deletion and drag-reordering can both identify this
+    //row's entry without relying on entryIndex, which goes stale the moment a drag reorders things
+    row._entry = entry;
+
+    const rank = document.createElement('span');
+    rank.className = 'region-entry-rank';
+    rank.textContent = entryIndex + 1;
+    row._rankEl = rank;
+
+    const entryBox = document.createElement('div');
+    entryBox.className = 'region-entry';
+    entryBox.innerHTML = `
         <img src="${champion.iconPath}" class="region-entry-icon">
         <span>${champion.name}</span>
         <img src="${role.iconSelected}" class="region-entry-icon">
     `;
 
-    //deletes just this entry from the list, then re-renders to reflect it
+    //deletes just this entry from the list, then re-renders to reflect it - looked up by
+    //reference rather than the captured entryIndex, for the same staleness reason as above
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'region-entry-delete-btn';
     deleteBtn.textContent = 'X';
     deleteBtn.addEventListener('click', () => {
-        pendingPreferences[currentRegionIndex].splice(entryIndex, 1);
+        const list = pendingPreferences[currentRegionIndex];
+        const currentIndex = list.indexOf(entry);
+        if (currentIndex !== -1) list.splice(currentIndex, 1);
         renderEntriesList();
     });
-    row.appendChild(deleteBtn);
+    entryBox.appendChild(deleteBtn);
+
+    row.addEventListener('dragstart', () => {
+        draggedRow = row;
+        row.classList.add('dragging');
+    });
+    row.addEventListener('dragend', () => {
+        row.classList.remove('dragging');
+        draggedRow = null;
+        commitEntriesOrder();
+    });
+    //moves the dragged row itself in front of or behind whichever row the pointer is currently
+    //over, based on which half of it the pointer is in - live, so the list visibly reorders as
+    //you drag rather than only snapping into place on drop
+    row.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        if (!draggedRow || draggedRow === row) return;
+        const rect = row.getBoundingClientRect();
+        const isAfter = event.clientY > rect.top + rect.height / 2;
+        regionEntriesList.insertBefore(draggedRow, isAfter ? row.nextSibling : row);
+        renumberEntryRows();
+    });
+
+    row.appendChild(rank);
+    row.appendChild(entryBox);
 
     return row;
 }
+
+//allows dropping below the last row (empty space under the list), otherwise the dragged row
+//could never move past the end since there's no row there to fire its own dragover
+regionEntriesList.addEventListener('dragover', (event) => {
+    event.preventDefault();
+    if (!draggedRow) return;
+    if (event.target === regionEntriesList) {
+        regionEntriesList.appendChild(draggedRow);
+        renumberEntryRows();
+    }
+});
 
 //clears and rebuilds the entries list from pendingPreferences for the region currently open
 function renderEntriesList() {
@@ -1228,23 +1343,37 @@ function renderEditRegionIcons() {
         const iconsContainer = button.querySelector('.edit-region-champ-icons');
         iconsContainer.innerHTML = '';
         const entries = currentPlayerData[region.indexNo] || [];
-        //the champion and role icon for each preference.
-        entries.forEach(preferencePair => {
-            const iconPair = document.createElement('div');
+        //the rank number, champion icon and role icon for each preference - array order IS the
+        //rank (1 = most wanted), same as the region-entries-list in the regional modal.
+        //the rank sits in an unbordered wrapper alongside a separate bordered box holding just
+        //the two icons, so the number itself reads as outside the box
+        entries.forEach((preferencePair, prefIndex) => {
             const champion = champions.find(c => c.id === preferencePair.championId);
             const role = roles.find(r => r.role === preferencePair.role)
             //skip anything that no longer matches a real champion or role
             if (!champion || !role) return;
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'preference-pair';
+
+            const rank = document.createElement('span');
+            rank.className = 'preference-pair-rank';
+            rank.textContent = prefIndex + 1;
+
+            const box = document.createElement('div');
+            box.className = 'preference-pair-box';
             const championIcon = document.createElement('img');
             const roleIcon = document.createElement('img');
             championIcon.src = champion.iconPath;
             championIcon.className = 'edit-region-champ-icon';
             roleIcon.src = role.iconSelected;
             roleIcon.className = 'edit-region-role-icon';
-            iconPair.className = 'preference-pair'
-            iconPair.appendChild(championIcon);
-            iconPair.appendChild(roleIcon);
-            iconsContainer.appendChild(iconPair);
+            box.appendChild(championIcon);
+            box.appendChild(roleIcon);
+
+            wrapper.appendChild(rank);
+            wrapper.appendChild(box);
+            iconsContainer.appendChild(wrapper);
         });
     });
 }
