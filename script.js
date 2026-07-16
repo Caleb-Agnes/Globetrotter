@@ -234,6 +234,7 @@ let currentPlayerData = null; // full firestore doc for the player currently bei
 const regionButtons = document.querySelectorAll('.region-btn');
 const playerSlots = document.querySelectorAll('.player-slot');
 const compContent = document.getElementById("comp-content");
+const regionChampionGrid = document.getElementById("region-champion-grid");
 
 //the comp column's view depends on all three of these, so each is kept up to date
 //by whichever onSnapshot listener owns that doc, and all three call refreshComp()
@@ -389,10 +390,9 @@ regionButtons.forEach(button => {
     });
 });
 
-//picks a random currently-possible region and clicks it - reuses the click handler above
-//verbatim, including its own "already selected" no-op, so landing on the current region by
-//chance correctly does nothing rather than needing special-casing here
+//randomise button
 const randomiseRegionBtn = document.getElementById("randomise-region-btn");
+
 randomiseRegionBtn.addEventListener('click', () => {
     const possibleButtons = Array.from(regionButtons).filter(button => !button.disabled);
     if (possibleButtons.length === 0) return;
@@ -406,8 +406,25 @@ randomiseRegionBtn.addEventListener('click', () => {
 //re-renders the team composition column
 //unlike the other two, this depends on all three shared docs, so it reads the latest
 //stored copy of each rather than taking one as a parameter
+//shows every champion available in the currently selected region, icons only
+function refreshRegionChampionGrid() {
+    regionChampionGrid.innerHTML = '';
+    const regionId = latestCurrentRegion?.selectedRegionId;
+    if (!regionId) return;
+
+    champions
+        .filter(champion => champion.regions.includes(regionId))
+        .forEach(champion => {
+            const icon = document.createElement('img');
+            icon.src = champion.iconPath;
+            icon.className = 'region-champion-icon';
+            regionChampionGrid.appendChild(icon);
+        });
+}
+
 function refreshComp() {
     compContent.innerHTML = '';
+    refreshRegionChampionGrid();
 
     if (latestTeamComp) {
         //a comp has already been generated: show it, the permutation count, and a reroll option
