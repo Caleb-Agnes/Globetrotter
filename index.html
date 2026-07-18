@@ -22,88 +22,102 @@
         <div class="columns">
             <div class="players column">
                 <h2>Players</h2>
-
-                <div class="player-slot"></div>
-                <div class="player-slot"></div>
-                <div class="player-slot"></div>
-                <div class="player-slot"></div>
-                <div class="player-slot"></div>
-
+                <div class="content-cutout">
+                    <div class="player-slot"></div>
+                    <div class="player-slot"></div>
+                    <div class="player-slot"></div>
+                    <div class="player-slot"></div>
+                    <div class="player-slot"></div>
+                </div>
                 <button class="add-player-btn">Add A New Player</button>
                 <button class="edit-preferences-btn">Edit A Players Preferences</button>
             </div>
             <div class="regions column">
                 <h2>Regions</h2>
 
-                <div class="region-grid">
-                    <button class="region-btn" data-region-id="bandle-city">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">5 Under 5'</span>
-                        <span class="challenge-region">Bandle City</span>
-                    </button>
-                    <button class="region-btn" data-region-id="bilgewater">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">All Hands on Deck</span>
-                        <span class="challenge-region">Bilgewater</span>
-                    </button>
-                    <button class="region-btn" data-region-id="demacia">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">FOR DEMACIA</span>
-                        <span class="challenge-region">Demacia</span>
-                    </button>
-                    <button class="region-btn" data-region-id="freljord">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Ice, Ice, Baby</span>
-                        <span class="challenge-region">Freljord</span>
-                    </button>
-                    <button class="region-btn" data-region-id="ionia">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Everybody was Wuju Fighting</span>
-                        <span class="challenge-region">Ionia</span>
-                    </button>
-                    <button class="region-btn" data-region-id="ixtal">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Elemental, My Dear Watson</span>
-                        <span class="challenge-region">Ixtal</span>
-                    </button>
-                    <button class="region-btn" data-region-id="noxus">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Strength Above All</span>
-                        <span class="challenge-region">Noxus</span>
-                    </button>
-                    <button class="region-btn" data-region-id="piltover">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Calculated</span>
-                        <span class="challenge-region">Piltover</span>
-                    </button>
-                    <button class="region-btn" data-region-id="shadow-isles">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Spooky Scary Skeletons</span>
-                        <span class="challenge-region">Shadow Isles</span>
-                    </button>
-                    <button class="region-btn" data-region-id="shurima">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">The Sun Disc Never Sets</span>
-                        <span class="challenge-region">Shurima</span>
-                    </button>
-                    <button class="region-btn" data-region-id="targon">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Peak Performance</span>
-                        <span class="challenge-region">Targon</span>
-                    </button>
-                    <button class="region-btn" data-region-id="void">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">(Inhuman Screeching Sounds)</span>
-                        <span class="challenge-region">the Void</span>
-                    </button>
-                    <button class="region-btn" data-region-id="zaun">
-                        <img src="assets/button template.png" class="region-icon">
-                        <span class="challenge-name">Chemtech Comrades</span>
-                        <span class="challenge-region">Zaun</span>
-                    </button>
+                <div class="region-circle-wrapper">
+                    <svg class="region-circle-svg" viewBox="0 0 588 588">
+                        <defs>
+                            <mask id="region-circle-inset-mask">
+                                <circle cx="294" cy="294" r="292" fill="white" />
+                                <circle cx="302" cy="302" r="292" fill="black" />
+                            </mask>
+                        </defs>
+                        <circle class="region-circle-fill" cx="294" cy="294" r="292" />
+                        <circle class="region-circle-shadow" cx="294" cy="294" r="292" mask="url(#region-circle-inset-mask)" />
+                    </svg>
+                    <div class="positioning-container">
+                        <button class="region-btn" data-region-id="bandle-city">
+                            <span class="challenge-name">5 Under 5'</span>
+                            <span class="challenge-region">Bandle City</span>
+                        </button>
+                        <button class="region-btn" data-region-id="bilgewater">
+                            <span class="challenge-name">All Hands on Deck</span>
+                            <span class="challenge-region">Bilgewater</span>
+                        </button>
+                        <button class="region-btn" data-region-id="demacia">
+                            <span class="challenge-name">FOR DEMACIA</span>
+                            <span class="challenge-region">Demacia</span>
+                        </button>
+                        <button class="region-btn" data-region-id="freljord">
+                            <span class="challenge-name">Ice, Ice, Baby</span>
+                            <span class="challenge-region">Freljord</span>
+                        </button>
+                        <button class="region-btn" data-region-id="ionia">
+                            <span class="challenge-name">Everybody was Wuju Fighting</span>
+                            <span class="challenge-region">Ionia</span>
+                        </button>
+                        <button class="region-btn" data-region-id="ixtal">
+                            <span class="challenge-name">Elemental, My Dear Watson</span>
+                            <span class="challenge-region">Ixtal</span>
+                        </button>
+                        <button class="region-btn" data-region-id="noxus">
+                            <span class="challenge-name">Strength Above All</span>
+                            <span class="challenge-region">Noxus</span>
+                        </button>
+                        <button class="region-btn" data-region-id="piltover">
+                            <span class="challenge-name">Calculated</span>
+                            <span class="challenge-region">Piltover</span>
+                        </button>
+                        <button class="region-btn" data-region-id="shadow-isles">
+                            <span class="challenge-name">Spooky Scary Skeletons</span>
+                            <span class="challenge-region">Shadow Isles</span>
+                        </button>
+                        <button class="region-btn" data-region-id="shurima">
+                            <span class="challenge-name">The Sun Disc Never Sets</span>
+                            <span class="challenge-region">Shurima</span>
+                        </button>
+                        <button class="region-btn" data-region-id="targon">
+                            <span class="challenge-name">Peak Performance</span>
+                            <span class="challenge-region">Targon</span>
+                        </button>
+                        <button class="region-btn" data-region-id="void">
+                            <span class="challenge-name">(Inhuman Screeching Sounds)</span>
+                            <span class="challenge-region">the Void</span>
+                        </button>
+                        <button class="region-btn" data-region-id="zaun">
+                            <span class="challenge-name">Chemtech Comrades</span>
+                            <span class="challenge-region">Zaun</span>
+                        </button>
+                        <div class="region-center">
+                            <svg class="region-image-svg" viewBox="0 0 292 292">
+                                <defs>
+                                    <clipPath id="region-image-clip">
+                                        <circle cx="146" cy="146" r="110" />
+                                    </clipPath>
+                                    <mask id="region-image-inset-mask">
+                                        <circle cx="146" cy="146" r="110" fill="white" />
+                                        <circle cx="150" cy="150" r="110" fill="black" />
+                                    </mask>
+                                </defs>
+                                <image href="assets/favicon.png" x="36" y="36" width="220" height="220" preserveAspectRatio="xMidYMid slice" clip-path="url(#region-image-clip)" />
+                                <circle class="region-image-shadow" cx="146" cy="146" r="110" mask="url(#region-image-inset-mask)" />
+                                <circle class="region-image-border" cx="146" cy="146" r="110" />
+                            </svg>
+                        </div>
+                        <button class="randomise-region-btn" id="randomise-region-btn">Randomise Region</button>
+                    </div>
                 </div>
-
-                <button class="randomise-region-btn" id="randomise-region-btn">Randomise Region</button>
             </div>
             <div class="comp column">
                 <h2>Team Composition</h2>
