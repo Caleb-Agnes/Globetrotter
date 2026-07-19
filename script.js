@@ -423,8 +423,8 @@ function refreshRegionChampionGrid() {
     champions
         .filter(champion => champion.regions.includes(regionId))
         .forEach(champion => {
-            const icon = document.createElement('img');
-            icon.src = champion.iconPath;
+            const icon = document.createElement('div');
+            icon.style.backgroundImage = `url("${champion.iconPath}")`;
             icon.className = 'region-champion-icon';
             regionChampionGrid.appendChild(icon);
         });
@@ -459,6 +459,8 @@ function refreshComp() {
 
         //iterate over roles (already ordered top/jng/mid/bot/sup) rather than latestTeamComp.comp,
         //whose order just depends on however the search happened to lock each player in
+        const rolesContainer = document.createElement('div');
+        rolesContainer.className = 'content-cutout';
         roles.forEach(role => {
             const assignment = latestTeamComp.comp.find(entry => entry.role === role.role);
             const champion = champions.find(c => c.id === assignment.championId);
@@ -469,20 +471,24 @@ function refreshComp() {
             //"<img src=x onerror=...>" execute in every viewer's browser once a comp is generated
             const championIcon = document.createElement('img');
             championIcon.src = champion.iconPath;
-            championIcon.className = 'region-entry-icon';
+            championIcon.className = 'region-entry-champion-icon';
             const nameSpan = document.createElement('span');
             nameSpan.textContent = assignment.name;
-            const roleIcon = document.createElement('img');
-            roleIcon.src = role.iconSelected;
-            roleIcon.className = 'region-entry-icon';
+            const roleIcon = document.createElement('div');
+            roleIcon.className = 'region-entry-role-icon';
+            const roleIconMask = document.createElement('div');
+            roleIconMask.style.setProperty('--icon-mask', `url("${role.iconDim}")`);
+            roleIconMask.className = 'role-image-mask';
+            roleIcon.appendChild(roleIconMask);
             slot.appendChild(championIcon);
             slot.appendChild(nameSpan);
             slot.appendChild(roleIcon);
-            compContent.appendChild(slot);
+            rolesContainer.appendChild(slot);
         });
+        compContent.appendChild(rolesContainer);
 
         const infoText = document.createElement('span');
-        infoText.className = 'info-text';
+        infoText.className = 'comp-rank-text';
         infoText.textContent = `Comp ${compRank}/${totalComps}`;
 
         if (totalComps > 1) {
@@ -507,7 +513,7 @@ function refreshComp() {
             compContent.appendChild(pagination);
 
             const randomBtn = document.createElement('button');
-            randomBtn.className = 'randomise-btn';
+            randomBtn.className = 'randomise-btn full-width-btn';
             randomBtn.textContent = 'Roll A Random Comp';
             randomBtn.addEventListener('click', generateRandomComp);
             compContent.appendChild(randomBtn);
@@ -525,14 +531,13 @@ function refreshComp() {
     if (hasFullRoster() && isSelectedRegionPossible) {
         //everything needed is in place, offer to generate a comp
         const generateBtn = document.createElement('button');
-        generateBtn.className = 'generate-comp-btn';
         generateBtn.textContent = 'Generate Comp';
         generateBtn.addEventListener('click', generateComp);
         compContent.appendChild(generateBtn);
     } else {
         //not enough set up yet to generate anything
         const message = document.createElement('p');
-        message.className = 'comp-info-text';
+        message.className = 'comp-input-prompt';
         message.textContent = 'Enter players and a region';
         compContent.appendChild(message);
     }
@@ -1090,9 +1095,9 @@ function constructListElement(entry, entryIndex) {
     const entryBox = document.createElement('div');
     entryBox.className = 'region-entry';
     entryBox.innerHTML = `
-        <img src="${champion.iconPath}" class="region-entry-icon">
+        <img src="${champion.iconPath}" class="region-entry-champion-icon">
         <span>${champion.name}</span>
-        <img src="${role.iconSelected}" class="region-entry-icon">
+        <img src="${role.iconSelected}" class="region-entry-role-icon">
     `;
 
     //deletes just this entry from the list, then re-renders to reflect it - looked up by

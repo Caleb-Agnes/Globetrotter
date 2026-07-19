@@ -28,24 +28,31 @@ body {
 }
 
 button {
+    --shadow-size: 2px;
     font-weight: bold;
     background-color: var(--buttons);
     color: var(--black);
     border: 2px solid var(--black);
     border-radius: 4px;
     padding: 2px 8px;
-    filter: drop-shadow(2px 2px 0px var(--black));
+    filter: drop-shadow(var(--shadow-size) var(--shadow-size) 0px var(--black));
     margin: 0 2px 2px 0;
+}
+.full-width-btn {
+    --shadow-size: 4px;
+    width: 100%;
+    margin: 7px 4px 4px 0px;
+    padding: 4px;
 }
 
 button:hover {
-    filter: drop-shadow(1px 1px 0px var(--black));
-    transform: translate(1px,1px);
+    filter: drop-shadow(calc(var(--shadow-size) / 2) calc(var(--shadow-size) / 2) 0px var(--black));
+    transform: translate(calc(var(--shadow-size) / 2), calc(var(--shadow-size) / 2));
 }
 
 button:active {
     filter: drop-shadow(0px 0px 0px var(--black));
-    transform: translate(2px,2px);
+    transform: translate(var(--shadow-size), var(--shadow-size));
 }
 
 
@@ -127,7 +134,7 @@ h1 {
 .content-cutout {
     background-color: var(--background);
     border: 4px solid var(--black);
-    padding: 20px;
+    padding: 20px 20px 12px 28px;
     box-shadow: inset 8px 8px 0 var(--black);
 }
 
@@ -200,11 +207,12 @@ h1 {
     height: 540px;
 }
 .region-btn {
+    --shadow-size: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     --angle: calc(360deg / 13 * var(--i));
-    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 6px), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 6px));
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px));
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -218,32 +226,32 @@ h1 {
 }
 .region-btn:hover,
 .region-btn:active {
-    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 7px), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 7px));
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px + var(--shadow-size) / 2), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px + var(--shadow-size) / 2));
 }
 .region-btn.selected {
-    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 8px), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 8px));
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px + var(--shadow-size)), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px + var(--shadow-size)));
     filter: drop-shadow(0px 0px 0px var(--black));
     background-color: var(--content);
 }
 .region-btn.impossible {
     background-color: var(--disabled);
     filter: drop-shadow(0px 0px 0px var(--black));
-    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 8px), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 8px));
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px + var(--shadow-size)), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px + var(--shadow-size)));
 }
 
-.region-btn:nth-child(1) { --i: 0; }
-.region-btn:nth-child(2) { --i: 1; }
-.region-btn:nth-child(3) { --i: 2; }
-.region-btn:nth-child(4) { --i: 3; }
-.region-btn:nth-child(5) { --i: 4; }
-.region-btn:nth-child(6) { --i: 5; }
-.region-btn:nth-child(7) { --i: 6; }
-.region-btn:nth-child(8) { --i: 7; }
-.region-btn:nth-child(9) { --i: 8; }
-.region-btn:nth-child(10) { --i: 9; }
-.region-btn:nth-child(11) { --i: 10; }
-.region-btn:nth-child(12) { --i: 11; }
-.region-btn:nth-child(13) { --i: 12; }
+.region-btn:nth-child(1) { --i: 0; z-index: 10; }
+.region-btn:nth-child(2) { --i: 1; z-index: 12; }
+.region-btn:nth-child(3) { --i: 2; z-index: 13; }
+.region-btn:nth-child(4) { --i: 3; z-index: 11; }
+.region-btn:nth-child(5) { --i: 4; z-index: 9; }
+.region-btn:nth-child(6) { --i: 5; z-index: 7; }
+.region-btn:nth-child(7) { --i: 6; z-index: 5; }
+.region-btn:nth-child(8) { --i: 7; z-index: 3; }
+.region-btn:nth-child(9) { --i: 8; z-index: 1; }
+.region-btn:nth-child(10) { --i: 9; z-index: 2; }
+.region-btn:nth-child(11) { --i: 10; z-index: 4; }
+.region-btn:nth-child(12) { --i: 11; z-index: 6; }
+.region-btn:nth-child(13) { --i: 12; z-index: 8; }
 .region-btn .challenge-name {
     font-weight: bold;
 }
@@ -289,6 +297,88 @@ h1 {
 .randomise-region-btn:active {
     transform: translate(calc(-50% + 2px), calc(-50% + 2px));
 }
+
+/*comp column*/
+.comp-input-prompt {
+    text-align: center;
+    font-weight: bold;
+}
+.role-slot {
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--content);
+    border: 4px solid var(--black);
+    filter: drop-shadow(4px 4px 0px var(--black));
+    margin: 10px 4px 14px 0px;
+}
+.region-entry-champion-icon {
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--black);
+    margin: 0px 10px 0px 0px;
+}
+.region-entry-role-icon {
+    height: 34px;
+    width: 34px;
+    background-color: var(--buttons);
+    border: 4px solid var(--black);
+    padding: 3px;
+    margin-left: auto;
+}
+.role-image-mask {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    mask-image: var(--icon-mask);
+    -webkit-mask-image: var(--icon-mask);
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.comp-rank-text {
+    border: 2px solid var(--black);
+    box-shadow: inset 2px 2px 0 var(--black);
+    color: var(--white);
+    background-color: var(--headers);
+    padding: 5px 3px 3px 5px;
+    display: inline-block;
+    width: 15ch;
+    text-align: center;
+}
+.comp-pagination {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: bold;
+}
+.region-champion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    margin: 12px auto 0;
+}
+.region-champion-icon {
+    border: 2px solid var(--black);
+    width: 40px;
+    height: 40px;
+    background-size: calc(100% + 4px);
+    background-position: center;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 0px var(--black));
+}
+
 
 /*modals*/
 .modal-header {
