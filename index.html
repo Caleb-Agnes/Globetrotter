@@ -134,35 +134,39 @@
                 <h2 id="new-player-heading">New Player</h2>
                 <button class="modal-close-btn" id="new-player-close-btn">X</button>
             </div>
-            <p>Enter your name</p>
-            <input type="text" id="new-player-name-input" placeholder="Player Name" maxlength="25">
-            <div class="input-error" id="new-player-name-error"></div>
-            <button class="modal-next-btn compact-btn" id="new-player-next-btn">Next</button>
+            <div class="modal-content">
+                <p>Enter your name</p>
+                <input type="text" id="new-player-name-input" placeholder="Player Name" maxlength="25">
+                <div class="input-error" id="new-player-name-error"></div>
+                <button class="modal-next-btn compact-btn" id="new-player-next-btn">Next</button>
+            </div>
         </div>
     </div>
     <div class="modal-backdrop" id="region-modal-backdrop">
         <div class="modal">
-            <button class="modal-back-btn" id="region-back-btn">←</button>
             <div class="modal-header">
+                <button class="modal-back-btn" id="region-back-btn">←</button>
                 <h2 id="region-modal-heading">Region: XXXXXXXX</h2>
                 <button class="modal-close-btn" id="region-close-btn">X</button>
             </div>
-            <p>Enter any combination of champions and roles you want to play in this challenge</p>
-            <div class="list-addition-options">
-                <div class="custom-dropdown" id="champion-dropdown">
-                    <button class="dropdown-toggle" id="champion-dropdown-toggle">Select champion ▾</button>
-                    <div class="dropdown-list" id="champion-dropdown-list"></div>
+            <div class="modal-content">
+                <p>Enter any combination of champions and roles you want to play in this challenge</p>
+                <div class="list-addition-options">
+                    <div class="custom-dropdown" id="champion-dropdown">
+                        <button class="dropdown-btn" id="champion-dropdown-toggle">Select champion ▾</button>
+                        <div class="dropdown-list" id="champion-dropdown-list"></div>
+                    </div>
+                    <div class="custom-dropdown" id="role-dropdown">
+                        <button class="dropdown-btn" id="role-dropdown-toggle">Select role ▾</button>
+                        <div class="dropdown-list" id="role-dropdown-list"></div>
+                    </div>
+                    <button class="compact-btn" id="region-add-btn">Add</button>
                 </div>
-                <div class="custom-dropdown" id="role-dropdown">
-                    <button class="dropdown-toggle" id="role-dropdown-toggle">Select role ▾</button>
-                    <div class="dropdown-list" id="role-dropdown-list"></div>
-                </div>
-                <button class="compact-btn" id="region-add-btn">Add</button>
-            </div>
-            <div class="input-error" id="region-entries-error"></div>
-            <div class="region-entries-list" id="region-entries-list"></div>
+                <div class="input-error" id="region-entries-error"></div>
+                <div class="region-entries-list" id="region-entries-list"></div>
 
-            <button class="compact-btn" id="region-done-btn">XXXXXXXX</button>
+                <button class="compact-btn" id="region-done-btn">XXXXXXXX</button>
+            </div>
         </div>
     </div>
     <div class="modal-backdrop" id="are-you-sure-modal-backdrop">
@@ -187,8 +191,8 @@
     </div>
     <div class="modal-backdrop" id="select-region-modal-backdrop">
         <div class="modal">
-            <button class="modal-back-btn" id="select-region-back-btn">←</button>
             <div class="modal-header">
+                <button class="modal-back-btn" id="select-region-back-btn">←</button>
                 <h2>Select Region to Edit</h2>
                 <button class="modal-close-btn" id="select-region-close-btn">X</button>
             </div>

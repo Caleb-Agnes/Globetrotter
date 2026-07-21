@@ -824,6 +824,14 @@ const newPlayerNextBtn = document.getElementById("new-player-next-btn");
 const newPlayerCloseBtn = document.getElementById("new-player-close-btn");
 const newPlayerNameError = document.getElementById('new-player-name-error');
 
+//pressing Enter in the name field acts the same as clicking Next/Done - reuses the click
+//handler itself (rather than duplicating its logic) so the two stay in sync automatically
+newPlayerNameInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        newPlayerNextBtn.click();
+    }
+});
+
 //function to start the modal
 //mode "edit" reuses this same modal to rename an existing player instead of creating a new one
 function openNewPlayerModal(name, mode) {
