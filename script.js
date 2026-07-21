@@ -1062,6 +1062,18 @@ roleDropdownToggle.addEventListener('click', () => {
     }
 });
 
+//closes a dropdown as soon as a click lands outside its own wrapper (toggle + list together) -
+//also means opening one dropdown closes the other for free, since a click on either toggle
+//always lands "outside" the other one
+document.addEventListener('click', (event) => {
+    if (!regionsDropdown.contains(event.target)) {
+        championDropdownList.classList.remove('open');
+    }
+    if (!roleDropdown.contains(event.target)) {
+        roleDropdownList.classList.remove('open');
+    }
+});
+
 //set while a row is being dragged - module-level since dragstart/dragover/dragend all fire on
 //different elements and need to agree on which row is currently being moved
 let draggedRow = null;
@@ -1080,10 +1092,10 @@ function commitEntriesOrder() {
     pendingPreferences[currentRegionIndex] = Array.from(regionEntriesList.children).map(row => row._entry);
 }
 
-//builds one row for the entries list: a rank number outside the box, then the box itself
-//(champ icon, champ name, role icon, delete button). draggable as a whole so the user can
-//reorder preferences from most to least wanted - the array order in pendingPreferences IS the
-//rank, so reordering here is just an array splice, no separate rank field needed
+//builds one row for the entries list: the box itself (rank number, champ icon, champ name,
+//role icon, delete button). draggable as a whole so the user can reorder preferences from most
+//to least wanted - the array order in pendingPreferences IS the rank, so reordering here is
+//just an array splice, no separate rank field needed
 function constructListElement(entry, entryIndex) {
     const champion = champions.find(c => c.id === entry.championId);
     const role = roles.find(r => r.role === entry.role);
@@ -1104,9 +1116,10 @@ function constructListElement(entry, entryIndex) {
     entryBox.className = 'region-entry';
     entryBox.innerHTML = `
         <img src="${champion.iconPath}" class="region-entry-champion-icon">
-        <span>${champion.name}</span>
+        <span class="region-entry-name">${champion.name}</span>
         <img src="${role.iconSelected}" class="region-entry-role-icon">
     `;
+    entryBox.prepend(rank);
 
     //deletes just this entry from the list, then re-renders to reflect it - looked up by
     //reference rather than the captured entryIndex, for the same staleness reason as above
@@ -1142,7 +1155,6 @@ function constructListElement(entry, entryIndex) {
         renumberEntryRows();
     });
 
-    row.appendChild(rank);
     row.appendChild(entryBox);
 
     return row;

@@ -475,16 +475,34 @@ h1 {
     left: 0;
     z-index: 5;
     background-color: var(--white);
-    border: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
 }
 .dropdown-list.open {
     display: block;
 }
+#champion-dropdown-list {
+    width: 180px;
+}
+#role-dropdown-list {
+    width: 120px;
+}
 .dropdown-option {
+    --shadow-size: 0px;
     display: flex;
     align-items: center;
     gap: 6px;
     width: 100%;
+    border-radius: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    border: none;
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+}
+.dropdown-option:last-child {
+    border-bottom: none;
 }
 .dropdown-option-icon,
 .dropdown-toggle-icon {
@@ -515,9 +533,19 @@ h1 {
     display: flex;
     align-items: center;
 }
+#region-add-btn {
+    margin-left: 16px;
+}
 .dropdown-btn {
     --shadow-size: 0px;
     background-color: var(--content);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 32px;
+    border-radius: 0;
+    margin: 0;
 }
 #champion-dropdown-toggle {
     width: 180px;
@@ -531,33 +559,49 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    width: 100%;
-    min-height: calc(10 * 50px + 9 * 4px);
+    width: 70%;
+    min-height: calc(10 * 47px + 9 * 4px);
     border: 4px solid var(--black);
     padding: 8px;
 }
 .region-entry-row {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     cursor: grab;
 }
 .region-entry-rank {
-    width: 16px;
+    width: 22px;
+    font-size: 18px;
     text-align: right;
     font-weight: bold;
 }
 .region-entry {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     flex: 1;
-    height: 50px;
-    padding: 4px;
-    border: 2px solid var(--black);
+    height: 35px;
+    padding: 3px;
+    border: 3px solid var(--black);
+    border-radius: 5px;
+    background-color: var(--content);
+    color: var(--white);
+    font-weight: bold;
 }
-.region-entry span {
+.region-entry-name {
     flex: 1;
+}
+.region-entry .region-entry-champion-icon {
+    height: 28px;
+    width: 28px;
+    margin-right: 7px;
+}
+.region-entry .region-entry-role-icon {
+    height: 24px;
+    width: 24px;
+    border-width: 3px;
+    padding: 2px;
 }
 .region-entry-delete-btn {
     width: 20px;
