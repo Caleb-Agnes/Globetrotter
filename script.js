@@ -425,7 +425,7 @@ function refreshRegionChampionGrid() {
         .forEach(champion => {
             const icon = document.createElement('div');
             icon.style.backgroundImage = `url("${champion.iconPath}")`;
-            icon.className = 'region-champion-icon';
+            icon.className = 'region-champion-icon cropped-icon';
             regionChampionGrid.appendChild(icon);
         });
 }
@@ -1431,12 +1431,15 @@ function renderEditRegionIcons() {
 
             const box = document.createElement('div');
             box.className = 'preference-pair-box';
-            const championIcon = document.createElement('img');
-            const roleIcon = document.createElement('img');
-            championIcon.src = champion.iconPath;
-            championIcon.className = 'edit-region-champ-icon';
-            roleIcon.src = role.iconSelected;
+            const championIcon = document.createElement('div');
+            const roleIcon = document.createElement('div');
+            championIcon.style.backgroundImage = `url("${champion.iconPath}")`;
+            championIcon.className = 'edit-region-champ-icon cropped-icon';
             roleIcon.className = 'edit-region-role-icon';
+            const roleIconMask = document.createElement('div');
+            roleIconMask.style.setProperty('--icon-mask', `url("${role.iconDim}")`);
+            roleIconMask.className = 'role-image-mask';
+            roleIcon.appendChild(roleIconMask);
             box.appendChild(championIcon);
             box.appendChild(roleIcon);
 

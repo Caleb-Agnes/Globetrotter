@@ -175,9 +175,13 @@
                 <h2>Are you sure?</h2>
                 <button class="modal-close-btn" id="are-you-sure-close-btn">X</button>
             </div>
-            <p id="are-you-sure-message"></p>
-            <button id="are-you-sure-confirm-btn">Yes</button>
-            <button id="are-you-sure-cancel-btn">Cancel</button>
+            <div class="modal-content">
+                <p id="are-you-sure-message"></p>
+                <div class="are-you-sure-actions">
+                    <button id="are-you-sure-confirm-btn">Yes</button>
+                    <button id="are-you-sure-cancel-btn">Cancel</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="modal-backdrop" id="select-player-modal-backdrop">
@@ -186,21 +190,26 @@
                 <h2 id="select-player-heading">Select Player</h2>
                 <button class="modal-close-btn" id="select-player-close-btn">X</button>
             </div>
-            <div class="select-player-grid" id="select-player-grid"></div>
+            <div class="modal-content">
+                <div class="select-player-grid" id="select-player-grid"></div>
+            </div>
         </div>
     </div>
     <div class="modal-backdrop" id="select-region-modal-backdrop">
         <div class="modal">
             <div class="modal-header">
-                <button class="modal-back-btn" id="select-region-back-btn">←</button>
+                <div class="modal-header-left">
+                    <button class="modal-back-btn" id="select-region-back-btn">←</button>
+                    <div class="edit-player-actions">
+                        <button class="compact-btn" id="edit-player-name-btn">Edit Name</button>
+                        <button class="compact-btn" id="delete-player-btn">Delete Player</button>
+                    </div>
+                </div>
                 <h2>Select Region to Edit</h2>
                 <button class="modal-close-btn" id="select-region-close-btn">X</button>
             </div>
-            <div class="edit-player-actions">
-                <button class="compact-btn" id="edit-player-name-btn">Edit Name</button>
-                <button class="compact-btn" id="delete-player-btn">Delete Player</button>
-            </div>
-            <div class="edit-region-grid">
+            <div class="modal-content">
+                <div class="edit-region-grid">
                 <button class="edit-region-btn" data-region-id="bandle-city">
                     <span class="challenge-region">Bandle City</span>
                     <div class="edit-region-champ-icons"></div>
@@ -253,6 +262,7 @@
                     <span class="challenge-region">Zaun</span>
                     <div class="edit-region-champ-icons"></div>
                 </button>
+                </div>
             </div>
         </div>
     </div>
