@@ -1,562 +1,712 @@
-/* consistant formating across all pages */
-*, *::before, *::after {
-    box-sizing: border-box;
+/* Heading font — regenerate at fonts.google.com/specimen/[FontName], copy the @import line */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* Body font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap');
+
+/* Monospace/stats font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --headers: blue;
+    --background: aquamarine;
+    --accent: brown;
+    --buttons: chartreuse;
+    --white: #ffffff;
+    --black: #000000;
+    --content: blueviolet;
+    --disabled: gray;
+    --error: red;
+
+    --font-heading: 'Bungee', sans-serif;
+    --font-body: 'Sora', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
 }
-h2 {
-    text-align: center;
-    margin: 0;
-    background-color: blue;
-    padding: 10px;
-}
-button {
-    width: 100%;
-    background-color: chartreuse;
-    margin: 0;
-}
-.compact-btn {
-    width: auto;
-    padding: 10px;
-}
-/* for the home page */
+
 body {
-    font-family: sans-serif;
-    margin: 0;
+    background-color: var(--background);
+    font-family: var(--font-body);
 }
+
+button {
+    --shadow-size: 2px;
+    font-weight: bold;
+    background-color: var(--buttons);
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    padding: 2px 8px;
+    filter: drop-shadow(var(--shadow-size) var(--shadow-size) 0px var(--black));
+    margin: 0 2px 2px 0;
+}
+.full-width-btn {
+    --shadow-size: 4px;
+    width: 100%;
+    margin: 7px 4px 4px 0px;
+    padding: 4px;
+}
+
+button:hover {
+    filter: drop-shadow(calc(var(--shadow-size) / 2) calc(var(--shadow-size) / 2) 0px var(--black));
+    transform: translate(calc(var(--shadow-size) / 2), calc(var(--shadow-size) / 2));
+}
+
+button:active {
+    filter: drop-shadow(0px 0px 0px var(--black));
+    transform: translate(var(--shadow-size), var(--shadow-size));
+}
+
+
+/*header*/
+
 header {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: aquamarine;
+    justify-content: center;
 }
-.version-tag {
+
+.version-box {
+    background-color: var(--accent);
+    padding: 5px 5px 3px 7px;
+    border: 2px solid var(--black);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     position: absolute;
-    top: 8px;
-    left: 8px;
-    font-size: small;
+    top: 0;
+    left: 0;
+    box-shadow: inset 2px 2px 0 var(--black);
 }
+
+.version-tag {
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-weight: bold;
+}
+
 .champion-stats-btn {
-    /* debugging tool */
     display: none;
     position: absolute;
-    top: 8px;
-    right: 8px;
-    width: auto;
-    padding: 4px 8px;
-    font-size: small;
-    cursor: pointer;
+    top: 0;
+    right: 0;
 }
-.patch-notes-btn {
-    position: absolute;
-    top: 24px;
-    left: 8px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+
+.title-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 200px;
+    border-radius: 9999px;
+    background-color: var(--headers);
+    border: 4px solid var(--black);
+    filter: drop-shadow(8px 8px 0px var(--black));
 }
-.logo{
+
+.logo {
+    height: 100px;
     width: 100px;
 }
+
 h1 {
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 50px;
     margin: 0;
 }
+
+/*columns*/
 .columns {
     display: flex;
+    margin-top: 12px;
 }
 .column {
-    flex:1;
-    min-height: 500px;
-    padding: 20px;
-    background-color: brown;
-    border-right: 1px solid #ccc;
+    margin: 10px;
+    padding: 0px 20px 20px 20px;
+    background-color: var(--accent);
+    border: 4px solid var(--black);
+    filter: drop-shadow(8px 8px 0px var(--black));
+    min-height: 743px;
 }
-.column:last-child{
-    border-right: none;
+.players {
+    flex: 1;
 }
+.regions {
+    flex: 0 0 588px;
+}
+.comp {
+    flex: 1;
+}
+.column h2 {
+    margin: 10px 12px 12px 10px;
+    padding: 5px;
+    background-color: var(--headers);
+    border: 4px solid var(--black);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white);
+    filter: drop-shadow(2px 2px 0px var(--black));
+}
+.content-cutout {
+    background-color: var(--background);
+    border: 4px solid var(--black);
+    padding: 13px 13px 5px 21px;
+    box-shadow: inset 8px 8px 0 var(--black);
+}
+
+/*players column*/
 .player-slot {
-    min-height: 40px;
-    padding: 8px;
-    margin: 0;
-    width: 100%;
-    border: 2px solid pink;
-    border-radius: 8px;
     display: flex;
+    border-radius: 5px;
+    padding: 4px 10px;
+    height: 50px;
     align-items: center;
-}
-.player-slot.filled {
-    background-color: blueviolet;
-    justify-content: space-between;
-}
-.player-slot.add {
-    background-color: darkslategray;
+    margin: 14px 0px 10px 4px;
 }
 .player-slot.empty {
-    background-color: transparent;
-    border-style: dashed;
+    border: 4px dotted var(--black);
+    
 }
-.player-slot-add-btn {
-    width: 100%;
-    height: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
+.player-slot.filled {
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--content);
+    border: 4px solid var(--black);
+    filter: drop-shadow(4px 4px 0px var(--black));
+    margin: 10px 4px 14px 0px;
+}
+.player-slot.add {
+    border: 4px dotted var(--black);
+    justify-content: center;
 }
 .player-slot-delete-btn {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    background: none;
-    border: none;
-    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-left: auto;
 }
-.region-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 0;
+.player-slot-add-btn {
+    font-size: 20px;
+    padding: 5px 20px;
+    align-self: center;
+}
+
+/*region column*/
+
+.region-circle-wrapper {
+    position: relative;
+    width: 588px;
+    height: 588px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.region-circle-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.region-circle-fill {
+    fill: var(--background);
+    stroke: var(--black);
+    stroke-width: 4;
+}
+.region-circle-shadow {
+    fill: var(--black);
+}
+.positioning-container {
+    position: relative;
+    width: 540px;
+    height: 540px;
 }
 .region-btn {
-    border: 2px solid pink;
-    background-color: darkslategray;
-    border-radius: 8px;
-    padding: 8px;
-    text-align: center;
+    --shadow-size: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    --angle: calc(360deg / 13 * var(--i));
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px));
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px;
-    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+.region-btn:hover,
+.region-btn:active {
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px + var(--shadow-size) / 2), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px + var(--shadow-size) / 2));
 }
 .region-btn.selected {
-    border-color: gold;
-    background-color: hotpink;
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px + var(--shadow-size)), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px + var(--shadow-size)));
+    filter: drop-shadow(0px 0px 0px var(--black));
+    background-color: var(--content);
 }
 .region-btn.impossible {
-    background-color: darkgray;
-    color: dimgray;
-    cursor: not-allowed;
+    background-color: var(--disabled);
+    filter: drop-shadow(0px 0px 0px var(--black));
+    transform: translate(calc(-50% + round(nearest, 220px * cos(var(--angle)), 1px) + 2px + var(--shadow-size)), calc(-50% + round(nearest, 220px * sin(var(--angle)), 1px) + 2px + var(--shadow-size)));
 }
-.region-icon {
+
+.region-btn:nth-child(1) { --i: 0; z-index: 10; }
+.region-btn:nth-child(2) { --i: 1; z-index: 12; }
+.region-btn:nth-child(3) { --i: 2; z-index: 13; }
+.region-btn:nth-child(4) { --i: 3; z-index: 11; }
+.region-btn:nth-child(5) { --i: 4; z-index: 9; }
+.region-btn:nth-child(6) { --i: 5; z-index: 7; }
+.region-btn:nth-child(7) { --i: 6; z-index: 5; }
+.region-btn:nth-child(8) { --i: 7; z-index: 3; }
+.region-btn:nth-child(9) { --i: 8; z-index: 1; }
+.region-btn:nth-child(10) { --i: 9; z-index: 2; }
+.region-btn:nth-child(11) { --i: 10; z-index: 4; }
+.region-btn:nth-child(12) { --i: 11; z-index: 6; }
+.region-btn:nth-child(13) { --i: 12; z-index: 8; }
+.region-btn .challenge-name {
+    font-weight: bold;
+}
+.region-btn .challenge-region {
+    font-weight: lighter;
+}
+.region-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 292px;
+    height: 292px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    border: 4px solid var(--black);
+    filter: drop-shadow(8px 8px 0px var(--black));
+}
+.region-image-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    /* hidden until real region icons are chosen - still in the HTML, just not shown */
-    display: none;
+    height: 100%;
 }
-.challenge-name {
-    font-size: small;
+.region-image-shadow {
+    fill: var(--black);
+}
+.region-image-border {
+    fill: none;
+    stroke: var(--black);
+    stroke-width: 4;
+}
+.randomise-region-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.randomise-region-btn:hover {
+    transform: translate(calc(-50% + 1px), calc(-50% + 1px));
+}
+.randomise-region-btn:active {
+    transform: translate(calc(-50% + 2px), calc(-50% + 2px));
+}
+
+/*comp column*/
+.comp-input-prompt {
+    text-align: center;
     font-weight: bold;
-}
-.region-champion-grid {
-    /* --icon-size is computed in JS (a ResizeObserver on this element) - fits as many 50px-
-       minimum icons as possible across the container's actual width, then splits the leftover
-       evenly across all of them. one size is computed from the container's width alone, so
-       it's the same for every region regardless of how many icons that region actually has -
-       the 50px fallback only matters before JS has run its first measurement */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--icon-size, 50px));
-    gap: 0;
-    margin-top: 8px;
-}
-.region-champion-icon {
-    width: var(--icon-size, 50px);
-    height: var(--icon-size, 50px);
-}
-.challenge-region {
-    font-size: small;
-}
-.edit-region-btn .challenge-region {
-    /* only the edit-preferences grid gets this treatment - the homepage's region-btn keeps
-       the plain .challenge-region styling above. line-height:16px here is also what the
-       min-height calc() on .edit-region-btn below relies on being an exact value */
-    line-height: 16px;
-    color: white;
-    font-weight: bold;
-}
-.comp-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
 }
 .role-slot {
-    min-height: 40px;
-    padding: 8px;
-    margin: 0;
-    background-color: yellow;
     display: flex;
+    border-radius: 5px;
+    padding: 4px 10px;
+    height: 50px;
     align-items: center;
-    gap: 6px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--content);
+    border: 4px solid var(--black);
+    filter: drop-shadow(4px 4px 0px var(--black));
+    margin: 10px 4px 14px 0px;
 }
-.comp-info-text {
+.region-entry-champion-icon {
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--black);
+    margin: 0px 10px 0px 0px;
+}
+.region-entry-role-icon {
+    height: 34px;
+    width: 34px;
+    background-color: var(--buttons);
+    border: 4px solid var(--black);
+    padding: 3px;
+    margin-left: auto;
+}
+.role-image-mask {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    mask-image: var(--icon-mask);
+    -webkit-mask-image: var(--icon-mask);
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.comp-rank-text {
+    border: 2px solid var(--black);
+    box-shadow: inset 2px 2px 0 var(--black);
+    color: var(--white);
+    background-color: var(--headers);
+    padding: 5px 3px 3px 5px;
+    display: inline-block;
+    width: 15ch;
     text-align: center;
 }
 .comp-pagination {
+    margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
+    font-weight: bold;
 }
-.comp-nav-btn {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
-    cursor: pointer;
+.region-champion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    margin: 12px auto 0;
+}
+.cropped-icon {
+    background-size: calc(100% + 4px);
+    background-position: center;
+    border-radius: 50%;
+}
+.region-champion-icon {
+    border: 2px solid var(--black);
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(2px 2px 0px var(--black));
 }
 
-/* for all modals*/
+
+/*modals*/
+.modal-header {
+    background-color: var(--headers);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 4px solid var(--black);
+    align-self: stretch;
+    padding: 0 12px;
+}
+.modal h2 {
+    grid-column: 2;
+    color: var(--white);
+    text-shadow: 3px 3px var(--black);
+}
+.modal-close-btn {
+    grid-column: 3;
+    justify-self: end;
+}
+.modal-back-btn {
+    grid-column: 1;
+    justify-self: start;
+}
+.modal-header-left {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: safe center;
+    overflow-y: auto;
+}
+.modal-backdrop.active {
+    display: flex;
+}
 .modal {
-    position: relative;
-    min-width: 70%;
-    background-color: aliceblue;
-    padding: 0 20px 20px;
-    margin: 40px 0;
+    width: 70%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    background-color: var(--white);
+    margin: 0px 8px 8px 0px ;
+    border: 4px solid var(--black);
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 0px var(--black));
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    position: relative;
 }
 .compact-modal {
-    /* for small modals (e.g. Are You Sure) where forcing the usual 70% width is redundant */
-    min-width: auto;
+    width: auto;
+    max-width: 320px;
 }
-.modal h2 {
-    /* stretched full-width and bled edge-to-edge, unlike every other centered child */
-    align-self: stretch;
-    margin-left: -20px;
-    margin-right: -20px;
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 24px 30px;
 }
-.patch-notes-content {
-    text-align: left;
-}
-.modal input[type="text"] {
-    width: 100%;
-    max-width: 400px;
+.modal-content p {
     margin: 0;
-    border: 1px solid black;
 }
-.modal-backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  /* centers the modal when it fits, but falls back to top-aligned instead of letting its
-     top edge become inaccessible/off-screen for modals taller than the viewport */
-  align-items: safe center;
-  overflow-y: auto;
+.modal h3 {
+    font-family: var(--font-body);
 }
-.modal-backdrop.active {
-  display: flex;
-}
-#are-you-sure-modal-backdrop {
-  /* this one deliberately layers on top of whatever modal is still open underneath it
-     (rather than that modal being hidden first), so it needs to always win the stacking
-     order regardless of DOM position - otherwise whichever backdrop comes later in the
-     HTML would bury it */
-  z-index: 10;
-}
-.modal-close-btn {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    right:  0;
-    cursor: pointer;
-    /* stay above any other positioned content added inside the modal later (e.g.
-       edit-region-header), which would otherwise paint over this since it comes later in the DOM */
-    z-index: 2;
-}
-.modal-back-btn {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    left:  0;
-    cursor: pointer;
-    z-index: 2;
-}
-.edit-region-header {
-    /* takes over h2's usual job of stretching full-width and bleeding to the modal's true edge,
-       since h2 itself is now nested a level deeper inside this wrapper */
-    position: relative;
-    align-self: stretch;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-.edit-region-header h2 {
-    /* the wrapper above already bled to the edge - h2 shouldn't ALSO apply the general
-       .modal h2 bleed on top of that, or it'd overflow twice as far */
-    margin-left: 0;
-    margin-right: 0;
-}
-.edit-player-actions {
-    position: absolute;
-    top: 50%;
-    left: 36px;
-    transform: translateY(-50%);
-    display: flex;
-    gap: 8px;
-}
-
-
-/* for the new player modal*/
-@keyframes shake {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(-8px); }
-  40% { transform: translateX(8px); }
-  60% { transform: translateX(-8px); }
-  80% { transform: translateX(8px); }
-  100% { transform: translateX(0); }
-}
-.shake {
-  animation: shake 0.3s;
-}
-.input-error {
-  color: #c0392b;
-  font-size: 13px;
-  min-height: 16px;
-  margin-top: 4px;
-}
-.list-addition-options {
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
+.modal li {
+    font-family: var(--font-body);
 }
 .custom-dropdown {
     position: relative;
-    height: 2.5em;
-    flex-shrink: 0;
-}
-#champion-dropdown {
-    /* fixed width sized to comfortably fit the longest champion name, e.g. "Nunu & Willump" */
-    width: 180px;
-}
-#role-dropdown {
-    /* wide enough for the "Select role" placeholder text before a role is picked */
-    width: 140px;
-}
-.dropdown-toggle {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.dropdown-toggle-icon {
-    width: 20px;
-    height: 20px;
 }
 .dropdown-list {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1;
-    max-height: 200px;
-    overflow-y: auto;
-    background-color: darkslategray;
-    border: 2px solid pink;
-    border-radius: 8px;
-    min-width: 100%;
+    z-index: 5;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--black);
 }
 .dropdown-list.open {
     display: block;
 }
+#champion-dropdown-list {
+    width: 180px;
+}
+#role-dropdown-list {
+    width: 120px;
+}
 .dropdown-option {
+    --shadow-size: 0px;
     display: flex;
     align-items: center;
     gap: 6px;
     width: 100%;
-    padding: 6px 8px;
-    background: none;
+    border-radius: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 4px 8px;
     border: none;
-    text-align: left;
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
 }
-.dropdown-option-icon {
+.dropdown-option:last-child {
+    border-bottom: none;
+}
+.dropdown-option-icon,
+.dropdown-toggle-icon {
     width: 20px;
     height: 20px;
+}
+
+/*New Player Modal*/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-8px); }
+    80% { transform: translateX(8px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.3s;
+}
+.input-error {
+    min-height: 18px;
+    color: var(--error);
+    font-size: 13px;
+}
+
+/*Regional Modal*/
+.list-addition-options {
+    display: flex;
+    align-items: center;
+}
+#region-add-btn {
+    margin-left: 16px;
+}
+.dropdown-btn {
+    --shadow-size: 0px;
+    background-color: var(--content);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 32px;
+    border-radius: 0;
+    margin: 0;
+}
+.dropdown-btn:hover,
+.dropdown-btn:active,
+.dropdown-option:hover,
+.dropdown-option:active {
+    transform: none;
+}
+#champion-dropdown-toggle {
+    width: 180px;
+    margin-right: 0;
+}
+#role-dropdown-toggle {
+    width: 120px;
+    margin-left: 0;
 }
 .region-entries-list {
     display: flex;
     flex-direction: column;
-    /* width (not align-self:stretch) + the parent's align-items:center is what actually
-       centers this box - stretch would just pin it to one side once max-width caps it */
-    width: 100%;
-    max-width: 400px;
-    /* no gap between rows - a gap is dead space that doesn't belong to any row's dragover
-       target, so hovering there always read as "past the last row" while drag-reordering.
-       the space that gap used to take up is instead folded into each row's own height below */
-    gap: 0;
-    border: 2px solid blue;
-    border-radius: 8px;
+    gap: 4px;
+    width: 70%;
+    min-height: calc(10 * 47px + 9 * 4px);
+    border: 4px solid var(--black);
     padding: 8px;
-    margin-bottom: 16px;
-    /* holds the space for a full 10 entries up front, so the box doesn't grow as you add to it.
-       box-sizing:border-box means min-height must include this box's OWN padding/border too,
-       not just its children: 10 entries x 40px (see .region-entry's own comment) + our own
-       16px padding + 4px border */
-    min-height: calc(10 * 40px + 2 * 8px + 2 * 2px);
 }
 .region-entry-row {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     cursor: grab;
 }
-.region-entry-row.dragging {
-    opacity: 0.5;
-}
 .region-entry-rank {
-    width: 16px;
-    flex-shrink: 0;
+    width: 22px;
+    font-size: 18px;
     text-align: right;
     font-weight: bold;
 }
 .region-entry {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     flex: 1;
-    /* 8px vertical (was 6px) absorbs the space the row gap used to take up, since rows now sit
-       flush against each other - height is 20px icon + 2*8px padding + 2*2px border = 40px */
-    padding: 8px;
-    background-color: darkslategray;
-    border: 2px solid pink;
-    border-radius: 8px;
+    height: 35px;
+    padding: 3px;
+    border: 3px solid var(--black);
+    border-radius: 5px;
+    background-color: var(--content);
+    color: var(--white);
+    font-weight: bold;
 }
-.region-entry-icon {
-    width: 20px;
-    height: 20px;
-}
-.region-entry span {
+.region-entry-name {
     flex: 1;
+}
+.region-entry .region-entry-champion-icon {
+    height: 28px;
+    width: 28px;
+    margin-right: 7px;
+}
+.region-entry .region-entry-role-icon {
+    height: 24px;
+    width: 24px;
+    border-width: 3px;
+    padding: 2px;
 }
 .region-entry-delete-btn {
     width: 20px;
     height: 20px;
+    padding: 0;
 }
-#region-done-btn.empty-list {
-    background-color: red;
+
+/*Are You Sure Modal*/
+.are-you-sure-actions {
+    display: flex;
+    gap: 8px;
 }
+
+/*Select Player Modal*/
 .select-player-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    grid-template-columns: repeat(5, 200px);
+    grid-auto-rows: 40px;
+    gap: 8px;
 }
-.select-player-btn-disabled {
-    background-color: darkgray;
-    color: dimgray;
-    cursor: not-allowed;
+.select-player-btn {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*Select Region To Edit Modal*/
+.edit-player-actions {
+    display: flex;
+    gap: 8px;
 }
 .edit-region-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(7, 1fr);
     gap: 8px;
     width: 100%;
 }
 .edit-region-btn {
-    border: 2px solid pink;
-    background-color: darkslategray;
-    border-radius: 8px;
-    padding: 8px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 6px;
-    /* reserves space for a full 10 preference-pairs, so every edit-region-btn reserves the
-       same height regardless of how many a given region actually has. each pair is 28px tall
-       (20px icon + 2px padding + 2px border, top and bottom) and only one fits per row at
-       this button's width - two together are wider than the space available, so they always
-       stack one per row rather than side by side. box-sizing:border-box means this also has
-       to include this button's own padding/border, not just its children:
-       10 pairs x 28px + 16px for the region-name text (an exact value, not an estimate, since
-       .challenge-region has its own explicit line-height:16px) + this button's own 8px
-       padding + 2px border (top and bottom of each) + the 6px gap between the name and the
-       first pair + 9 gaps x 2px between the 10 stacked pairs */
+    padding: 8px;
+    border-radius: 8px;
     min-height: calc(10 * 28px + 16px + 2 * 8px + 2 * 2px + 6px + 9 * 2px);
+}
+.edit-region-btn .challenge-region {
+    line-height: 16px;
+    font-weight: bold;
 }
 .edit-region-champ-icons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 2px;
 }
 .edit-region-champ-icon {
     width: 20px;
     height: 20px;
-}
-
-.champion-stats-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-    max-height: 60vh;
-    overflow-y: auto;
-}
-.champion-stats-entry {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 8px;
-    background-color: darkslategray;
-    border: 2px solid pink;
-    border-radius: 8px;
-}
-.champion-stats-entry.done {
-    border-color: gold;
-}
-.champion-stats-icon {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-}
-.champion-stats-name {
-    flex: 1;
-    text-align: left;
-}
-.champion-stats-tally,
-.champion-stats-confidence {
-    width: 50px;
-    text-align: right;
-}
-.champion-stats-role-icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
+    border: 2px solid var(--black);
 }
 .edit-region-role-icon {
     width: 20px;
     height: 20px;
 }
+.edit-region-role-icon .role-image-mask {
+    background-color: var(--white);
+}
 .preference-pair {
-    /* the invisible outer wrapper - just lays the rank number next to the bordered box, no
-       border of its own so the number itself reads as outside the box */
     display: flex;
     align-items: center;
     gap: 2px;
 }
 .preference-pair-rank {
-    /* sized to match preference-pair-box's own height (20px icon + 2*2px padding + 2*2px
-       border = 28px) now that the number sits outside that box instead of inside it - the
-       line-height caps it at that same 28px so it still doesn't grow the pair taller than
-       the .edit-region-btn min-height calc() assumes */
     font-size: 16px;
     line-height: 28px;
     font-weight: bold;
-    color: white;
+    color: var(--black);
 }
 .preference-pair-box {
     display: flex;
     align-items: center;
     gap: 2px;
-    border: 2px solid pink;
+    border: 2px solid var(--black);
     border-radius: 8px;
     padding: 2px;
+    background-color: var(--content);
 }
