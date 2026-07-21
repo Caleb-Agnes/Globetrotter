@@ -1,3 +1,7 @@
+V1.4
+Redesigned the visuals
+Can now toggle between old colour scheme and new one
+
 V1.3 - The Better Input Patch
 Automatically fills a champions role with its most played role when adding a champion to you preferences (can still be changed)
 Now can have 10 preferences for each region (previously 5)

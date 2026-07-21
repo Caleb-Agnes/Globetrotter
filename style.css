@@ -23,6 +23,15 @@
     --font-mono: 'JetBrains Mono', monospace;
 }
 
+.alt-theme {
+    --headers: #266DD3;
+    --background: #ABDAFC;
+    --buttons: #F97068;
+    --accent: #083D77;
+    --content: #89043D;
+    --disabled: #595959;
+}
+
 body {
     background-color: var(--background);
     font-family: var(--font-body);
@@ -91,6 +100,43 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.theme-toggle-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-toggle-track {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 56px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 9999px;
+    background-color: var(--accent);
+    border: 2px solid var(--black);
+    box-shadow: inset 2px 2px 0 var(--black);
+    cursor: pointer;
+}
+
+.theme-toggle-knob {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--buttons);
+    border: 2px solid var(--black);
+    filter: drop-shadow(2px 2px 0px var(--black));
+    transition: transform 0.2s ease;
+}
+
+.theme-toggle-input:checked + .theme-toggle-track .theme-toggle-knob {
+    transform: translateX(26px);
 }
 
 .title-pill {

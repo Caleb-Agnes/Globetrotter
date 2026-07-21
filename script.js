@@ -1546,6 +1546,24 @@ patchNotesCloseBtn.addEventListener('click', () => {
 });
 // #endregion
 
+// #region Header - Theme Toggle
+
+const themeToggleInput = document.getElementById("theme-toggle-input");
+
+//restore whichever theme was last picked, so a refresh doesn't reset it to default
+const isAltThemeSaved = localStorage.getItem('altTheme') === 'true';
+themeToggleInput.checked = isAltThemeSaved;
+document.body.classList.toggle('alt-theme', isAltThemeSaved);
+
+//swaps in the alt colour scheme by toggling a class on body - the actual alt colours are
+//defined against .alt-theme in style.css
+themeToggleInput.addEventListener('change', () => {
+    document.body.classList.toggle('alt-theme', themeToggleInput.checked);
+    localStorage.setItem('altTheme', themeToggleInput.checked);
+});
+
+// #endregion
+
 // #region Champion Role Stats
 // champion-roles.json is written by the scheduled "Update Champion Roles" GitHub Action
 // (scripts/update-champion-roles.js) - nothing here writes to it, this just keeps a local copy
