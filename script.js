@@ -17,11 +17,11 @@ const db = getFirestore(app);
 
 // #region Game Data
 const roles = [
-    { role: "top", iconDim: "assets/Role Icons/icon-position-top-disabled.png", iconHover: "assets/Role Icons/icon-position-top-hover.png", iconSelected: "assets/Role Icons/icon-position-top.png" },
-    { role: "jng", iconDim: "assets/Role Icons/icon-position-jungle-disabled.png", iconHover: "assets/Role Icons/icon-position-jungle-hover.png", iconSelected: "assets/Role Icons/icon-position-jungle.png" },
-    { role: "mid", iconDim: "assets/Role Icons/icon-position-middle-disabled.png", iconHover: "assets/Role Icons/icon-position-middle-hover.png", iconSelected: "assets/Role Icons/icon-position-middle.png" },
-    { role: "bot", iconDim: "assets/Role Icons/icon-position-bottom-disabled.png", iconHover: "assets/Role Icons/icon-position-bottom-hover.png", iconSelected: "assets/Role Icons/icon-position-bottom.png" },
-    { role: "sup", iconDim: "assets/Role Icons/icon-position-utility-disabled.png", iconHover: "assets/Role Icons/icon-position-utility-hover.png", iconSelected: "assets/Role Icons/icon-position-utility.png" }
+    { role: "top", iconDim: "assets/Role Icons/icon-position-top-disabled.png", iconHover: "assets/Role Icons/icon-position-top-hover.png", iconSelected: "assets/Role Icons/icon-position-top.png", iconMask: "assets/Role Icons/icon-mask-position-top.png" },
+    { role: "jng", iconDim: "assets/Role Icons/icon-position-jungle-disabled.png", iconHover: "assets/Role Icons/icon-position-jungle-hover.png", iconSelected: "assets/Role Icons/icon-position-jungle.png", iconMask: "assets/Role Icons/icon-mask-position-jungle.png" },
+    { role: "mid", iconDim: "assets/Role Icons/icon-position-middle-disabled.png", iconHover: "assets/Role Icons/icon-position-middle-hover.png", iconSelected: "assets/Role Icons/icon-position-middle.png", iconMask: "assets/Role Icons/icon-mask-position-middle.png" },
+    { role: "bot", iconDim: "assets/Role Icons/icon-position-bottom-disabled.png", iconHover: "assets/Role Icons/icon-position-bottom-hover.png", iconSelected: "assets/Role Icons/icon-position-bottom.png", iconMask: "assets/Role Icons/icon-mask-position-bottom.png" },
+    { role: "sup", iconDim: "assets/Role Icons/icon-position-utility-disabled.png", iconHover: "assets/Role Icons/icon-position-utility-hover.png", iconSelected: "assets/Role Icons/icon-position-utility.png", iconMask: "assets/Role Icons/icon-mask-position-utility.png" }
 ];
 
 const regions = [
@@ -477,7 +477,7 @@ function refreshComp() {
             const roleIcon = document.createElement('div');
             roleIcon.className = 'region-entry-role-icon';
             const roleIconMask = document.createElement('div');
-            roleIconMask.style.setProperty('--icon-mask', `url("${role.iconDim}")`);
+            roleIconMask.style.setProperty('--icon-mask', `url("${role.iconMask}")`);
             roleIconMask.className = 'role-image-mask';
             roleIcon.appendChild(roleIconMask);
             slot.appendChild(championIcon);
@@ -1437,7 +1437,7 @@ function renderEditRegionIcons() {
             championIcon.className = 'edit-region-champ-icon cropped-icon';
             roleIcon.className = 'edit-region-role-icon';
             const roleIconMask = document.createElement('div');
-            roleIconMask.style.setProperty('--icon-mask', `url("${role.iconDim}")`);
+            roleIconMask.style.setProperty('--icon-mask', `url("${role.iconMask}")`);
             roleIconMask.className = 'role-image-mask';
             roleIcon.appendChild(roleIconMask);
             box.appendChild(championIcon);

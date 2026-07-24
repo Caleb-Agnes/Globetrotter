@@ -1,5 +1,5 @@
 V1.4
-Redesigned the visuals
+Redesigned the layout and design
 Can now toggle between old colour scheme and new one
 
 V1.3 - The Better Input Patch
