@@ -1,1 +1,9268 @@
-Current complete database doesn't need updating
+Current database outdated, starting fresh sampling
+sett top -> 1
+briar jng -> 1
+veigar mid -> 1
+yunara bot -> 1
+thresh sup -> 1
+teemo top -> 1
+wukong jng -> 1
+irelia mid -> 1
+missfortune bot -> 1
+leblanc sup -> 1
+----------------
+gangplank top -> 1
+karthus jng -> 1
+ekko mid -> 1
+lucian bot -> 1
+thresh sup -> 2
+renekton top -> 1
+masteryi jng -> 1
+ahri mid -> 1
+jinx bot -> 1
+lux sup -> 1
+----------------
+chogath top -> 1
+leesin jng -> 1
+syndra mid -> 1
+missfortune bot -> 2
+lulu sup -> 1
+tahmkench top -> 1
+mordekaiser jng -> 1
+ahri mid -> 2
+vayne bot -> 1
+milio sup -> 1
+----------------
+udyr top -> 1
+shyvana jng -> 1
+malphite mid -> 1
+jhin bot -> 1
+velkoz sup -> 1
+chogath top -> 2
+talon jng -> 1
+irelia mid -> 2
+lucian bot -> 2
+milio sup -> 2
+----------------
+drmundo top -> 1
+masteryi jng -> 2
+akshan mid -> 1
+jinx bot -> 2
+mel sup -> 1
+darius top -> 1
+warwick jng -> 1
+diana mid -> 1
+samira bot -> 1
+tahmkench sup -> 1
+----------------
+tryndamere top -> 1
+rammus jng -> 1
+veigar mid -> 2
+smolder bot -> 1
+pyke sup -> 1
+varus top -> 1
+masteryi jng -> 3
+ahri mid -> 3
+missfortune bot -> 3
+senna sup -> 1
+----------------
+darius top -> 2
+lillia jng -> 1
+zoe mid -> 1
+draven bot -> 1
+bard sup -> 1
+sett top -> 2
+khazix jng -> 1
+annie mid -> 1
+aphelios bot -> 1
+leona sup -> 1
+----------------
+irelia top -> 1
+sylas jng -> 1
+yasuo mid -> 1
+kaisa bot -> 1
+alistar sup -> 1
+jax top -> 1
+nidalee jng -> 1
+veigar mid -> 3
+kalista bot -> 1
+poppy sup -> 1
+----------------
+aatrox top -> 1
+naafiri jng -> 1
+velkoz mid -> 1
+vayne bot -> 2
+morgana sup -> 1
+chogath top -> 3
+shen jng -> 1
+sylas mid -> 1
+twitch bot -> 1
+neeko sup -> 1
+----------------
+urgot top -> 1
+masteryi jng -> 4
+ahri mid -> 4
+nilah bot -> 1
+lux sup -> 2
+jax top -> 2
+viego jng -> 1
+katarina mid -> 1
+jhin bot -> 2
+soraka sup -> 1
+----------------
+sett top -> 3
+viego jng -> 2
+twistedfate mid -> 1
+aphelios bot -> 2
+pyke sup -> 2
+riven top -> 1
+lillia jng -> 2
+veigar mid -> 4
+missfortune bot -> 4
+lux sup -> 3
+----------------
+garen top -> 1
+viego jng -> 3
+qiyana mid -> 1
+missfortune bot -> 5
+lux sup -> 4
+tryndamere top -> 2
+wukong jng -> 2
+vex mid -> 1
+zed bot -> 1
+seraphine sup -> 1
+----------------
+kayn top -> 1
+qiyana jng -> 1
+yasuo mid -> 2
+tristana bot -> 1
+leona sup -> 2
+yorick top -> 1
+rammus jng -> 2
+leblanc mid -> 1
+jinx bot -> 3
+brand sup -> 1
+----------------
+urgot top -> 2
+sylas jng -> 2
+orianna mid -> 1
+aurelionsol bot -> 1
+nami sup -> 1
+olaf top -> 1
+maokai jng -> 1
+leblanc mid -> 2
+draven bot -> 2
+nautilus sup -> 1
+----------------
+kennen top -> 1
+volibear jng -> 1
+qiyana mid -> 2
+mel bot -> 1
+seraphine sup -> 2
+gnar top -> 1
+vi jng -> 1
+zed mid -> 1
+lux bot -> 1
+morgana sup -> 2
+----------------
+aatrox top -> 2
+jax jng -> 1
+ryze mid -> 1
+lucian bot -> 3
+thresh sup -> 3
+kayle top -> 1
+vi jng -> 2
+veigar mid -> 5
+twitch bot -> 2
+leona sup -> 3
+----------------
+zeri top -> 1
+nocturne jng -> 1
+lissandra mid -> 1
+yasuo bot -> 1
+senna sup -> 2
+gnar top -> 2
+rengar jng -> 1
+katarina mid -> 2
+tristana bot -> 2
+thresh sup -> 4
+----------------
+shen top -> 1
+nocturne jng -> 2
+jhin mid -> 1
+twitch bot -> 3
+janna sup -> 1
+olaf top -> 2
+talon jng -> 2
+tryndamere mid -> 1
+hecarim bot -> 1
+leona sup -> 4
+----------------
+heimerdinger top -> 1
+nasus jng -> 1
+leblanc mid -> 3
+ezreal bot -> 1
+pyke sup -> 3
+chogath top -> 4
+masteryi jng -> 5
+naafiri mid -> 1
+tristana bot -> 3
+thresh sup -> 5
+----------------
+heimerdinger top -> 2
+warwick jng -> 2
+akali mid -> 1
+zeri bot -> 1
+rell sup -> 1
+yasuo top -> 1
+zac jng -> 1
+swain mid -> 1
+kaisa bot -> 2
+nautilus sup -> 2
+----------------
+darius top -> 3
+lillia jng -> 3
+mel mid -> 1
+twitch bot -> 4
+thresh sup -> 6
+gnar top -> 3
+leesin jng -> 2
+locke mid -> 1
+caitlyn bot -> 1
+pyke sup -> 4
+----------------
+jayce top -> 1
+shyvana jng -> 2
+akali mid -> 2
+caitlyn bot -> 2
+lulu sup -> 2
+darius top -> 4
+sylas jng -> 3
+galio mid -> 1
+nilah bot -> 2
+soraka sup -> 2
+----------------
+kayle top -> 2
+darius jng -> 1
+qiyana mid -> 3
+katarina bot -> 1
+braum sup -> 1
+irelia top -> 2
+briar jng -> 2
+akshan mid -> 2
+ziggs bot -> 1
+ashe sup -> 1
+----------------
+garen top -> 2
+zyra jng -> 1
+ekko mid -> 2
+jinx bot -> 4
+braum sup -> 2
+tahmkench top -> 2
+wukong jng -> 3
+fizz mid -> 1
+sivir bot -> 1
+bard sup -> 2
+----------------
+gangplank top -> 2
+lillia jng -> 4
+katarina mid -> 3
+yunara bot -> 2
+nami sup -> 2
+chogath top -> 5
+kayn jng -> 1
+lux mid -> 1
+tristana bot -> 4
+lulu sup -> 3
+----------------
+shen top -> 2
+vi jng -> 3
+malzahar mid -> 1
+kaisa bot -> 3
+nautilus sup -> 3
+rumble top -> 1
+graves jng -> 1
+ahri mid -> 5
+missfortune bot -> 6
+morgana sup -> 3
+----------------
+garen top -> 3
+kayn jng -> 2
+malzahar mid -> 2
+samira bot -> 2
+shaco sup -> 1
+vladimir top -> 1
+mordekaiser jng -> 2
+ahri mid -> 6
+ashe bot -> 1
+senna sup -> 3
+----------------
+swain top -> 1
+shyvana jng -> 3
+karma mid -> 1
+kaisa bot -> 4
+fiddlesticks sup -> 1
+chogath top -> 6
+masteryi jng -> 6
+twistedfate mid -> 2
+ashe bot -> 2
+brand sup -> 2
+----------------
+gnar top -> 4
+zed jng -> 1
+katarina mid -> 4
+ashe bot -> 3
+twitch sup -> 1
+zaahen top -> 1
+kayn jng -> 3
+malzahar mid -> 3
+jinx bot -> 5
+teemo sup -> 1
+----------------
+kaisa top -> 1
+chogath jng -> 1
+ornn mid -> 1
+smolder bot -> 2
+zilean sup -> 1
+sett top -> 4
+brand jng -> 1
+akali mid -> 3
+jinx bot -> 6
+swain sup -> 1
+----------------
+darius top -> 5
+zed jng -> 2
+fizz mid -> 2
+samira bot -> 3
+seraphine sup -> 3
+morgana top -> 1
+masteryi jng -> 7
+yone mid -> 1
+caitlyn bot -> 3
+lux sup -> 5
+----------------
+kayle top -> 3
+sylas jng -> 4
+ahri mid -> 7
+jinx bot -> 7
+senna sup -> 4
+garen top -> 4
+amumu jng -> 1
+kaisa mid -> 1
+smolder bot -> 3
+morgana sup -> 4
+----------------
+aatrox top -> 3
+sejuani jng -> 1
+vladimir mid -> 1
+kaisa bot -> 5
+taric sup -> 1
+vayne top -> 1
+amumu jng -> 2
+zed mid -> 2
+lucian bot -> 4
+nautilus sup -> 4
+----------------
+4% THROUGH (100/2500 API CALLS)
+----------------
+ornn top -> 1
+rengar jng -> 2
+diana mid -> 2
+kaisa bot -> 6
+maokai sup -> 1
+renekton top -> 2
+zyra jng -> 2
+heimerdinger mid -> 1
+xayah bot -> 1
+lux sup -> 6
+----------------
+kled top -> 1
+twitch jng -> 1
+ahri mid -> 8
+jinx bot -> 8
+pantheon sup -> 1
+darius top -> 6
+viego jng -> 4
+lux mid -> 2
+kogmaw bot -> 1
+morgana sup -> 5
+----------------
+garen top -> 5
+khazix jng -> 2
+ahri mid -> 9
+caitlyn bot -> 4
+milio sup -> 3
+kayle top -> 4
+hecarim jng -> 1
+vladimir mid -> 2
+yunara bot -> 3
+lulu sup -> 4
+----------------
+singed top -> 1
+sylas jng -> 5
+naafiri mid -> 2
+ezreal bot -> 2
+pyke sup -> 5
+kayle top -> 5
+hecarim jng -> 2
+gangplank mid -> 1
+smolder bot -> 4
+braum sup -> 3
+----------------
+yone top -> 1
+kindred jng -> 1
+ryze mid -> 2
+tristana bot -> 5
+brand sup -> 3
+darius top -> 7
+volibear jng -> 2
+akali mid -> 4
+kogmaw bot -> 2
+poppy sup -> 2
+----------------
+quinn top -> 1
+briar jng -> 3
+malzahar mid -> 4
+kalista bot -> 2
+morgana sup -> 6
+fiora top -> 1
+nasus jng -> 2
+katarina mid -> 5
+zeri bot -> 2
+tahmkench sup -> 2
+----------------
+sion top -> 1
+kayn jng -> 4
+ekko mid -> 3
+jinx bot -> 9
+sona sup -> 1
+locke top -> 1
+viego jng -> 5
+drmundo mid -> 1
+ashe bot -> 4
+janna sup -> 2
+----------------
+jhin top -> 1
+nocturne jng -> 3
+akali mid -> 5
+jinx bot -> 10
+soraka sup -> 3
+fiora top -> 2
+zac jng -> 2
+lux mid -> 3
+caitlyn bot -> 5
+bard sup -> 3
+----------------
+gragas top -> 1
+viego jng -> 6
+yasuo mid -> 3
+jinx bot -> 11
+braum sup -> 4
+volibear top -> 1
+trundle jng -> 1
+akali mid -> 6
+samira bot -> 4
+sejuani sup -> 1
+----------------
+tryndamere top -> 3
+xinzhao jng -> 1
+veigar mid -> 6
+aphelios bot -> 3
+brand sup -> 4
+tahmkench top -> 3
+briar jng -> 4
+naafiri mid -> 3
+caitlyn bot -> 6
+zyra sup -> 1
+----------------
+camille top -> 1
+lillia jng -> 5
+irelia mid -> 3
+ashe bot -> 5
+taric sup -> 2
+olaf top -> 3
+xinzhao jng -> 2
+ahri mid -> 10
+kaisa bot -> 7
+poppy sup -> 3
+----------------
+sett top -> 5
+naafiri jng -> 2
+yasuo mid -> 4
+caitlyn bot -> 7
+senna sup -> 5
+garen top -> 6
+briar jng -> 5
+fizz mid -> 3
+jhin bot -> 3
+pyke sup -> 6
+----------------
+kayle top -> 6
+masteryi jng -> 8
+diana mid -> 3
+caitlyn bot -> 8
+lux sup -> 7
+udyr top -> 2
+xinzhao jng -> 3
+twistedfate mid -> 3
+missfortune bot -> 7
+sona sup -> 2
+----------------
+mordekaiser top -> 1
+locke jng -> 1
+katarina mid -> 6
+kalista bot -> 3
+seraphine sup -> 4
+fiora top -> 3
+viego jng -> 7
+akali mid -> 7
+kogmaw bot -> 3
+morgana sup -> 7
+----------------
+yorick top -> 2
+teemo jng -> 1
+ahri mid -> 11
+caitlyn bot -> 9
+milio sup -> 4
+pantheon top -> 1
+kayn jng -> 5
+akali mid -> 8
+aphelios bot -> 4
+seraphine sup -> 5
+----------------
+vayne top -> 2
+briar jng -> 6
+zoe mid -> 2
+lucian bot -> 5
+nami sup -> 3
+jax top -> 3
+sylas jng -> 6
+leblanc mid -> 4
+kaisa bot -> 8
+alistar sup -> 2
+----------------
+gwen top -> 1
+qiyana jng -> 2
+katarina mid -> 7
+smolder bot -> 5
+lux sup -> 8
+yone top -> 2
+hecarim jng -> 3
+ahri mid -> 12
+kaisa bot -> 9
+pantheon sup -> 2
+----------------
+Rate limited fetching match ids for puuid 8GRTAHhwzBap6jneIZVkhKttX5Ciaw27zrA491Ulv1vwm9cobymFL5pH6Oh-OxwO1mxr3ClViC8DsA, waiting 70s
+sett top -> 6
+briar jng -> 7
+jhin mid -> 2
+ezreal bot -> 3
+poppy sup -> 4
+tahmkench top -> 4
+volibear jng -> 3
+lissandra mid -> 2
+missfortune bot -> 8
+galio sup -> 1
+----------------
+soraka top -> 1
+volibear jng -> 4
+orianna mid -> 2
+syndra bot -> 1
+poppy sup -> 5
+heimerdinger top -> 3
+warwick jng -> 3
+akshan mid -> 3
+yone bot -> 1
+yasuo sup -> 1
+----------------
+kayle top -> 7
+hecarim jng -> 4
+akshan mid -> 4
+veigar bot -> 1
+lulu sup -> 5
+shen top -> 3
+sylas jng -> 7
+zed mid -> 3
+kalista bot -> 4
+pantheon sup -> 3
+----------------
+briar top -> 1
+zac jng -> 3
+yasuo mid -> 5
+mel bot -> 2
+brand sup -> 5
+singed top -> 2
+poppy jng -> 1
+zed mid -> 4
+zeri bot -> 3
+nautilus sup -> 5
+----------------
+darius top -> 8
+kayn jng -> 6
+orianna mid -> 3
+lucian bot -> 6
+leona sup -> 5
+ambessa top -> 1
+rammus jng -> 3
+lissandra mid -> 3
+missfortune bot -> 9
+pyke sup -> 7
+----------------
+jayce top -> 2
+naafiri jng -> 3
+syndra mid -> 2
+brand bot -> 1
+janna sup -> 3
+singed top -> 3
+nasus jng -> 3
+fizz mid -> 4
+jinx bot -> 12
+braum sup -> 5
+----------------
+gragas top -> 2
+ambessa jng -> 1
+fizz mid -> 5
+kaisa bot -> 10
+braum sup -> 6
+pantheon top -> 2
+taliyah jng -> 1
+xinzhao mid -> 1
+senna bot -> 1
+bard sup -> 4
+----------------
+briar top -> 2
+diana jng -> 1
+viktor mid -> 1
+twitch bot -> 5
+lulu sup -> 6
+yone top -> 3
+khazix jng -> 3
+naafiri mid -> 4
+velkoz bot -> 1
+lux sup -> 9
+----------------
+renekton top -> 3
+malphite jng -> 1
+malzahar mid -> 5
+aphelios bot -> 5
+lulu sup -> 7
+camille top -> 2
+lillia jng -> 6
+ekko mid -> 4
+ahri bot -> 1
+nautilus sup -> 6
+----------------
+volibear top -> 2
+wukong jng -> 4
+swain mid -> 2
+xayah bot -> 2
+lulu sup -> 8
+kled top -> 2
+viego jng -> 8
+yasuo mid -> 6
+lucian bot -> 7
+leona sup -> 6
+----------------
+darius top -> 9
+diana jng -> 2
+sylas mid -> 2
+ezreal bot -> 4
+seraphine sup -> 6
+yorick top -> 3
+viego jng -> 9
+orianna mid -> 4
+ashe bot -> 6
+braum sup -> 7
+----------------
+teemo top -> 2
+belveth jng -> 1
+yone mid -> 2
+jhin bot -> 4
+thresh sup -> 7
+darius top -> 10
+nasus jng -> 4
+vex mid -> 2
+kaisa bot -> 11
+rell sup -> 2
+----------------
+yasuo top -> 2
+nunu jng -> 1
+katarina mid -> 8
+yunara bot -> 4
+milio sup -> 5
+rammus top -> 1
+nocturne jng -> 4
+lissandra mid -> 4
+ezreal bot -> 5
+yuumi sup -> 1
+----------------
+sett top -> 7
+kayn jng -> 7
+yone mid -> 3
+twitch bot -> 6
+rakan sup -> 1
+olaf top -> 4
+viego jng -> 10
+ahri mid -> 13
+vayne bot -> 3
+morgana sup -> 8
+----------------
+hwei top -> 1
+kayn jng -> 8
+ahri mid -> 14
+kaisa bot -> 12
+pyke sup -> 8
+shen top -> 4
+skarner jng -> 1
+aurora mid -> 1
+ezreal bot -> 6
+ivern sup -> 1
+----------------
+ksante top -> 1
+tryndamere jng -> 1
+malzahar mid -> 6
+jinx bot -> 13
+blitzcrank sup -> 1
+teemo top -> 3
+darius jng -> 2
+syndra mid -> 3
+camille bot -> 1
+swain sup -> 2
+----------------
+8% THROUGH (200/2500 API CALLS)
+----------------
+viktor top -> 1
+hecarim jng -> 5
+camille mid -> 1
+twitch bot -> 7
+zilean sup -> 2
+kaisa top -> 2
+shyvana jng -> 4
+irelia mid -> 4
+jinx bot -> 14
+taliyah sup -> 1
+----------------
+heimerdinger top -> 4
+warwick jng -> 4
+brand mid -> 1
+tristana bot -> 6
+karma sup -> 1
+mordekaiser top -> 2
+viego jng -> 11
+viktor mid -> 2
+jinx bot -> 15
+swain sup -> 3
+----------------
+garen top -> 7
+kayn jng -> 9
+mel mid -> 2
+ashe bot -> 7
+lux sup -> 10
+ornn top -> 2
+nidalee jng -> 2
+jayce mid -> 1
+caitlyn bot -> 10
+maokai sup -> 2
+----------------
+leesin top -> 1
+diana jng -> 3
+mel mid -> 3
+caitlyn bot -> 11
+braum sup -> 8
+teemo top -> 4
+kayn jng -> 10
+aurora mid -> 2
+smolder bot -> 6
+pyke sup -> 9
+----------------
+fiddlesticks top -> 1
+rammus jng -> 4
+ahri mid -> 15
+mel bot -> 3
+maokai sup -> 3
+mordekaiser top -> 3
+rengar jng -> 3
+katarina mid -> 9
+xerath bot -> 1
+rell sup -> 3
+----------------
+anivia top -> 1
+masteryi jng -> 9
+corki mid -> 1
+heimerdinger bot -> 1
+thresh sup -> 8
+fiora top -> 4
+nidalee jng -> 3
+katarina mid -> 10
+ashe bot -> 8
+rell sup -> 4
+----------------
+kennen top -> 2
+ekko jng -> 1
+yone mid -> 4
+jinx bot -> 16
+nami sup -> 4
+shyvana top -> 1
+viego jng -> 12
+cassiopeia mid -> 1
+smolder bot -> 7
+milio sup -> 6
+----------------
+vladimir top -> 2
+viego jng -> 13
+viktor mid -> 3
+twitch bot -> 8
+renata sup -> 1
+darius top -> 11
+wukong jng -> 5
+anivia mid -> 1
+caitlyn bot -> 12
+morgana sup -> 9
+----------------
+teemo top -> 5
+khazix jng -> 4
+katarina mid -> 11
+kaisa bot -> 13
+nautilus sup -> 7
+ornn top -> 3
+sejuani jng -> 2
+yasuo mid -> 7
+missfortune bot -> 10
+shaco sup -> 2
+----------------
+teemo top -> 6
+jarvaniv jng -> 1
+syndra mid -> 4
+ezreal bot -> 7
+taric sup -> 3
+malphite top -> 1
+khazix jng -> 5
+ekko mid -> 5
+kaisa bot -> 14
+leona sup -> 7
+----------------
+shen top -> 5
+nocturne jng -> 5
+lissandra mid -> 5
+nilah bot -> 3
+taric sup -> 4
+darius top -> 12
+vi jng -> 4
+annie mid -> 2
+ezreal bot -> 8
+lux sup -> 11
+----------------
+chogath top -> 7
+diana jng -> 4
+teemo mid -> 1
+ziggs bot -> 2
+morgana sup -> 10
+jax top -> 4
+viego jng -> 14
+zoe mid -> 3
+sivir bot -> 2
+seraphine sup -> 7
+----------------
+camille top -> 3
+shaco jng -> 1
+lux mid -> 4
+kaisa bot -> 15
+seraphine sup -> 8
+gangplank top -> 3
+shyvana jng -> 5
+veigar mid -> 7
+smolder bot -> 8
+senna sup -> 6
+----------------
+darius top -> 13
+lillia jng -> 7
+anivia mid -> 2
+kaisa bot -> 16
+leona sup -> 8
+gragas top -> 3
+wukong jng -> 6
+morgana mid -> 1
+yunara bot -> 5
+lulu sup -> 9
+----------------
+aatrox top -> 4
+maokai jng -> 2
+velkoz mid -> 2
+xerath bot -> 2
+rell sup -> 5
+garen top -> 8
+belveth jng -> 2
+ahri mid -> 16
+kaisa bot -> 17
+thresh sup -> 9
+----------------
+smolder top -> 1
+wukong jng -> 7
+gragas mid -> 1
+lucian bot -> 8
+nasus sup -> 1
+shen top -> 6
+graves jng -> 2
+viktor mid -> 4
+caitlyn bot -> 13
+zilean sup -> 3
+----------------
+gangplank top -> 4
+naafiri jng -> 4
+twistedfate mid -> 4
+ashe bot -> 9
+zyra sup -> 2
+garen top -> 9
+masteryi jng -> 10
+qiyana mid -> 4
+ezreal bot -> 9
+leona sup -> 9
+----------------
+gragas top -> 4
+maokai jng -> 3
+lux mid -> 5
+caitlyn bot -> 14
+seraphine sup -> 9
+renekton top -> 4
+viego jng -> 15
+syndra mid -> 5
+tristana bot -> 7
+leona sup -> 10
+----------------
+nasus top -> 1
+khazix jng -> 6
+xerath mid -> 1
+hwei bot -> 1
+lux sup -> 12
+trundle top -> 1
+qiyana jng -> 3
+katarina mid -> 12
+ashe bot -> 10
+seraphine sup -> 10
+----------------
+sett top -> 8
+leesin jng -> 3
+xerath mid -> 2
+kaisa bot -> 18
+kaisa marked as done (100.0% confidence)
+nautilus sup -> 8
+mordekaiser top -> 4
+poppy jng -> 2
+viktor mid -> 5
+yasuo bot -> 2
+sona sup -> 3
+----------------
+renekton top -> 5
+nunu jng -> 2
+katarina mid -> 13
+caitlyn bot -> 15
+morgana sup -> 11
+mordekaiser top -> 5
+camille jng -> 1
+yone mid -> 5
+jinx bot -> 17
+milio sup -> 7
+----------------
+darius top -> 14
+kayn jng -> 11
+gwen mid -> 1
+galio bot -> 1
+lux sup -> 13
+volibear top -> 3
+warwick jng -> 5
+sylas mid -> 3
+seraphine bot -> 1
+morgana sup -> 12
+----------------
+gnar top -> 5
+skarner jng -> 2
+pantheon mid -> 1
+zeri bot -> 4
+seraphine sup -> 11
+ambessa top -> 2
+sylas jng -> 8
+anivia mid -> 3
+xayah bot -> 3
+elise sup -> 1
+----------------
+olaf top -> 5
+sylas jng -> 9
+malzahar mid -> 7
+ashe bot -> 11
+milio sup -> 8
+heimerdinger top -> 5
+kayn jng -> 12
+yasuo mid -> 8
+xayah bot -> 4
+pyke sup -> 10
+----------------
+garen top -> 10
+briar jng -> 8
+annie mid -> 3
+xayah bot -> 5
+leona sup -> 11
+tahmkench top -> 5
+warwick jng -> 6
+veigar mid -> 8
+aphelios bot -> 6
+seraphine sup -> 12
+----------------
+drmundo top -> 2
+graves jng -> 3
+akali mid -> 9
+ashe bot -> 12
+lulu sup -> 10
+ornn top -> 4
+talon jng -> 3
+malzahar mid -> 8
+caitlyn bot -> 16
+lux sup -> 14
+----------------
+gwen top -> 2
+briar jng -> 9
+veigar mid -> 9
+kaisa bot -> 19
+nautilus sup -> 9
+mordekaiser top -> 6
+jarvaniv jng -> 2
+morgana mid -> 2
+missfortune bot -> 11
+seraphine sup -> 13
+----------------
+quinn top -> 2
+nunu jng -> 3
+ahri mid -> 17
+yunara bot -> 6
+sona sup -> 4
+aatrox top -> 5
+udyr jng -> 1
+xerath mid -> 3
+tristana bot -> 8
+milio sup -> 9
+----------------
+jax top -> 5
+talon jng -> 4
+ahri mid -> 18
+samira bot -> 5
+nautilus sup -> 10
+illaoi top -> 1
+masteryi jng -> 11
+yone mid -> 6
+tristana bot -> 9
+leona sup -> 12
+----------------
+malphite top -> 2
+amumu jng -> 3
+irelia mid -> 5
+mel bot -> 4
+zyra sup -> 3
+chogath top -> 8
+zac jng -> 4
+akshan mid -> 5
+varus bot -> 1
+swain sup -> 4
+----------------
+teemo top -> 7
+masteryi jng -> 12
+akali mid -> 10
+zeri bot -> 5
+yuumi sup -> 2
+nasus top -> 2
+kayn jng -> 13
+mel mid -> 4
+twitch bot -> 9
+zyra sup -> 4
+----------------
+ambessa top -> 3
+vi jng -> 5
+aurelionsol mid -> 1
+kaisa bot -> 20
+seraphine sup -> 14
+heimerdinger top -> 6
+fiddlesticks jng -> 1
+kogmaw mid -> 1
+caitlyn bot -> 17
+lux sup -> 15
+lux marked as done (99.3% confidence)
+----------------
+singed top -> 4
+shaco jng -> 2
+ryze mid -> 3
+samira bot -> 6
+tahmkench sup -> 3
+warwick top -> 1
+wukong jng -> 8
+zed mid -> 5
+ashe bot -> 13
+seraphine sup -> 15
+----------------
+12% THROUGH (300/2500 API CALLS)
+----------------
+rumble top -> 2
+rengar jng -> 4
+smolder mid -> 1
+jinx bot -> 18
+blitzcrank sup -> 2
+mordekaiser top -> 7
+volibear jng -> 5
+ryze mid -> 4
+twitch bot -> 10
+mel sup -> 2
+----------------
+Rate limited fetching match ids for puuid m9j6HxWq8ZjHWa3cevAr4EExesteAw0ErHU7m1DuRAzMhHMbToxQvSalYhRWfz_BusBMoF2dtlI-NQ, waiting 72s
+yone top -> 4
+nidalee jng -> 4
+mel mid -> 5
+smolder bot -> 9
+maokai sup -> 4
+mordekaiser top -> 8
+nocturne jng -> 6
+vex mid -> 3
+missfortune bot -> 12
+xerath sup -> 1
+----------------
+volibear top -> 4
+ekko jng -> 2
+viktor mid -> 6
+ashe bot -> 14
+morgana sup -> 13
+mordekaiser top -> 9
+darius jng -> 3
+twistedfate mid -> 5
+kaisa bot -> 21
+seraphine sup -> 16
+----------------
+aatrox top -> 6
+sylas jng -> 10
+cassiopeia mid -> 2
+ashe bot -> 15
+nautilus sup -> 11
+ksante top -> 2
+belveth jng -> 3
+vladimir mid -> 3
+caitlyn bot -> 18
+braum sup -> 9
+----------------
+ambessa top -> 4
+xinzhao jng -> 4
+syndra mid -> 6
+nilah bot -> 4
+karma sup -> 2
+urgot top -> 3
+elise jng -> 1
+zed mid -> 6
+caitlyn bot -> 19
+leona sup -> 13
+----------------
+nasus top -> 3
+wukong jng -> 9
+zed mid -> 7
+caitlyn bot -> 20
+blitzcrank sup -> 3
+gnar top -> 6
+leesin jng -> 4
+akali mid -> 11
+ezreal bot -> 10
+anivia sup -> 1
+----------------
+jax top -> 6
+ekko jng -> 3
+twistedfate mid -> 6
+kaisa bot -> 22
+lux sup -> 16
+yone top -> 5
+leesin jng -> 5
+mel mid -> 6
+caitlyn bot -> 21
+caitlyn marked as done (100.0% confidence)
+tahmkench sup -> 4
+----------------
+garen top -> 11
+kayn jng -> 14
+diana mid -> 4
+twitch bot -> 11
+karma sup -> 3
+urgot top -> 4
+leesin jng -> 6
+vladimir mid -> 4
+zeri bot -> 6
+braum sup -> 10
+----------------
+riven top -> 2
+nocturne jng -> 7
+zed mid -> 8
+vayne bot -> 4
+braum sup -> 11
+gnar top -> 7
+warwick jng -> 7
+naafiri mid -> 5
+caitlyn bot -> 22
+nautilus sup -> 12
+----------------
+ahri top -> 1
+elise jng -> 2
+veigar mid -> 10
+vayne bot -> 5
+seraphine sup -> 17
+akali top -> 1
+quinn jng -> 1
+mel mid -> 7
+viktor bot -> 1
+pyke sup -> 11
+----------------
+tahmkench top -> 6
+nunu jng -> 4
+vladimir mid -> 5
+jhin bot -> 5
+senna sup -> 7
+malphite top -> 3
+khazix jng -> 7
+katarina mid -> 14
+tristana bot -> 10
+milio sup -> 10
+----------------
+gwen top -> 3
+pantheon jng -> 1
+ekko mid -> 6
+smolder bot -> 10
+sona sup -> 5
+jax top -> 7
+shaco jng -> 3
+syndra mid -> 7
+seraphine bot -> 2
+tahmkench sup -> 5
+----------------
+shen top -> 7
+rengar jng -> 5
+syndra mid -> 8
+tristana bot -> 11
+pantheon sup -> 4
+sylas top -> 1
+diana jng -> 5
+zed mid -> 9
+zeri bot -> 7
+yuumi sup -> 3
+----------------
+sett top -> 9
+briar jng -> 10
+annie mid -> 4
+caitlyn bot -> 23
+leona sup -> 14
+fiora top -> 5
+kayn jng -> 15
+twistedfate mid -> 7
+jinx bot -> 19
+velkoz sup -> 2
+----------------
+ksante top -> 3
+kayn jng -> 16
+twistedfate mid -> 8
+seraphine bot -> 3
+ashe sup -> 2
+yasuo top -> 3
+jarvaniv jng -> 3
+mel mid -> 8
+syndra bot -> 2
+morgana sup -> 14
+----------------
+wukong top -> 1
+nunu jng -> 5
+aurelionsol mid -> 2
+jhin bot -> 6
+senna sup -> 8
+gnar top -> 8
+talon jng -> 5
+mel mid -> 9
+caitlyn bot -> 24
+rell sup -> 6
+----------------
+ksante top -> 4
+kayn jng -> 17
+orianna mid -> 5
+twitch bot -> 12
+janna sup -> 4
+ornn top -> 5
+talon jng -> 6
+twistedfate mid -> 9
+vayne bot -> 6
+nami sup -> 5
+----------------
+akali top -> 2
+leesin jng -> 7
+lux mid -> 6
+aphelios bot -> 7
+morgana sup -> 15
+chogath top -> 9
+shyvana jng -> 6
+velkoz mid -> 3
+smolder bot -> 11
+zilean sup -> 4
+----------------
+teemo top -> 8
+fiddlesticks jng -> 2
+yasuo mid -> 9
+veigar bot -> 2
+maokai sup -> 5
+tryndamere top -> 4
+warwick jng -> 8
+zed mid -> 10
+ziggs bot -> 3
+yuumi sup -> 4
+----------------
+zaahen top -> 2
+xinzhao jng -> 5
+brand mid -> 2
+tristana bot -> 12
+rakan sup -> 2
+ksante top -> 5
+zyra jng -> 3
+nasus mid -> 1
+jhin bot -> 7
+pyke sup -> 12
+----------------
+gangplank top -> 5
+qiyana jng -> 4
+viktor mid -> 7
+jinx bot -> 20
+maokai sup -> 6
+drmundo top -> 3
+belveth jng -> 4
+fizz mid -> 6
+veigar bot -> 3
+soraka sup -> 4
+----------------
+kayle top -> 8
+jarvaniv jng -> 4
+orianna mid -> 6
+caitlyn bot -> 25
+blitzcrank sup -> 4
+darius top -> 15
+belveth jng -> 5
+syndra mid -> 9
+swain bot -> 1
+lux sup -> 17
+----------------
+garen top -> 12
+belveth jng -> 6
+leblanc mid -> 5
+missfortune bot -> 13
+nautilus sup -> 13
+jax top -> 8
+shaco jng -> 4
+mel mid -> 10
+jhin bot -> 8
+thresh sup -> 10
+----------------
+yorick top -> 4
+shaco jng -> 5
+malzahar mid -> 9
+yunara bot -> 7
+leona sup -> 15
+chogath top -> 10
+reksai jng -> 1
+smolder mid -> 2
+ezreal bot -> 11
+fiddlesticks sup -> 2
+----------------
+swain top -> 2
+nocturne jng -> 8
+vladimir mid -> 6
+jinx bot -> 21
+jinx marked as done (100.0% confidence)
+thresh sup -> 11
+irelia top -> 3
+olaf jng -> 1
+morgana mid -> 3
+lucian bot -> 9
+nami sup -> 6
+----------------
+drmundo top -> 4
+diana jng -> 6
+draven mid -> 1
+zeri bot -> 8
+galio sup -> 2
+mordekaiser top -> 10
+masteryi jng -> 13
+yone mid -> 7
+ezreal bot -> 12
+thresh sup -> 12
+----------------
+kayle top -> 9
+briar jng -> 11
+veigar mid -> 11
+caitlyn bot -> 26
+neeko sup -> 2
+jax top -> 9
+warwick jng -> 9
+annie mid -> 5
+X
+lulu sup -> 11
+----------------
+darius top -> 16
+ekko jng -> 4
+yasuo mid -> 10
+ashe bot -> 16
+tahmkench sup -> 6
+sett top -> 10
+briar jng -> 12
+akali mid -> 12
+samira bot -> 7
+poppy sup -> 6
+----------------
+darius top -> 17
+kindred jng -> 2
+pantheon mid -> 2
+veigar bot -> 4
+senna sup -> 9
+nasus top -> 4
+kayn jng -> 18
+galio mid -> 2
+missfortune bot -> 14
+anivia sup -> 2
+----------------
+chogath top -> 11
+hecarim jng -> 6
+zilean mid -> 1
+yunara bot -> 8
+soraka sup -> 5
+kayle top -> 10
+rengar jng -> 6
+sylas mid -> 4
+caitlyn bot -> 27
+swain sup -> 5
+----------------
+olaf top -> 6
+warwick jng -> 10
+twistedfate mid -> 10
+missfortune bot -> 15
+tahmkench sup -> 7
+yone top -> 6
+twitch jng -> 2
+vex mid -> 4
+graves bot -> 1
+seraphine sup -> 18
+seraphine marked as done (100.0% confidence)
+----------------
+trundle top -> 2
+xinzhao jng -> 6
+malzahar mid -> 10
+jhin bot -> 9
+leona sup -> 16
+garen top -> 13
+maokai jng -> 4
+ekko mid -> 7
+lucian bot -> 10
+velkoz sup -> 3
+----------------
+nasus top -> 5
+shyvana jng -> 7
+naafiri mid -> 6
+katarina bot -> 2
+yuumi sup -> 5
+gnar top -> 9
+viego jng -> 16
+fizz mid -> 7
+kaisa bot -> 23
+thresh sup -> 13
+----------------
+16% THROUGH (400/2500 API CALLS)
+----------------
+sett top -> 11
+briar jng -> 13
+ekko mid -> 8
+draven bot -> 3
+alistar sup -> 3
+sion top -> 2
+shaco jng -> 6
+ahri mid -> 19
+ahri marked as done (100.0% confidence)
+ashe bot -> 17
+milio sup -> 11
+----------------
+drmundo top -> 5
+jarvaniv jng -> 5
+xerath mid -> 4
+jinx bot -> 22
+lux sup -> 18
+yone top -> 7
+zac jng -> 5
+mel mid -> 11
+vayne bot -> 7
+lulu sup -> 12
+----------------
+drmundo top -> 6
+masteryi jng -> 14
+aurora mid -> 3
+caitlyn bot -> 28
+lux sup -> 19
+yasuo top -> 4
+nasus jng -> 5
+viktor mid -> 8
+brand bot -> 2
+senna sup -> 10
+----------------
+irelia top -> 4
+nocturne jng -> 9
+syndra mid -> 10
+kaisa bot -> 24
+thresh sup -> 14
+urgot top -> 5
+khazix jng -> 8
+hwei mid -> 1
+corki bot -> 1
+pantheon sup -> 5
+----------------
+malphite top -> 4
+wukong jng -> 10
+hwei mid -> 2
+missfortune bot -> 16
+morgana sup -> 16
+drmundo top -> 7
+leesin jng -> 8
+syndra mid -> 11
+xayah bot -> 6
+lulu sup -> 13
+----------------
+heimerdinger top -> 7
+wukong jng -> 11
+locke mid -> 2
+caitlyn bot -> 29
+amumu sup -> 1
+vladimir top -> 3
+shen jng -> 2
+yone mid -> 8
+seraphine bot -> 4
+senna sup -> 11
+----------------
+shen top -> 8
+nocturne jng -> 10
+lissandra mid -> 6
+kaisa bot -> 25
+nautilus sup -> 14
+illaoi top -> 2
+briar jng -> 14
+locke mid -> 3
+jinx bot -> 23
+milio sup -> 12
+----------------
+gangplank top -> 6
+talon jng -> 7
+ryze mid -> 5
+ezreal bot -> 13
+nami sup -> 7
+sett top -> 12
+zed jng -> 3
+yasuo mid -> 11
+veigar bot -> 5
+seraphine sup -> 19
+----------------
+gnar top -> 10
+kayn jng -> 19
+kassadin mid -> 1
+akshan bot -> 1
+malphite sup -> 1
+jax top -> 10
+viego jng -> 17
+zoe mid -> 4
+missfortune bot -> 17
+rell sup -> 7
+----------------
+yone top -> 8
+quinn jng -> 2
+hwei mid -> 3
+nilah bot -> 5
+poppy sup -> 7
+jax top -> 11
+nocturne jng -> 11
+akshan mid -> 6
+lucian bot -> 11
+yuumi sup -> 6
+----------------
+nasus top -> 6
+nocturne jng -> 12
+xerath mid -> 5
+veigar bot -> 6
+janna sup -> 5
+anivia top -> 2
+graves jng -> 4
+viktor mid -> 9
+aphelios bot -> 8
+leona sup -> 17
+----------------
+yasuo top -> 5
+masteryi jng -> 15
+lissandra mid -> 7
+sivir bot -> 3
+lulu sup -> 14
+malphite top -> 5
+zac jng -> 6
+vex mid -> 5
+tahmkench bot -> 1
+zilean sup -> 5
+----------------
+masteryi top -> 1
+jax jng -> 2
+viktor mid -> 10
+kogmaw bot -> 4
+janna sup -> 6
+gwen top -> 4
+shyvana jng -> 8
+xerath mid -> 6
+caitlyn bot -> 30
+morgana sup -> 17
+morgana marked as done (100.0% confidence)
+----------------
+garen top -> 14
+briar jng -> 15
+zed mid -> 11
+mel bot -> 5
+pyke sup -> 13
+mordekaiser top -> 11
+masteryi jng -> 16
+yasuo mid -> 12
+caitlyn bot -> 31
+soraka sup -> 6
+----------------
+sett top -> 13
+viego jng -> 18
+lissandra mid -> 8
+lucian bot -> 12
+nami sup -> 8
+darius top -> 18
+darius marked as done (100.0% confidence)
+ambessa jng -> 2
+orianna mid -> 7
+jhin bot -> 10
+velkoz sup -> 4
+----------------
+urgot top -> 6
+viego jng -> 19
+vladimir mid -> 7
+ezreal bot -> 14
+bard sup -> 5
+illaoi top -> 3
+X
+locke mid -> 4
+yunara bot -> 9
+lulu sup -> 15
+----------------
+malzahar top -> 1
+jax jng -> 3
+twistedfate mid -> 11
+sivir bot -> 4
+thresh sup -> 15
+irelia top -> 5
+zed jng -> 4
+yasuo mid -> 13
+yasuo marked as done (97.8% confidence)
+tristana bot -> 13
+leona sup -> 18
+----------------
+ornn top -> 6
+shaco jng -> 7
+morgana mid -> 4
+nilah bot -> 6
+blitzcrank sup -> 5
+tryndamere top -> 5
+fiddlesticks jng -> 3
+malzahar mid -> 11
+kaisa bot -> 26
+leona sup -> 19
+----------------
+Rate limited fetching match ids for puuid qlJ6mr8nMN8EmdmSPh7TnCcXzaTZ91tmCtaE7SrcrLZVETKw5MmjSE-2Q6g09WppKHxu8DiPhhLGDQ, waiting 74s
+warwick top -> 2
+xinzhao jng -> 7
+lux mid -> 7
+ashe bot -> 18
+blitzcrank sup -> 6
+malzahar top -> 2
+wukong jng -> 12
+irelia mid -> 6
+caitlyn bot -> 32
+bard sup -> 6
+----------------
+tahmkench top -> 7
+shaco jng -> 8
+anivia mid -> 4
+lucian bot -> 13
+blitzcrank sup -> 7
+zaahen top -> 3
+khazix jng -> 9
+ziggs mid -> 1
+seraphine bot -> 5
+yuumi sup -> 7
+----------------
+camille top -> 4
+xinzhao jng -> 8
+velkoz mid -> 4
+smolder bot -> 12
+thresh sup -> 16
+masteryi top -> 2
+shen jng -> 3
+lux mid -> 8
+tristana bot -> 14
+brand sup -> 6
+----------------
+darius top -> 19
+udyr jng -> 2
+malzahar mid -> 12
+jhin bot -> 11
+zilean sup -> 6
+akali top -> 3
+qiyana jng -> 5
+ahri mid -> 20
+nilah bot -> 7
+rakan sup -> 3
+----------------
+tahmkench top -> 8
+shen jng -> 4
+veigar mid -> 12
+jinx bot -> 24
+thresh sup -> 17
+ornn top -> 7
+diana jng -> 7
+locke mid -> 5
+ezreal bot -> 15
+nami sup -> 9
+----------------
+yone top -> 9
+zed jng -> 5
+aurora mid -> 4
+smolder bot -> 13
+yuumi sup -> 8
+akali top -> 4
+naafiri jng -> 5
+morgana mid -> 5
+jhin bot -> 12
+senna sup -> 12
+----------------
+aatrox top -> 7
+leesin jng -> 9
+annie mid -> 6
+ashe bot -> 19
+ashe marked as done (100.0% confidence)
+thresh sup -> 18
+ornn top -> 8
+nocturne jng -> 13
+ahri mid -> 21
+lucian bot -> 14
+bard sup -> 7
+----------------
+darius top -> 20
+kindred jng -> 3
+aurelionsol mid -> 3
+jinx bot -> 25
+maokai sup -> 7
+ksante top -> 6
+jax jng -> 4
+swain mid -> 3
+ashe bot -> 20
+janna sup -> 7
+----------------
+yone top -> 10
+diana jng -> 8
+ahri mid -> 22
+aphelios bot -> 9
+karma sup -> 4
+akali top -> 5
+sylas jng -> 11
+zed mid -> 12
+riven bot -> 1
+blitzcrank sup -> 8
+----------------
+chogath top -> 12
+trundle jng -> 2
+malzahar mid -> 13
+tristana bot -> 15
+nami sup -> 10
+mordekaiser top -> 12
+sett jng -> 1
+lissandra mid -> 9
+jinx bot -> 26
+karma sup -> 5
+----------------
+yorick top -> 5
+talon jng -> 8
+anivia mid -> 5
+jinx bot -> 27
+braum sup -> 12
+illaoi top -> 4
+nidalee jng -> 5
+corki mid -> 2
+vayne bot -> 8
+alistar sup -> 4
+----------------
+shen top -> 9
+evelynn jng -> 1
+jayce mid -> 2
+smolder bot -> 14
+lux sup -> 20
+yorick top -> 6
+jarvaniv jng -> 6
+kayle mid -> 1
+kaisa bot -> 27
+thresh sup -> 19
+----------------
+darius top -> 21
+masteryi jng -> 17
+zed mid -> 13
+missfortune bot -> 18
+brand sup -> 7
+zaahen top -> 4
+kayn jng -> 20
+kayn marked as done (100.0% confidence)
+veigar mid -> 13
+caitlyn bot -> 33
+braum sup -> 13
+----------------
+darius top -> 22
+ambessa jng -> 3
+zilean mid -> 2
+lucian bot -> 15
+xerath sup -> 2
+fizz top -> 1
+viego jng -> 20
+ahri mid -> 23
+caitlyn bot -> 34
+rakan sup -> 4
+----------------
+briar top -> 3
+diana jng -> 9
+lucian mid -> 1
+caitlyn bot -> 35
+milio sup -> 13
+shen top -> 10
+viego jng -> 21
+viego marked as done (100.0% confidence)
+kassadin mid -> 2
+ashe bot -> 21
+swain sup -> 6
+----------------
+20% THROUGH (500/2500 API CALLS)
+----------------
+yone top -> 11
+vi jng -> 6
+katarina mid -> 15
+vayne bot -> 9
+morgana sup -> 18
+garen top -> 15
+khazix jng -> 10
+akali mid -> 13
+jinx bot -> 28
+lulu sup -> 16
+----------------
+illaoi top -> 5
+zac jng -> 7
+locke mid -> 6
+ezreal bot -> 16
+pyke sup -> 14
+renekton top -> 6
+leesin jng -> 10
+kassadin mid -> 3
+kaisa bot -> 28
+renata sup -> 2
+----------------
+garen top -> 16
+sejuani jng -> 3
+hwei mid -> 4
+senna bot -> 2
+rakan sup -> 5
+renekton top -> 7
+sylas jng -> 12
+locke mid -> 7
+tristana bot -> 16
+tahmkench sup -> 8
+----------------
+malphite top -> 6
+masteryi jng -> 18
+annie mid -> 7
+caitlyn bot -> 36
+nautilus sup -> 15
+yone top -> 12
+warwick jng -> 11
+veigar mid -> 14
+ashe bot -> 22
+leona sup -> 20
+----------------
+garen top -> 17
+leesin jng -> 11
+anivia mid -> 6
+aphelios bot -> 10
+thresh sup -> 20
+trundle top -> 3
+wukong jng -> 13
+locke mid -> 8
+draven bot -> 4
+brand sup -> 8
+----------------
+renekton top -> 8
+wukong jng -> 14
+aurelionsol mid -> 4
+kaisa bot -> 29
+morgana sup -> 19
+fiddlesticks top -> 2
+viego jng -> 22
+cassiopeia mid -> 3
+missfortune bot -> 19
+blitzcrank sup -> 9
+----------------
+vladimir top -> 4
+graves jng -> 5
+nunu mid -> 1
+vayne bot -> 10
+nautilus sup -> 16
+masteryi top -> 3
+masteryi marked as done (100.0% confidence)
+olaf jng -> 2
+vex mid -> 6
+twitch bot -> 13
+bard sup -> 8
+----------------
+fiora top -> 6
+quinn jng -> 3
+vladimir mid -> 8
+varus bot -> 2
+xerath sup -> 3
+zaahen top -> 5
+hecarim jng -> 7
+swain mid -> 4
+kogmaw bot -> 5
+rell sup -> 8
+----------------
+gnar top -> 11
+pantheon jng -> 2
+vex mid -> 7
+caitlyn bot -> 37
+xerath sup -> 4
+darius top -> 23
+brand jng -> 2
+lux mid -> 9
+zeri bot -> 9
+nautilus sup -> 17
+----------------
+anivia top -> 3
+chogath jng -> 2
+talon mid -> 1
+jinx bot -> 29
+yuumi sup -> 9
+jayce top -> 3
+warwick jng -> 12
+malzahar mid -> 14
+twitch bot -> 14
+nautilus sup -> 18
+----------------
+chogath top -> 13
+naafiri jng -> 6
+aurora mid -> 5
+missfortune bot -> 20
+milio sup -> 14
+nasus top -> 7
+wukong jng -> 15
+yone mid -> 9
+ziggs bot -> 4
+pantheon sup -> 6
+----------------
+shen top -> 11
+nocturne jng -> 14
+hwei mid -> 5
+jinx bot -> 30
+nami sup -> 11
+sion top -> 3
+talon jng -> 9
+viktor mid -> 11
+ezreal bot -> 17
+kennen sup -> 1
+----------------
+renekton top -> 9
+talon jng -> 10
+heimerdinger mid -> 2
+jhin bot -> 13
+leona sup -> 21
+leona marked as done (100.0% confidence)
+jax top -> 12
+rammus jng -> 5
+locke mid -> 9
+jinx bot -> 31
+xerath sup -> 5
+----------------
+teemo top -> 9
+qiyana jng -> 6
+vex mid -> 8
+yasuo bot -> 3
+velkoz sup -> 5
+volibear top -> 5
+nunu jng -> 6
+mel mid -> 12
+missfortune bot -> 21
+missfortune marked as done (100.0% confidence)
+tahmkench sup -> 9
+----------------
+pantheon top -> 3
+amumu jng -> 4
+ahri mid -> 24
+twitch bot -> 15
+tahmkench sup -> 10
+mordekaiser top -> 13
+rammus jng -> 6
+katarina mid -> 16
+missfortune bot -> 22
+nautilus sup -> 19
+----------------
+darius top -> 24
+viego jng -> 23
+fizz mid -> 8
+vayne bot -> 11
+lux sup -> 21
+garen top -> 18
+nocturne jng -> 15
+locke mid -> 10
+zeri bot -> 10
+mel sup -> 3
+----------------
+chogath top -> 14
+fiddlesticks jng -> 4
+galio mid -> 3
+jhin bot -> 14
+brand sup -> 9
+sett top -> 14
+warwick jng -> 13
+velkoz mid -> 5
+caitlyn bot -> 38
+bard sup -> 9
+----------------
+jax top -> 13
+warwick jng -> 14
+anivia mid -> 7
+kaisa bot -> 30
+rakan sup -> 6
+aatrox top -> 8
+zaahen jng -> 1
+akali mid -> 14
+caitlyn bot -> 39
+lux sup -> 22
+----------------
+jayce top -> 4
+nidalee jng -> 6
+zed mid -> 14
+kaisa bot -> 31
+pyke sup -> 15
+gragas top -> 5
+viego jng -> 24
+talon mid -> 2
+ezreal bot -> 18
+karma sup -> 6
+----------------
+malphite top -> 7
+shyvana jng -> 9
+galio mid -> 4
+caitlyn bot -> 40
+sylas sup -> 1
+kled top -> 3
+warwick jng -> 15
+veigar mid -> 15
+veigar marked as done (98.2% confidence)
+kaisa bot -> 32
+lux sup -> 23
+----------------
+darius top -> 25
+warwick jng -> 16
+nunu mid -> 2
+ashe bot -> 23
+nautilus sup -> 20
+drmundo top -> 8
+diana jng -> 10
+yasuo mid -> 14
+jhin bot -> 15
+lux sup -> 24
+----------------
+drmundo top -> 9
+viego jng -> 25
+azir mid -> 1
+kogmaw bot -> 6
+nautilus sup -> 21
+nautilus marked as done (100.0% confidence)
+sett top -> 15
+belveth jng -> 7
+akshan mid -> 7
+jhin bot -> 16
+karma sup -> 7
+----------------
+lulu top -> 1
+elise jng -> 3
+naafiri mid -> 7
+missfortune bot -> 23
+lux sup -> 25
+yone top -> 13
+shyvana jng -> 10
+ahri mid -> 25
+samira bot -> 8
+braum sup -> 14
+----------------
+gangplank top -> 7
+shaco jng -> 9
+zed mid -> 15
+zed marked as done (99.3% confidence)
+ashe bot -> 24
+teemo sup -> 2
+sett top -> 16
+rengar jng -> 7
+leblanc mid -> 6
+zilean bot -> 1
+nautilus sup -> 22
+----------------
+drmundo top -> 10
+kayn jng -> 21
+twistedfate mid -> 12
+ashe bot -> 25
+seraphine sup -> 20
+tryndamere top -> 6
+diana jng -> 11
+yasuo mid -> 15
+twitch bot -> 16
+lux sup -> 26
+----------------
+olaf top -> 7
+briar jng -> 16
+lissandra mid -> 10
+kaisa bot -> 33
+sylas sup -> 2
+kayle top -> 11
+kayn jng -> 22
+akali mid -> 15
+jhin bot -> 17
+velkoz sup -> 6
+----------------
+teemo top -> 10
+udyr jng -> 3
+mel bot -> 6
+leona sup -> 22
+kled top -> 4
+zed jng -> 6
+veigar mid -> 16
+vayne bot -> 12
+lux sup -> 27
+----------------
+garen top -> 19
+diana jng -> 12
+aurora mid -> 6
+kaisa bot -> 34
+lulu sup -> 17
+sett top -> 17
+nunu jng -> 7
+velkoz mid -> 6
+tristana bot -> 17
+camille sup -> 1
+----------------
+akali top -> 6
+akali marked as done (98.2% confidence)
+nunu jng -> 8
+zed mid -> 16
+jhin bot -> 18
+jhin marked as done (100.0% confidence)
+soraka sup -> 7
+mordekaiser top -> 14
+sejuani jng -> 4
+lux mid -> 10
+caitlyn bot -> 41
+senna sup -> 13
+----------------
+yone top -> 14
+ekko jng -> 5
+gangplank mid -> 2
+twitch bot -> 17
+soraka sup -> 8
+trundle top -> 4
+wukong jng -> 16
+katarina mid -> 17
+veigar bot -> 7
+brand sup -> 10
+----------------
+shen top -> 12
+talon jng -> 11
+seraphine mid -> 1
+ezreal bot -> 19
+neeko sup -> 3
+gangplank top -> 8
+kayn jng -> 23
+malzahar mid -> 15
+vayne bot -> 13
+rakan sup -> 7
+----------------
+sett top -> 18
+warwick jng -> 17
+yone mid -> 10
+mel bot -> 7
+lux sup -> 28
+teemo top -> 11
+vi jng -> 7
+yasuo mid -> 16
+caitlyn bot -> 42
+seraphine sup -> 21
+----------------
+ekko top -> 1
+wukong jng -> 17
+malphite mid -> 2
+jinx bot -> 32
+rell sup -> 9
+smolder top -> 2
+masteryi jng -> 19
+qiyana mid -> 5
+ashe bot -> 26
+milio sup -> 15
+----------------
+24% THROUGH (600/2500 API CALLS)
+----------------
+yorick top -> 7
+mordekaiser jng -> 3
+mel mid -> 13
+tristana bot -> 18
+janna sup -> 8
+fiora top -> 7
+drmundo jng -> 1
+ahri mid -> 26
+missfortune bot -> 24
+yuumi sup -> 10
+----------------
+locke top -> 2
+diana jng -> 13
+ahri mid -> 27
+yunara bot -> 10
+pantheon sup -> 7
+garen top -> 20
+nunu jng -> 9
+aurora mid -> 7
+tristana bot -> 19
+thresh sup -> 21
+thresh marked as done (100.0% confidence)
+----------------
+Rate limited fetching match ids for puuid i3MhFrLmF5YIP4JUbp8i2zZX0n8SSZnCTbyfDoRupPDTZinlR-gU8YL4RMS7SWimO-9j8f0lTH7MEA, waiting 73s
+teemo top -> 12
+nocturne jng -> 16
+sylas mid -> 5
+lux bot -> 2
+sion sup -> 1
+shyvana top -> 2
+mordekaiser jng -> 4
+fizz mid -> 9
+senna bot -> 3
+brand sup -> 11
+----------------
+poppy top -> 1
+riven jng -> 1
+annie mid -> 8
+jinx bot -> 33
+zilean sup -> 7
+aatrox top -> 9
+vi jng -> 8
+zed mid -> 17
+caitlyn bot -> 43
+veigar sup -> 1
+----------------
+teemo top -> 13
+wukong jng -> 18
+veigar mid -> 17
+smolder bot -> 15
+braum sup -> 15
+malzahar top -> 3
+amumu jng -> 5
+chogath mid -> 1
+kalista bot -> 5
+soraka sup -> 9
+----------------
+irelia top -> 6
+skarner jng -> 3
+sylas mid -> 6
+ashe bot -> 27
+seraphine sup -> 22
+aatrox top -> 10
+kindred jng -> 4
+talon mid -> 3
+mel bot -> 8
+thresh sup -> 22
+----------------
+irelia top -> 7
+drmundo jng -> 2
+kassadin mid -> 4
+missfortune bot -> 25
+pyke sup -> 16
+renekton top -> 10
+rammus jng -> 7
+naafiri mid -> 8
+jhin bot -> 19
+velkoz sup -> 7
+----------------
+warwick top -> 3
+leesin jng -> 12
+mel mid -> 14
+tristana bot -> 20
+maokai sup -> 8
+ambessa top -> 5
+fiddlesticks jng -> 5
+syndra mid -> 12
+kogmaw bot -> 7
+lulu sup -> 18
+----------------
+darius top -> 26
+kayn jng -> 24
+twistedfate mid -> 13
+aphelios bot -> 11
+swain sup -> 7
+garen top -> 21
+garen marked as done (100.0% confidence)
+diana jng -> 14
+xinzhao mid -> 2
+zeri bot -> 11
+senna sup -> 14
+----------------
+tahmkench top -> 9
+masteryi jng -> 20
+kassadin mid -> 5
+kaisa bot -> 35
+morgana sup -> 20
+garen top -> 22
+belveth jng -> 8
+ahri mid -> 28
+jinx bot -> 34
+nami sup -> 12
+----------------
+fiora top -> 8
+sylas jng -> 13
+sylas marked as done (95.3% confidence)
+neeko mid -> 1
+ezreal bot -> 20
+zilean sup -> 8
+jayce top -> 5
+khazix jng -> 11
+xerath mid -> 7
+kaisa bot -> 36
+nami sup -> 13
+----------------
+ahri top -> 2
+nautilus jng -> 1
+katarina mid -> 18
+jhin bot -> 20
+seraphine sup -> 23
+malphite top -> 8
+kayn jng -> 25
+galio mid -> 5
+twitch bot -> 18
+twitch marked as done (100.0% confidence)
+pyke sup -> 17
+----------------
+kayle top -> 12
+graves jng -> 6
+yone mid -> 11
+brand bot -> 3
+nautilus sup -> 23
+zac top -> 1
+chogath jng -> 3
+ahri mid -> 29
+kogmaw bot -> 8
+morgana sup -> 21
+----------------
+sett top -> 19
+teemo jng -> 2
+twistedfate mid -> 14
+jhin bot -> 21
+lux sup -> 29
+shen top -> 13
+viego jng -> 26
+diana mid -> 5
+brand bot -> 4
+nami sup -> 14
+----------------
+tahmkench top -> 10
+briar jng -> 17
+lissandra mid -> 11
+aphelios bot -> 12
+nami sup -> 15
+mordekaiser top -> 15
+masteryi jng -> 21
+katarina mid -> 19
+katarina marked as done (100.0% confidence)
+twitch bot -> 19
+morgana sup -> 22
+----------------
+malphite top -> 9
+wukong jng -> 19
+vladimir mid -> 9
+kaisa bot -> 37
+sona sup -> 6
+mordekaiser top -> 16
+ivern jng -> 1
+velkoz mid -> 7
+smolder bot -> 16
+nami sup -> 16
+----------------
+sett top -> 20
+sett marked as done (100.0% confidence)
+jax jng -> 5
+xerath mid -> 8
+yunara bot -> 11
+seraphine sup -> 24
+teemo top -> 14
+zac jng -> 8
+syndra mid -> 13
+smolder bot -> 17
+smolder marked as done (100.0% confidence)
+pantheon sup -> 8
+----------------
+ambessa top -> 6
+talon jng -> 12
+hwei mid -> 6
+jhin bot -> 22
+xerath sup -> 6
+zaahen top -> 6
+sylas jng -> 14
+ekko mid -> 9
+ezreal bot -> 21
+ezreal marked as done (100.0% confidence)
+poppy sup -> 8
+----------------
+darius top -> 27
+talon jng -> 13
+chogath mid -> 2
+kalista bot -> 6
+janna sup -> 9
+anivia top -> 4
+elise jng -> 4
+hwei mid -> 7
+zeri bot -> 12
+leona sup -> 23
+----------------
+mordekaiser top -> 17
+mordekaiser marked as done (100.0% confidence)
+shyvana jng -> 11
+akali mid -> 16
+karthus bot -> 1
+neeko sup -> 4
+urgot top -> 7
+wukong jng -> 20
+wukong marked as done (100.0% confidence)
+yasuo mid -> 17
+ziggs bot -> 5
+seraphine sup -> 25
+----------------
+gnar top -> 12
+sylas jng -> 15
+katarina mid -> 20
+yunara bot -> 12
+blitzcrank sup -> 10
+sett top -> 21
+taliyah jng -> 2
+twistedfate mid -> 15
+jinx bot -> 35
+lulu sup -> 19
+----------------
+irelia top -> 8
+nocturne jng -> 17
+malzahar mid -> 16
+caitlyn bot -> 44
+soraka sup -> 10
+jax top -> 14
+nidalee jng -> 7
+xerath mid -> 9
+tristana bot -> 21
+tristana marked as done (100.0% confidence)
+braum sup -> 16
+----------------
+aatrox top -> 11
+shyvana jng -> 12
+annie mid -> 9
+jhin bot -> 23
+shaco sup -> 3
+ksante top -> 7
+zed jng -> 7
+malzahar mid -> 17
+zac bot -> 1
+xerath sup -> 7
+----------------
+nasus top -> 8
+teemo jng -> 3
+syndra mid -> 14
+caitlyn bot -> 45
+thresh sup -> 23
+sett top -> 22
+leesin jng -> 13
+anivia mid -> 8
+jhin bot -> 24
+leona sup -> 24
+----------------
+qiyana top -> 1
+viego jng -> 27
+mel mid -> 15
+aphelios bot -> 13
+senna sup -> 15
+chogath top -> 15
+kayn jng -> 26
+veigar mid -> 18
+jhin bot -> 25
+seraphine sup -> 26
+----------------
+yorick top -> 8
+shyvana jng -> 13
+xerath mid -> 10
+sivir bot -> 5
+thresh sup -> 24
+tahmkench top -> 11
+vi jng -> 9
+kaisa mid -> 2
+missfortune bot -> 26
+morgana sup -> 23
+----------------
+yone top -> 15
+zac jng -> 9
+syndra mid -> 15
+kaisa bot -> 38
+rell sup -> 10
+elise top -> 1
+wukong jng -> 21
+yasuo mid -> 18
+viktor bot -> 2
+nautilus sup -> 24
+----------------
+singed top -> 5
+ekko jng -> 6
+zoe mid -> 5
+yunara bot -> 13
+leona sup -> 25
+udyr top -> 3
+jax jng -> 6
+ahri mid -> 30
+vayne bot -> 14
+lulu sup -> 20
+lulu marked as done (100.0% confidence)
+----------------
+twitch top -> 1
+kindred jng -> 5
+riven mid -> 1
+tristana bot -> 22
+seraphine sup -> 27
+zac top -> 2
+elise jng -> 5
+brand mid -> 3
+missfortune bot -> 27
+mel sup -> 4
+----------------
+yone top -> 16
+shen jng -> 5
+cassiopeia mid -> 4
+zeri bot -> 13
+alistar sup -> 5
+mordekaiser top -> 18
+kayn jng -> 27
+lissandra mid -> 12
+twitch bot -> 20
+nautilus sup -> 25
+----------------
+vayne top -> 3
+zed jng -> 8
+yone mid -> 12
+ezreal bot -> 22
+morgana sup -> 24
+gnar top -> 13
+leesin jng -> 14
+mel mid -> 16
+mel marked as done (95.4% confidence)
+caitlyn bot -> 46
+tahmkench sup -> 11
+----------------
+ambessa top -> 7
+viego jng -> 28
+vex mid -> 9
+missfortune bot -> 28
+leona sup -> 26
+masteryi top -> 4
+diana jng -> 15
+galio mid -> 6
+jinx bot -> 36
+yuumi sup -> 11
+----------------
+singed top -> 6
+lillia jng -> 8
+diana mid -> 6
+diana marked as done (98.2% confidence)
+lucian bot -> 16
+seraphine sup -> 28
+gangplank top -> 9
+kayn jng -> 28
+kassadin mid -> 6
+aphelios bot -> 14
+yuumi sup -> 12
+----------------
+28% THROUGH (700/2500 API CALLS)
+----------------
+gragas top -> 6
+briar jng -> 18
+briar marked as done (100.0% confidence)
+orianna mid -> 8
+zeri bot -> 14
+leona sup -> 27
+garen top -> 23
+graves jng -> 7
+syndra mid -> 16
+seraphine bot -> 6
+teemo sup -> 3
+teemo marked as done (99.9% confidence)
+----------------
+kayle top -> 13
+khazix jng -> 12
+yasuo mid -> 19
+jinx bot -> 37
+braum sup -> 17
+darius top -> 28
+zed jng -> 9
+fizz mid -> 10
+lucian bot -> 17
+shen sup -> 1
+----------------
+yasuo top -> 6
+xinzhao jng -> 9
+ahri mid -> 31
+mel bot -> 9
+thresh sup -> 25
+tryndamere top -> 7
+lillia jng -> 9
+akali mid -> 17
+ezreal bot -> 23
+neeko sup -> 5
+----------------
+aatrox top -> 12
+lillia jng -> 10
+veigar mid -> 19
+aphelios bot -> 15
+blitzcrank sup -> 11
+mordekaiser top -> 19
+jax jng -> 7
+fizz mid -> 11
+jinx bot -> 38
+zyra sup -> 5
+----------------
+jayce top -> 6
+khazix jng -> 13
+leblanc mid -> 7
+caitlyn bot -> 47
+thresh sup -> 26
+diana top -> 1
+shyvana jng -> 14
+ziggs mid -> 2
+jhin bot -> 26
+nautilus sup -> 26
+----------------
+teemo top -> 15
+kayn jng -> 29
+sejuani mid -> 1
+ezreal bot -> 24
+senna sup -> 16
+olaf top -> 8
+nunu jng -> 10
+naafiri mid -> 9
+jinx bot -> 39
+leona sup -> 28
+----------------
+yorick top -> 9
+rammus jng -> 8
+kassadin mid -> 7
+aphelios bot -> 16
+xerath sup -> 8
+ornn top -> 9
+shyvana jng -> 15
+irelia mid -> 7
+kogmaw bot -> 9
+nami sup -> 17
+----------------
+urgot top -> 8
+masteryi jng -> 22
+diana mid -> 7
+jhin bot -> 27
+lulu sup -> 21
+renekton top -> 11
+kayn jng -> 30
+ahri mid -> 32
+jinx bot -> 40
+velkoz sup -> 8
+----------------
+renekton top -> 12
+nidalee jng -> 8
+mel mid -> 17
+missfortune bot -> 29
+neeko sup -> 6
+yone top -> 17
+khazix jng -> 14
+velkoz mid -> 8
+caitlyn bot -> 48
+nami sup -> 18
+----------------
+twistedfate top -> 1
+rammus jng -> 9
+akali mid -> 18
+kaisa bot -> 39
+nautilus sup -> 27
+rumble top -> 3
+kayn jng -> 31
+caitlyn mid -> 1
+missfortune bot -> 30
+lux sup -> 30
+----------------
+mordekaiser top -> 20
+lillia jng -> 11
+yasuo mid -> 20
+jinx bot -> 41
+thresh sup -> 27
+nasus top -> 9
+shaco jng -> 10
+yone mid -> 13
+ashe bot -> 28
+locke sup -> 1
+----------------
+chogath top -> 16
+chogath marked as done (100.0% confidence)
+wukong jng -> 22
+zed mid -> 18
+lucian bot -> 18
+sona sup -> 7
+urgot top -> 9
+hecarim jng -> 8
+qiyana mid -> 6
+jhin bot -> 28
+nami sup -> 19
+----------------
+sett top -> 23
+graves jng -> 8
+akali mid -> 19
+smolder bot -> 18
+velkoz sup -> 9
+chogath top -> 17
+nautilus jng -> 2
+orianna mid -> 9
+lucian bot -> 19
+yuumi sup -> 13
+----------------
+tahmkench top -> 12
+talon jng -> 14
+twistedfate mid -> 16
+kaisa bot -> 40
+lux sup -> 31
+nasus top -> 10
+warwick jng -> 18
+warwick marked as done (100.0% confidence)
+veigar mid -> 20
+missfortune bot -> 31
+soraka sup -> 11
+----------------
+ornn top -> 10
+diana jng -> 16
+ekko mid -> 10
+samira bot -> 9
+mel sup -> 5
+rumble top -> 4
+vi jng -> 10
+viktor mid -> 12
+nilah bot -> 8
+leona sup -> 29
+----------------
+teemo top -> 16
+lillia jng -> 12
+anivia mid -> 9
+tristana bot -> 23
+yuumi sup -> 14
+darius top -> 29
+chogath jng -> 4
+syndra mid -> 17
+twitch bot -> 21
+seraphine sup -> 29
+----------------
+mordekaiser top -> 21
+taliyah jng -> 3
+katarina mid -> 21
+vayne bot -> 15
+leona sup -> 30
+ambessa top -> 8
+nasus jng -> 6
+fizz mid -> 12
+caitlyn bot -> 49
+blitzcrank sup -> 12
+----------------
+sett top -> 24
+malphite jng -> 2
+malzahar mid -> 18
+malzahar marked as done (100.0% confidence)
+samira bot -> 10
+morgana sup -> 25
+teemo top -> 17
+viego jng -> 29
+riven mid -> 2
+swain bot -> 2
+lux sup -> 32
+----------------
+camille top -> 5
+lillia jng -> 13
+qiyana mid -> 7
+yunara bot -> 14
+soraka sup -> 12
+kled top -> 5
+twitch jng -> 3
+zoe mid -> 6
+kaisa bot -> 41
+pantheon sup -> 9
+----------------
+Rate limited fetching match ids for puuid 5w3_JdgtS_AILG_YcSMeFsnssez5X7gk8WMxaTLGIOLKhWyOUeTa9TYUvAywKlmiL6z21gETFP1mPA, waiting 64s
+tahmkench top -> 13
+volibear jng -> 6
+mel mid -> 18
+missfortune bot -> 32
+morgana sup -> 26
+kayle top -> 14
+amumu jng -> 6
+yone mid -> 14
+caitlyn bot -> 50
+lux sup -> 33
+----------------
+tryndamere top -> 8
+nasus jng -> 7
+syndra mid -> 18
+smolder bot -> 19
+ashe sup -> 3
+vayne top -> 4
+diana jng -> 17
+sylas mid -> 7
+samira bot -> 11
+thresh sup -> 28
+----------------
+kaisa top -> 3
+briar jng -> 19
+orianna mid -> 10
+varus bot -> 3
+seraphine sup -> 30
+mordekaiser top -> 22
+shaco jng -> 11
+missfortune mid -> 1
+twitch bot -> 22
+nautilus sup -> 28
+----------------
+olaf top -> 9
+masteryi jng -> 23
+smolder mid -> 3
+missfortune bot -> 33
+nami sup -> 20
+urgot top -> 10
+qiyana jng -> 7
+mel mid -> 19
+jinx bot -> 42
+thresh sup -> 29
+----------------
+darius top -> 30
+briar jng -> 20
+ahri mid -> 33
+ezreal bot -> 25
+alistar sup -> 6
+rumble top -> 5
+viego jng -> 30
+yasuo mid -> 21
+caitlyn bot -> 51
+brand sup -> 12
+brand marked as done (98.6% confidence)
+----------------
+garen top -> 24
+morgana jng -> 1
+malzahar mid -> 19
+caitlyn bot -> 52
+milio sup -> 16
+tryndamere top -> 9
+pantheon jng -> 3
+aurora mid -> 8
+swain bot -> 3
+nautilus sup -> 29
+----------------
+rumble top -> 6
+twitch jng -> 4
+aurelionsol mid -> 5
+ezreal bot -> 26
+janna sup -> 10
+teemo top -> 18
+nocturne jng -> 18
+yone mid -> 15
+caitlyn bot -> 53
+pyke sup -> 18
+----------------
+heimerdinger top -> 8
+briar jng -> 21
+ahri mid -> 34
+tristana bot -> 24
+braum sup -> 18
+mordekaiser top -> 23
+nocturne jng -> 19
+galio mid -> 7
+xayah bot -> 7
+nautilus sup -> 30
+----------------
+gwen top -> 5
+vi jng -> 11
+yone mid -> 16
+jinx bot -> 43
+thresh sup -> 30
+garen top -> 25
+sejuani jng -> 5
+veigar mid -> 21
+yasuo bot -> 4
+sion sup -> 2
+----------------
+mordekaiser top -> 24
+trundle jng -> 3
+yasuo mid -> 22
+missfortune bot -> 34
+milio sup -> 17
+tryndamere top -> 10
+briar jng -> 22
+lissandra mid -> 13
+ashe bot -> 29
+seraphine sup -> 31
+----------------
+aatrox top -> 13
+elise jng -> 6
+akali mid -> 20
+sivir bot -> 6
+blitzcrank sup -> 13
+garen top -> 26
+chogath jng -> 5
+hwei mid -> 8
+xayah bot -> 8
+leona sup -> 31
+----------------
+gangplank top -> 10
+nautilus jng -> 3
+diana mid -> 8
+jhin bot -> 29
+neeko sup -> 7
+aatrox top -> 14
+gwen jng -> 1
+fizz mid -> 13
+katarina bot -> 3
+lulu sup -> 22
+----------------
+chogath top -> 18
+ambessa jng -> 4
+sylas mid -> 8
+kaisa bot -> 42
+seraphine sup -> 32
+illaoi top -> 6
+viego jng -> 31
+zed mid -> 19
+ashe bot -> 30
+milio sup -> 18
+----------------
+gragas top -> 7
+vi jng -> 12
+malzahar mid -> 20
+missfortune bot -> 35
+seraphine sup -> 33
+malphite top -> 10
+ivern jng -> 2
+xerath mid -> 11
+kaisa bot -> 43
+leona sup -> 32
+----------------
+32% THROUGH (800/2500 API CALLS)
+----------------
+varus top -> 2
+malphite jng -> 3
+leblanc mid -> 8
+twitch bot -> 23
+braum sup -> 19
+garen top -> 27
+drmundo jng -> 3
+fizz mid -> 14
+ashe bot -> 31
+seraphine sup -> 34
+----------------
+yone top -> 18
+nocturne jng -> 20
+mel mid -> 20
+jhin bot -> 30
+leona sup -> 33
+mordekaiser top -> 25
+kayn jng -> 32
+diana mid -> 9
+smolder bot -> 20
+swain sup -> 8
+----------------
+yasuo top -> 7
+nunu jng -> 11
+syndra mid -> 19
+syndra marked as done (100.0% confidence)
+vladimir bot -> 1
+poppy sup -> 9
+darius top -> 31
+talon jng -> 15
+fizz mid -> 15
+sivir bot -> 7
+zyra sup -> 6
+----------------
+yorick top -> 10
+shyvana jng -> 16
+yone mid -> 17
+missfortune bot -> 36
+ashe sup -> 4
+gnar top -> 14
+viego jng -> 32
+vex mid -> 10
+kogmaw bot -> 10
+blitzcrank sup -> 14
+----------------
+sylas top -> 2
+rammus jng -> 10
+tryndamere mid -> 2
+ezreal bot -> 27
+milio sup -> 19
+nasus top -> 11
+belveth jng -> 9
+kassadin mid -> 8
+ashe bot -> 32
+swain sup -> 9
+----------------
+irelia top -> 9
+olaf jng -> 3
+ekko mid -> 11
+jinx bot -> 44
+pantheon sup -> 10
+shen top -> 14
+shaco jng -> 12
+veigar mid -> 22
+missfortune bot -> 37
+seraphine sup -> 35
+----------------
+kled top -> 6
+amumu jng -> 7
+ryze mid -> 6
+ziggs bot -> 6
+seraphine sup -> 36
+mordekaiser top -> 26
+volibear jng -> 7
+yorick mid -> 1
+swain bot -> 4
+pyke sup -> 19
+----------------
+malphite top -> 11
+shen jng -> 6
+shen marked as done (97.0% confidence)
+viktor mid -> 13
+aphelios bot -> 17
+swain sup -> 10
+sett top -> 25
+ekko jng -> 7
+zed mid -> 20
+vayne bot -> 16
+lulu sup -> 23
+----------------
+urgot top -> 11
+kayn jng -> 33
+yone mid -> 18
+veigar bot -> 8
+morgana sup -> 27
+mordekaiser top -> 27
+jax jng -> 8
+sylas mid -> 9
+tristana bot -> 25
+pantheon sup -> 11
+----------------
+akali top -> 7
+sylas jng -> 16
+kogmaw mid -> 2
+jhin bot -> 31
+thresh sup -> 31
+yasuo top -> 8
+ekko jng -> 8
+irelia mid -> 8
+missfortune bot -> 38
+zilean sup -> 9
+----------------
+illaoi top -> 7
+khazix jng -> 15
+malzahar mid -> 21
+ashe bot -> 33
+brand sup -> 13
+jax top -> 15
+leesin jng -> 15
+akshan mid -> 8
+ezreal bot -> 28
+nami sup -> 21
+nami marked as done (100.0% confidence)
+----------------
+jax top -> 16
+jax marked as done (95.4% confidence)
+masteryi jng -> 24
+ahri mid -> 35
+jhin bot -> 32
+lux sup -> 34
+zaahen top -> 7
+leesin jng -> 16
+ekko mid -> 12
+caitlyn bot -> 54
+senna sup -> 17
+----------------
+rumble top -> 7
+zaahen jng -> 2
+diana mid -> 10
+jhin bot -> 33
+seraphine sup -> 37
+singed top -> 7
+shyvana jng -> 17
+fizz mid -> 16
+smolder bot -> 21
+nautilus sup -> 31
+----------------
+teemo top -> 19
+warwick jng -> 19
+vladimir mid -> 10
+aphelios bot -> 18
+lulu sup -> 24
+garen top -> 28
+darius jng -> 4
+gwen mid -> 2
+kaisa bot -> 44
+tahmkench sup -> 12
+----------------
+nasus top -> 12
+jarvaniv jng -> 7
+ekko mid -> 13
+twitch bot -> 24
+lulu sup -> 25
+gangplank top -> 11
+sylas jng -> 17
+syndra mid -> 20
+tristana bot -> 26
+thresh sup -> 32
+----------------
+gnar top -> 15
+nocturne jng -> 21
+nocturne marked as done (100.0% confidence)
+velkoz mid -> 9
+sivir bot -> 8
+heimerdinger sup -> 1
+fiora top -> 9
+masteryi jng -> 25
+ahri mid -> 36
+ashe bot -> 34
+lux sup -> 35
+----------------
+urgot top -> 12
+naafiri jng -> 7
+vladimir mid -> 11
+vayne bot -> 17
+vayne marked as done (100.0% confidence)
+blitzcrank sup -> 15
+gragas top -> 8
+sejuani jng -> 6
+leblanc mid -> 9
+caitlyn bot -> 55
+morgana sup -> 28
+----------------
+garen top -> 29
+twitch jng -> 5
+kassadin mid -> 9
+aphelios bot -> 19
+brand sup -> 14
+warwick top -> 4
+kayn jng -> 34
+swain mid -> 5
+yunara bot -> 15
+mel sup -> 6
+----------------
+malphite top -> 12
+ekko jng -> 9
+veigar mid -> 23
+yunara bot -> 16
+pyke sup -> 20
+mordekaiser top -> 28
+sejuani jng -> 7
+tryndamere mid -> 3
+kaisa bot -> 45
+lulu sup -> 26
+----------------
+drmundo top -> 11
+khazix jng -> 16
+pantheon mid -> 3
+missfortune bot -> 39
+lux sup -> 36
+kled top -> 7
+diana jng -> 18
+brand mid -> 4
+tristana bot -> 27
+rakan sup -> 8
+----------------
+heimerdinger top -> 9
+talon jng -> 16
+katarina mid -> 22
+ashe bot -> 35
+nautilus sup -> 32
+ryze top -> 1
+briar jng -> 23
+ahri mid -> 37
+caitlyn bot -> 56
+lux sup -> 37
+----------------
+volibear top -> 6
+vi jng -> 13
+ahri mid -> 38
+missfortune bot -> 40
+zaahen sup -> 1
+aphelios top -> 1
+amumu jng -> 8
+malzahar mid -> 22
+kalista bot -> 7
+morgana sup -> 29
+----------------
+sion top -> 4
+fiddlesticks jng -> 6
+ziggs mid -> 3
+sivir bot -> 9
+karma sup -> 8
+ksante top -> 8
+pantheon jng -> 4
+pantheon marked as done (97.4% confidence)
+viktor mid -> 14
+zeri bot -> 15
+thresh sup -> 33
+----------------
+pantheon top -> 4
+nasus jng -> 8
+leblanc mid -> 10
+viktor bot -> 3
+nami sup -> 22
+naafiri top -> 1
+zed jng -> 10
+kayle mid -> 2
+swain bot -> 5
+xerath sup -> 9
+----------------
+chogath top -> 19
+rengar jng -> 8
+mel mid -> 21
+jinx bot -> 45
+karma sup -> 9
+zac top -> 3
+xinzhao jng -> 10
+malzahar mid -> 23
+kaisa bot -> 46
+teemo sup -> 4
+----------------
+zaahen top -> 8
+graves jng -> 9
+seraphine mid -> 2
+leblanc bot -> 1
+senna sup -> 18
+senna marked as done (100.0% confidence)
+fiora top -> 10
+kayn jng -> 35
+ahri mid -> 39
+kaisa bot -> 47
+alistar sup -> 7
+----------------
+fiora top -> 11
+fiddlesticks jng -> 7
+xerath mid -> 12
+caitlyn bot -> 57
+rell sup -> 11
+kled top -> 8
+shen jng -> 7
+syndra mid -> 21
+smolder bot -> 22
+morgana sup -> 30
+----------------
+sett top -> 26
+graves jng -> 10
+gwen mid -> 3
+samira bot -> 12
+nami sup -> 23
+garen top -> 30
+ekko jng -> 10
+lissandra mid -> 14
+corki bot -> 2
+seraphine sup -> 38
+----------------
+malphite top -> 13
+teemo jng -> 4
+yone mid -> 19
+rengar bot -> 1
+ivern sup -> 2
+chogath top -> 20
+masteryi jng -> 26
+veigar mid -> 24
+caitlyn bot -> 58
+morgana sup -> 31
+----------------
+aatrox top -> 15
+zac jng -> 10
+katarina mid -> 23
+cassiopeia bot -> 1
+pantheon sup -> 12
+renekton top -> 13
+khazix jng -> 17
+syndra mid -> 22
+yunara bot -> 17
+lulu sup -> 27
+----------------
+jax top -> 17
+shaco jng -> 13
+viktor mid -> 15
+yasuo bot -> 5
+leona sup -> 34
+vladimir top -> 5
+jarvaniv jng -> 8
+naafiri mid -> 10
+smolder bot -> 23
+janna sup -> 11
+----------------
+garen top -> 31
+chogath jng -> 6
+xerath mid -> 13
+akshan bot -> 2
+tahmkench sup -> 13
+kayle top -> 15
+yasuo jng -> 1
+briar mid -> 1
+viego bot -> 1
+nautilus sup -> 33
+----------------
+36% THROUGH (900/2500 API CALLS)
+----------------
+yorick top -> 11
+rammus jng -> 11
+sylas mid -> 10
+jinx bot -> 46
+brand sup -> 15
+garen top -> 32
+lillia jng -> 14
+yone mid -> 20
+zeri bot -> 16
+rell sup -> 12
+----------------
+jax top -> 18
+xinzhao jng -> 11
+syndra mid -> 23
+senna bot -> 4
+nami sup -> 24
+olaf top -> 10
+jarvaniv jng -> 9
+diana mid -> 11
+jhin bot -> 34
+briar sup -> 1
+----------------
+malphite top -> 14
+jax jng -> 9
+malzahar mid -> 24
+caitlyn bot -> 59
+lux sup -> 38
+renekton top -> 14
+warwick jng -> 20
+sylas mid -> 11
+missfortune bot -> 41
+morgana sup -> 32
+----------------
+illaoi top -> 8
+warwick jng -> 21
+akali mid -> 21
+jinx bot -> 47
+thresh sup -> 34
+mordekaiser top -> 29
+sejuani jng -> 8
+anivia mid -> 10
+missfortune bot -> 42
+bard sup -> 10
+----------------
+Rate limited fetching match ids for puuid qUfe9grHkkQIwBMIaD3gqTaPm58pwaWuLnn9zbx03ngxrrR61mErmDtFfeFRxuMueM5fqx2hDITPhQ, waiting 67s
+gnar top -> 16
+zed jng -> 11
+ahri mid -> 40
+lucian bot -> 20
+lucian marked as done (100.0% confidence)
+sona sup -> 8
+renekton top -> 15
+nasus jng -> 9
+veigar mid -> 25
+ezreal bot -> 29
+alistar sup -> 8
+----------------
+teemo top -> 20
+amumu jng -> 9
+swain mid -> 6
+tristana bot -> 28
+bard sup -> 11
+drmundo top -> 12
+rengar jng -> 9
+mel mid -> 22
+jinx bot -> 48
+galio sup -> 3
+----------------
+malphite top -> 15
+malphite marked as done (100.0% confidence)
+leesin jng -> 17
+fizz mid -> 17
+jinx bot -> 49
+nautilus sup -> 34
+akali top -> 8
+shyvana jng -> 18
+ekko mid -> 14
+caitlyn bot -> 60
+senna sup -> 19
+----------------
+aatrox top -> 16
+kayn jng -> 36
+syndra mid -> 24
+caitlyn bot -> 61
+seraphine sup -> 39
+gwen top -> 6
+briar jng -> 24
+taliyah mid -> 1
+missfortune bot -> 43
+brand sup -> 16
+----------------
+masteryi top -> 5
+nocturne jng -> 22
+akali mid -> 22
+missfortune bot -> 44
+seraphine sup -> 40
+kennen top -> 3
+ekko jng -> 11
+cassiopeia mid -> 5
+senna bot -> 5
+nautilus sup -> 35
+----------------
+yorick top -> 12
+rengar jng -> 10
+hwei mid -> 9
+missfortune bot -> 45
+thresh sup -> 35
+irelia top -> 10
+pantheon jng -> 5
+ahri mid -> 41
+veigar bot -> 9
+morgana sup -> 33
+----------------
+kayle top -> 16
+briar jng -> 25
+zoe mid -> 7
+zeri bot -> 17
+bard sup -> 12
+jayce top -> 7
+drmundo jng -> 4
+mordekaiser mid -> 1
+corki bot -> 3
+morgana sup -> 34
+----------------
+ambessa top -> 9
+trundle jng -> 4
+vex mid -> 11
+ezreal bot -> 30
+xerath sup -> 10
+rammus top -> 2
+nocturne jng -> 23
+akali mid -> 23
+veigar bot -> 10
+malphite sup -> 2
+----------------
+jax top -> 19
+kayn jng -> 37
+naafiri mid -> 11
+vayne bot -> 18
+malphite sup -> 3
+kennen top -> 4
+khazix jng -> 18
+malzahar mid -> 25
+varus bot -> 4
+yorick sup -> 1
+----------------
+tryndamere top -> 11
+evelynn jng -> 2
+azir mid -> 2
+smolder bot -> 24
+milio sup -> 20
+ziggs top -> 1
+masteryi jng -> 27
+diana mid -> 12
+missfortune bot -> 46
+leona sup -> 35
+----------------
+zaahen top -> 9
+masteryi jng -> 28
+irelia mid -> 9
+caitlyn bot -> 62
+senna sup -> 20
+mordekaiser top -> 30
+pantheon jng -> 6
+vex mid -> 12
+jinx bot -> 50
+teemo sup -> 5
+----------------
+qiyana top -> 2
+xinzhao jng -> 12
+hwei mid -> 10
+vayne bot -> 19
+zyra sup -> 7
+yone top -> 19
+graves jng -> 11
+X
+kogmaw bot -> 11
+senna sup -> 21
+----------------
+kayle top -> 17
+volibear jng -> 8
+viktor mid -> 16
+swain bot -> 6
+karma sup -> 10
+katarina top -> 1
+chogath jng -> 7
+heimerdinger mid -> 3
+jinx bot -> 51
+zilean sup -> 10
+----------------
+sett top -> 27
+masteryi jng -> 29
+talon mid -> 4
+tristana bot -> 29
+thresh sup -> 36
+fiora top -> 12
+nocturne jng -> 24
+malzahar mid -> 26
+samira bot -> 13
+nami sup -> 25
+----------------
+volibear top -> 7
+belveth jng -> 10
+diana mid -> 13
+jinx bot -> 52
+yuumi sup -> 15
+darius top -> 32
+viego jng -> 33
+katarina mid -> 24
+irelia bot -> 1
+nautilus sup -> 36
+----------------
+mordekaiser top -> 31
+nautilus jng -> 4
+ahri mid -> 42
+xayah bot -> 9
+lux sup -> 39
+ambessa top -> 10
+twistedfate jng -> 1
+yasuo mid -> 23
+caitlyn bot -> 63
+tahmkench sup -> 14
+----------------
+jax top -> 20
+olaf jng -> 4
+ekko mid -> 15
+jhin bot -> 35
+nasus sup -> 2
+kassadin top -> 1
+viego jng -> 34
+chogath mid -> 3
+tristana bot -> 30
+senna sup -> 22
+----------------
+sett top -> 28
+amumu jng -> 10
+yasuo mid -> 24
+kaisa bot -> 48
+nami sup -> 26
+fiora top -> 13
+drmundo jng -> 5
+mel mid -> 23
+draven bot -> 5
+thresh sup -> 37
+----------------
+jax top -> 21
+khazix jng -> 19
+qiyana mid -> 8
+vayne bot -> 20
+nami sup -> 27
+swain top -> 3
+twitch jng -> 6
+jayce mid -> 3
+smolder bot -> 25
+soraka sup -> 13
+----------------
+illaoi top -> 9
+pantheon jng -> 7
+mel mid -> 24
+sivir bot -> 10
+zyra sup -> 8
+sett top -> 29
+diana jng -> 19
+malzahar mid -> 27
+caitlyn bot -> 64
+brand sup -> 17
+----------------
+drmundo top -> 13
+diana jng -> 20
+hwei mid -> 11
+draven bot -> 6
+swain sup -> 11
+trundle top -> 5
+warwick jng -> 22
+xerath mid -> 14
+jinx bot -> 53
+brand sup -> 18
+----------------
+irelia top -> 11
+aatrox jng -> 1
+ryze mid -> 7
+ezreal bot -> 31
+karma sup -> 11
+camille top -> 6
+jayce jng -> 1
+velkoz mid -> 10
+vayne bot -> 21
+bard sup -> 13
+----------------
+jax top -> 22
+zac jng -> 11
+mel mid -> 25
+smolder bot -> 26
+janna sup -> 12
+swain top -> 4
+hecarim jng -> 9
+ahri mid -> 43
+yunara bot -> 18
+galio sup -> 4
+----------------
+malphite top -> 16
+shaco jng -> 14
+yone mid -> 21
+smolder bot -> 27
+lux sup -> 40
+cassiopeia top -> 1
+warwick jng -> 23
+yasuo mid -> 25
+twitch bot -> 25
+blitzcrank sup -> 16
+----------------
+olaf top -> 11
+viego jng -> 35
+cassiopeia mid -> 6
+caitlyn bot -> 65
+lux sup -> 41
+yone top -> 20
+elise jng -> 7
+sion mid -> 1
+tristana bot -> 31
+karma sup -> 12
+----------------
+yone top -> 21
+zed jng -> 12
+brand mid -> 5
+ezreal bot -> 32
+shen sup -> 2
+pantheon top -> 5
+karthus jng -> 2
+fizz mid -> 18
+ashe bot -> 36
+leona sup -> 36
+----------------
+skarner top -> 1
+udyr jng -> 4
+xerath mid -> 15
+jhin bot -> 36
+blitzcrank sup -> 17
+tryndamere top -> 12
+nocturne jng -> 25
+leblanc mid -> 11
+caitlyn bot -> 66
+bard sup -> 14
+----------------
+shen top -> 15
+graves jng -> 12
+naafiri mid -> 12
+twitch bot -> 26
+lux sup -> 42
+garen top -> 33
+leesin jng -> 18
+veigar mid -> 26
+caitlyn bot -> 67
+zyra sup -> 9
+----------------
+riven top -> 3
+nocturne jng -> 26
+twistedfate mid -> 17
+kaisa bot -> 49
+tahmkench sup -> 15
+naafiri top -> 2
+shyvana jng -> 19
+shyvana marked as done (100.0% confidence)
+veigar mid -> 27
+lucian bot -> 21
+milio sup -> 21
+milio marked as done (100.0% confidence)
+----------------
+40% THROUGH (1000/2500 API CALLS)
+----------------
+sett top -> 30
+teemo jng -> 5
+smolder mid -> 4
+darius bot -> 1
+alistar sup -> 9
+malphite top -> 17
+briar jng -> 26
+veigar mid -> 28
+kalista bot -> 8
+milio sup -> 22
+----------------
+camille top -> 7
+leesin jng -> 19
+fizz mid -> 19
+ashe bot -> 37
+nami sup -> 28
+olaf top -> 12
+rengar jng -> 11
+syndra mid -> 25
+jinx bot -> 54
+karma sup -> 13
+----------------
+trundle top -> 6
+nocturne jng -> 27
+malzahar mid -> 28
+caitlyn bot -> 68
+zyra sup -> 10
+tahmkench top -> 14
+sett jng -> 2
+fizz mid -> 20
+fizz marked as done (100.0% confidence)
+samira bot -> 14
+thresh sup -> 38
+----------------
+ornn top -> 11
+rammus jng -> 12
+vex mid -> 13
+missfortune bot -> 47
+swain sup -> 12
+zaahen top -> 10
+masteryi jng -> 30
+sylas mid -> 12
+aphelios bot -> 20
+aphelios marked as done (100.0% confidence)
+nami sup -> 29
+----------------
+garen top -> 34
+volibear jng -> 9
+missfortune mid -> 2
+corki bot -> 4
+swain sup -> 13
+swain marked as done (95.3% confidence)
+zaahen top -> 11
+talon jng -> 17
+talon marked as done (100.0% confidence)
+irelia mid -> 10
+ashe bot -> 38
+lux sup -> 43
+----------------
+kayle top -> 18
+warwick jng -> 24
+chogath mid -> 4
+ashe bot -> 39
+nami sup -> 30
+darius top -> 33
+ekko jng -> 12
+yone mid -> 22
+jinx bot -> 55
+lux sup -> 44
+----------------
+singed top -> 8
+shaco jng -> 15
+leblanc mid -> 12
+tristana bot -> 32
+veigar sup -> 2
+vayne top -> 5
+graves jng -> 13
+malzahar mid -> 29
+ezreal bot -> 33
+zyra sup -> 11
+----------------
+mordekaiser top -> 32
+jarvaniv jng -> 10
+lissandra mid -> 15
+corki bot -> 5
+thresh sup -> 39
+udyr top -> 4
+elise jng -> 8
+kassadin mid -> 10
+missfortune bot -> 48
+velkoz sup -> 10
+----------------
+darius top -> 34
+wukong jng -> 23
+mel mid -> 26
+vayne bot -> 22
+senna sup -> 23
+irelia top -> 12
+nocturne jng -> 28
+ekko mid -> 16
+jinx bot -> 56
+nautilus sup -> 37
+----------------
+zaahen top -> 12
+warwick jng -> 25
+veigar mid -> 29
+kaisa bot -> 50
+maokai sup -> 9
+varus top -> 3
+kayn jng -> 38
+qiyana mid -> 9
+yunara bot -> 19
+rell sup -> 13
+----------------
+darius top -> 35
+zed jng -> 13
+cassiopeia mid -> 7
+lucian bot -> 22
+lulu sup -> 28
+twistedfate top -> 2
+olaf jng -> 5
+fizz mid -> 21
+teemo bot -> 1
+seraphine sup -> 41
+----------------
+rengar top -> 1
+wukong jng -> 24
+aurora mid -> 9
+draven bot -> 7
+nautilus sup -> 38
+quinn top -> 3
+jarvaniv jng -> 11
+orianna mid -> 11
+yunara bot -> 20
+seraphine sup -> 42
+----------------
+ambessa top -> 11
+chogath jng -> 8
+sylas mid -> 13
+twitch bot -> 27
+leona sup -> 37
+renekton top -> 16
+shyvana jng -> 20
+aurelionsol mid -> 6
+jhin bot -> 37
+shen sup -> 3
+----------------
+renekton top -> 17
+khazix jng -> 20
+akali mid -> 24
+ashe bot -> 40
+braum sup -> 20
+sett top -> 31
+vi jng -> 14
+mel mid -> 27
+missfortune bot -> 49
+thresh sup -> 40
+----------------
+cassiopeia top -> 2
+naafiri jng -> 8
+qiyana mid -> 10
+ezreal bot -> 34
+rell sup -> 14
+irelia top -> 13
+elise jng -> 9
+sylas mid -> 14
+vayne bot -> 23
+bard sup -> 15
+----------------
+garen top -> 35
+shaco jng -> 16
+kassadin mid -> 11
+jinx bot -> 57
+xerath sup -> 11
+volibear top -> 8
+shyvana jng -> 21
+fizz mid -> 22
+varus bot -> 5
+thresh sup -> 41
+----------------
+shyvana top -> 3
+locke jng -> 2
+kassadin mid -> 12
+jinx bot -> 58
+blitzcrank sup -> 18
+darius top -> 36
+viego jng -> 36
+galio mid -> 8
+caitlyn bot -> 69
+lux sup -> 45
+----------------
+ornn top -> 12
+nidalee jng -> 9
+akali mid -> 25
+kaisa bot -> 51
+senna sup -> 24
+nasus top -> 13
+jayce jng -> 2
+cassiopeia mid -> 8
+ezreal bot -> 35
+velkoz sup -> 11
+----------------
+heimerdinger top -> 10
+sejuani jng -> 9
+jayce mid -> 4
+zeri bot -> 18
+zac sup -> 1
+renekton top -> 18
+shaco jng -> 17
+fizz mid -> 23
+vayne bot -> 24
+leona sup -> 38
+----------------
+mordekaiser top -> 33
+talon jng -> 18
+locke mid -> 11
+missfortune bot -> 50
+soraka sup -> 14
+xinzhao top -> 1
+viego jng -> 37
+sylas mid -> 15
+smolder bot -> 28
+veigar sup -> 3
+----------------
+heimerdinger top -> 11
+zed jng -> 14
+yone mid -> 23
+jhin bot -> 38
+chogath sup -> 1
+aatrox top -> 17
+jarvaniv jng -> 12
+annie mid -> 10
+ashe bot -> 41
+lulu sup -> 29
+----------------
+Rate limited fetching match ids for puuid pKALemn94giwg-_R9ryOFN-ce9Xno7ZTysfnWOn9ZWpN97QEf1fjs-qI757K_eRBgdD271xcSDGp5A, waiting 75s
+jax top -> 23
+shaco jng -> 18
+shaco marked as done (100.0% confidence)
+yone mid -> 24
+ezreal bot -> 36
+lulu sup -> 30
+ksante top -> 9
+amumu jng -> 11
+leblanc mid -> 13
+yasuo bot -> 6
+renata sup -> 3
+----------------
+olaf top -> 13
+viego jng -> 38
+akali mid -> 26
+xayah bot -> 10
+nami sup -> 31
+sett top -> 32
+briar jng -> 27
+lux mid -> 11
+ezreal bot -> 37
+milio sup -> 23
+----------------
+drmundo top -> 14
+leesin jng -> 20
+leesin marked as done (100.0% confidence)
+smolder mid -> 5
+missfortune bot -> 51
+seraphine sup -> 43
+caitlyn top -> 1
+warwick jng -> 26
+malzahar mid -> 30
+samira bot -> 15
+nami sup -> 32
+----------------
+tryndamere top -> 13
+jarvaniv jng -> 13
+xerath mid -> 16
+jinx bot -> 59
+lulu sup -> 31
+twistedfate top -> 3
+twistedfate marked as done (100.0% confidence)
+ekko jng -> 13
+kassadin mid -> 13
+caitlyn bot -> 70
+soraka sup -> 15
+----------------
+fiora top -> 14
+evelynn jng -> 3
+leblanc mid -> 14
+ziggs bot -> 7
+senna sup -> 25
+akali top -> 9
+masteryi jng -> 31
+twistedfate mid -> 18
+caitlyn bot -> 71
+thresh sup -> 42
+----------------
+malphite top -> 18
+volibear jng -> 10
+brand mid -> 6
+caitlyn bot -> 72
+lux sup -> 46
+teemo top -> 21
+evelynn jng -> 4
+ezreal bot -> 38
+senna sup -> 26
+----------------
+olaf top -> 14
+quinn jng -> 4
+ahri mid -> 44
+sivir bot -> 11
+nautilus sup -> 39
+mordekaiser top -> 34
+amumu jng -> 12
+qiyana mid -> 11
+jinx bot -> 60
+leona sup -> 39
+----------------
+jayce top -> 8
+viego jng -> 39
+syndra mid -> 26
+caitlyn bot -> 73
+lux sup -> 47
+yorick top -> 13
+kayn jng -> 39
+orianna mid -> 12
+aphelios bot -> 21
+thresh sup -> 43
+----------------
+kayle top -> 19
+kayle marked as done (100.0% confidence)
+nunu jng -> 12
+naafiri mid -> 13
+tristana bot -> 33
+maokai sup -> 10
+mordekaiser top -> 35
+nocturne jng -> 29
+fizz mid -> 24
+caitlyn bot -> 74
+janna sup -> 13
+----------------
+rumble top -> 8
+naafiri jng -> 9
+twistedfate mid -> 19
+caitlyn bot -> 75
+pyke sup -> 21
+pyke marked as done (100.0% confidence)
+akali top -> 10
+xinzhao jng -> 13
+orianna mid -> 13
+ezreal bot -> 39
+rell sup -> 15
+----------------
+malphite top -> 19
+sylas jng -> 18
+twistedfate mid -> 20
+sivir bot -> 12
+hwei sup -> 1
+yasuo top -> 9
+nunu jng -> 13
+yone mid -> 25
+yunara bot -> 21
+yunara marked as done (100.0% confidence)
+sona sup -> 9
+----------------
+reksai top -> 1
+diana jng -> 21
+veigar mid -> 30
+caitlyn bot -> 76
+zyra sup -> 12
+garen top -> 36
+pantheon jng -> 8
+ahri mid -> 45
+draven bot -> 8
+nautilus sup -> 40
+----------------
+44% THROUGH (1100/2500 API CALLS)
+----------------
+camille top -> 8
+poppy jng -> 3
+pantheon mid -> 4
+kaisa bot -> 52
+lulu sup -> 32
+garen top -> 37
+shaco jng -> 19
+veigar mid -> 31
+vayne bot -> 25
+sona sup -> 10
+----------------
+shen top -> 16
+shaco jng -> 20
+syndra mid -> 27
+tristana bot -> 34
+leona sup -> 40
+volibear top -> 9
+masteryi jng -> 32
+katarina mid -> 25
+jhin bot -> 39
+pyke sup -> 22
+----------------
+yorick top -> 14
+udyr jng -> 5
+zed mid -> 21
+aphelios bot -> 22
+lux sup -> 48
+malphite top -> 20
+lillia jng -> 15
+ekko mid -> 17
+missfortune bot -> 52
+morgana sup -> 35
+----------------
+renekton top -> 19
+shyvana jng -> 22
+sion mid -> 2
+vayne bot -> 26
+elise sup -> 2
+illaoi top -> 10
+nasus jng -> 10
+malzahar mid -> 31
+tristana bot -> 35
+karma sup -> 14
+----------------
+renekton top -> 20
+hecarim jng -> 10
+syndra mid -> 28
+yunara bot -> 22
+thresh sup -> 44
+gangplank top -> 12
+jarvaniv jng -> 14
+mel mid -> 28
+jinx bot -> 61
+lulu sup -> 33
+----------------
+irelia top -> 14
+shyvana jng -> 23
+veigar mid -> 32
+ashe bot -> 42
+blitzcrank sup -> 19
+sett top -> 33
+warwick jng -> 27
+yone mid -> 26
+ezreal bot -> 40
+rakan sup -> 9
+----------------
+ornn top -> 13
+wukong jng -> 25
+kogmaw mid -> 3
+viktor bot -> 4
+viktor marked as done (99.9% confidence)
+zilean sup -> 11
+teemo top -> 22
+shyvana jng -> 24
+twistedfate mid -> 21
+jhin bot -> 40
+brand sup -> 19
+----------------
+teemo top -> 23
+shaco jng -> 21
+ryze mid -> 8
+xayah bot -> 11
+blitzcrank sup -> 20
+heimerdinger top -> 12
+lillia jng -> 16
+mel mid -> 29
+caitlyn bot -> 77
+bard sup -> 16
+----------------
+mordekaiser top -> 36
+karthus jng -> 3
+zed mid -> 22
+tristana bot -> 36
+xerath sup -> 12
+fiora top -> 15
+briar jng -> 28
+vex mid -> 14
+kaisa bot -> 53
+lux sup -> 49
+----------------
+quinn top -> 4
+shyvana jng -> 25
+jayce mid -> 5
+jhin bot -> 41
+lux sup -> 50
+sion top -> 5
+warwick jng -> 28
+kassadin mid -> 14
+ashe bot -> 43
+braum sup -> 21
+braum marked as done (100.0% confidence)
+----------------
+gangplank top -> 13
+hecarim jng -> 11
+viktor mid -> 17
+jhin bot -> 42
+pyke sup -> 23
+sylas top -> 3
+belveth jng -> 11
+ziggs mid -> 4
+kaisa bot -> 54
+lux sup -> 51
+----------------
+yorick top -> 15
+sylas jng -> 19
+katarina mid -> 26
+locke bot -> 1
+janna sup -> 14
+yone top -> 22
+graves jng -> 14
+vladimir mid -> 12
+draven bot -> 9
+pyke sup -> 24
+----------------
+tahmkench top -> 15
+briar jng -> 29
+mel mid -> 30
+ekko bot -> 1
+seraphine sup -> 44
+trundle top -> 7
+masteryi jng -> 33
+annie mid -> 11
+sivir bot -> 13
+lux sup -> 52
+----------------
+shen top -> 17
+evelynn jng -> 5
+ekko mid -> 18
+kaisa bot -> 55
+thresh sup -> 45
+urgot top -> 13
+naafiri jng -> 10
+azir mid -> 3
+caitlyn bot -> 78
+yuumi sup -> 16
+----------------
+sett top -> 34
+kayn jng -> 40
+sylas mid -> 16
+aphelios bot -> 23
+mel sup -> 7
+gangplank top -> 14
+lillia jng -> 17
+yone mid -> 27
+draven bot -> 10
+leona sup -> 41
+----------------
+teemo top -> 24
+briar jng -> 30
+akshan mid -> 9
+missfortune bot -> 53
+zilean sup -> 12
+kled top -> 9
+hecarim jng -> 12
+aurelionsol mid -> 7
+kalista bot -> 9
+swain sup -> 14
+----------------
+jax top -> 24
+volibear jng -> 11
+viego mid -> 1
+kaisa bot -> 56
+morgana sup -> 36
+mordekaiser top -> 37
+shyvana jng -> 26
+urgot mid -> 1
+jinx bot -> 62
+braum sup -> 22
+----------------
+nasus top -> 14
+amumu jng -> 13
+zoe mid -> 8
+vayne bot -> 27
+janna sup -> 15
+garen top -> 38
+zed jng -> 15
+diana mid -> 14
+kaisa bot -> 57
+nami sup -> 33
+----------------
+darius top -> 37
+sylas jng -> 20
+fizz mid -> 25
+varus bot -> 6
+maokai sup -> 11
+sion top -> 6
+leesin jng -> 21
+lux mid -> 12
+ziggs bot -> 8
+alistar sup -> 10
+----------------
+teemo top -> 25
+zyra jng -> 4
+yasuo mid -> 26
+samira bot -> 16
+nautilus sup -> 41
+yone top -> 23
+briar jng -> 31
+hwei mid -> 12
+xerath bot -> 3
+swain sup -> 15
+----------------
+blitzcrank top -> 1
+blitzcrank marked as done (100.0% confidence)
+evelynn jng -> 6
+fizz mid -> 26
+missfortune bot -> 54
+xerath sup -> 13
+kled top -> 10
+ekko jng -> 14
+zed mid -> 23
+ashe bot -> 44
+braum sup -> 23
+----------------
+yone top -> 24
+briar jng -> 32
+locke mid -> 12
+senna bot -> 6
+seraphine sup -> 45
+yasuo top -> 10
+warwick jng -> 29
+twistedfate mid -> 22
+missfortune bot -> 55
+pyke sup -> 25
+----------------
+sion top -> 7
+vi jng -> 15
+lissandra mid -> 16
+missfortune bot -> 56
+taric sup -> 5
+ambessa top -> 12
+zac jng -> 12
+velkoz mid -> 11
+jinx bot -> 63
+soraka sup -> 16
+----------------
+mordekaiser top -> 38
+shyvana jng -> 27
+katarina mid -> 27
+aphelios bot -> 24
+poppy sup -> 10
+nasus top -> 15
+graves jng -> 15
+kennen mid -> 1
+locke bot -> 2
+ashe sup -> 5
+----------------
+darius top -> 38
+ekko jng -> 15
+naafiri mid -> 14
+smolder bot -> 29
+ashe sup -> 6
+vayne top -> 6
+rammus jng -> 13
+malzahar mid -> 32
+ezreal bot -> 41
+senna sup -> 27
+----------------
+tryndamere top -> 14
+nocturne jng -> 30
+taliyah mid -> 2
+jinx bot -> 64
+lux sup -> 53
+teemo top -> 26
+shaco jng -> 22
+aurelionsol mid -> 8
+jhin bot -> 43
+rell sup -> 16
+----------------
+xinzhao top -> 2
+briar jng -> 33
+xerath mid -> 17
+lucian bot -> 23
+seraphine sup -> 46
+jax top -> 25
+nocturne jng -> 31
+malzahar mid -> 33
+jinx bot -> 65
+leona sup -> 42
+----------------
+chogath top -> 21
+aatrox jng -> 2
+talon mid -> 5
+jinx bot -> 66
+pantheon sup -> 13
+sett top -> 35
+leesin jng -> 22
+orianna mid -> 14
+samira bot -> 17
+nautilus sup -> 42
+----------------
+illaoi top -> 11
+shaco jng -> 23
+yone mid -> 28
+yunara bot -> 23
+nami sup -> 34
+trundle top -> 8
+udyr jng -> 6
+taliyah mid -> 3
+ashe bot -> 45
+thresh sup -> 46
+----------------
+zaahen top -> 13
+fizz jng -> 1
+lucian mid -> 2
+ashe bot -> 46
+nami sup -> 35
+tryndamere top -> 15
+graves jng -> 16
+vladimir mid -> 13
+jhin bot -> 44
+lux sup -> 54
+----------------
+garen top -> 39
+jax jng -> 10
+ahri mid -> 46
+cassiopeia bot -> 2
+lux sup -> 55
+mordekaiser top -> 39
+naafiri jng -> 11
+viktor mid -> 18
+nilah bot -> 9
+thresh sup -> 47
+----------------
+tahmkench top -> 16
+shyvana jng -> 28
+syndra mid -> 29
+jhin bot -> 45
+soraka sup -> 17
+fiora top -> 16
+evelynn jng -> 7
+ekko mid -> 19
+jinx bot -> 67
+thresh sup -> 48
+----------------
+veigar top -> 1
+shaco jng -> 24
+malzahar mid -> 34
+caitlyn bot -> 79
+tahmkench sup -> 16
+gwen top -> 7
+briar jng -> 34
+locke mid -> 13
+aatrox bot -> 1
+illaoi sup -> 1
+----------------
+akali top -> 11
+briar jng -> 35
+yone mid -> 29
+nilah bot -> 10
+swain sup -> 16
+varus top -> 4
+ambessa jng -> 5
+malzahar mid -> 35
+jhin bot -> 46
+shaco sup -> 4
+----------------
+48% THROUGH (1200/2500 API CALLS)
+----------------
+teemo top -> 27
+chogath jng -> 9
+leblanc mid -> 15
+tristana bot -> 37
+tahmkench sup -> 17
+mordekaiser top -> 40
+shyvana jng -> 29
+taliyah mid -> 4
+ashe bot -> 47
+rell sup -> 17
+----------------
+mordekaiser top -> 41
+udyr jng -> 7
+zed mid -> 24
+varus bot -> 7
+morgana sup -> 37
+garen top -> 40
+trundle jng -> 5
+vladimir mid -> 14
+caitlyn bot -> 80
+zoe sup -> 1
+----------------
+akali top -> 12
+viego jng -> 40
+katarina mid -> 28
+draven bot -> 11
+blitzcrank sup -> 21
+X
+wukong jng -> 26
+yone mid -> 30
+syndra bot -> 3
+soraka sup -> 18
+----------------
+ambessa top -> 13
+amumu jng -> 14
+sylas mid -> 17
+ashe bot -> 48
+leona sup -> 43
+gnar top -> 17
+briar jng -> 36
+twistedfate mid -> 23
+ezreal bot -> 42
+thresh sup -> 49
+----------------
+Rate limited fetching match ids for puuid WGivo3ZqpNssB_8xaknpOmyWkv2LiuILctXF4CN0yY_qy7PkOPxk67T9Suuv2zSCKzy03S0_f35QRA, waiting 74s
+mordekaiser top -> 42
+viego jng -> 41
+akali mid -> 27
+caitlyn bot -> 81
+morgana sup -> 38
+jax top -> 26
+masteryi jng -> 34
+aurora mid -> 10
+ashe bot -> 49
+velkoz sup -> 12
+----------------
+malphite top -> 21
+warwick jng -> 30
+veigar mid -> 33
+missfortune bot -> 57
+leona sup -> 44
+kled top -> 11
+sylas jng -> 21
+jhin mid -> 3
+vayne bot -> 28
+poppy sup -> 11
+----------------
+mordekaiser top -> 43
+warwick jng -> 31
+syndra mid -> 30
+ezreal bot -> 43
+lulu sup -> 34
+darius top -> 39
+graves jng -> 17
+malzahar mid -> 36
+caitlyn bot -> 82
+velkoz sup -> 13
+----------------
+briar top -> 4
+ambessa jng -> 6
+velkoz mid -> 12
+ashe bot -> 50
+pantheon sup -> 14
+sion top -> 8
+hecarim jng -> 13
+ryze mid -> 9
+ezreal bot -> 44
+hwei sup -> 2
+----------------
+yone top -> 25
+brand jng -> 3
+xinzhao mid -> 3
+tristana bot -> 38
+lulu sup -> 35
+sett top -> 36
+amumu jng -> 15
+talon mid -> 6
+jinx bot -> 68
+lux sup -> 56
+----------------
+kennen top -> 5
+leesin jng -> 23
+aurelionsol mid -> 9
+smolder bot -> 30
+leona sup -> 45
+varus top -> 5
+olaf jng -> 6
+locke mid -> 14
+locke marked as done (100.0% confidence)
+lucian bot -> 24
+milio sup -> 24
+----------------
+swain top -> 5
+lillia jng -> 18
+naafiri mid -> 15
+ashe bot -> 51
+nautilus sup -> 43
+sett top -> 37
+viego jng -> 42
+lissandra mid -> 17
+caitlyn bot -> 83
+nami sup -> 36
+----------------
+garen top -> 41
+shaco jng -> 25
+jayce mid -> 6
+senna bot -> 7
+tahmkench sup -> 18
+sett top -> 38
+lillia jng -> 19
+malphite mid -> 3
+draven bot -> 12
+nami sup -> 37
+----------------
+fiddlesticks top -> 3
+sejuani jng -> 10
+ashe mid -> 1
+kaisa bot -> 58
+veigar sup -> 4
+irelia top -> 15
+nasus jng -> 11
+akshan mid -> 10
+missfortune bot -> 58
+blitzcrank sup -> 22
+----------------
+warwick top -> 5
+diana jng -> 22
+lissandra mid -> 18
+samira bot -> 18
+nautilus sup -> 44
+mordekaiser top -> 44
+naafiri jng -> 12
+jayce mid -> 7
+caitlyn bot -> 84
+galio sup -> 5
+----------------
+shen top -> 18
+pantheon jng -> 9
+lissandra mid -> 19
+senna bot -> 8
+rakan sup -> 10
+ambessa top -> 14
+quinn jng -> 5
+aurelionsol mid -> 10
+brand bot -> 5
+thresh sup -> 50
+----------------
+teemo top -> 28
+shyvana jng -> 30
+fizz mid -> 27
+yunara bot -> 24
+swain sup -> 17
+tryndamere top -> 16
+sylas jng -> 22
+ahri mid -> 47
+tristana bot -> 39
+nautilus sup -> 45
+----------------
+teemo top -> 29
+talon jng -> 19
+sylas mid -> 18
+yunara bot -> 25
+janna sup -> 16
+malzahar top -> 4
+wukong jng -> 27
+lux mid -> 13
+viktor bot -> 5
+rakan sup -> 11
+----------------
+renekton top -> 21
+renekton marked as done (100.0% confidence)
+rengar jng -> 12
+xerath mid -> 18
+xayah bot -> 12
+rakan sup -> 12
+irelia top -> 16
+zac jng -> 13
+aurora mid -> 11
+kaisa bot -> 59
+janna sup -> 17
+----------------
+gangplank top -> 15
+wukong jng -> 28
+locke mid -> 15
+aphelios bot -> 25
+leona sup -> 46
+yone top -> 26
+lillia jng -> 20
+malphite mid -> 4
+teemo bot -> 2
+tahmkench sup -> 19
+----------------
+trundle top -> 9
+diana jng -> 23
+galio mid -> 9
+jinx bot -> 69
+blitzcrank sup -> 23
+ksante top -> 10
+kayn jng -> 41
+akali mid -> 28
+ezreal bot -> 45
+morgana sup -> 39
+----------------
+sion top -> 9
+shyvana jng -> 31
+akali mid -> 29
+kalista bot -> 10
+renata sup -> 4
+udyr top -> 5
+quinn jng -> 6
+brand mid -> 7
+varus bot -> 8
+poppy sup -> 12
+----------------
+malphite top -> 22
+ambessa jng -> 7
+mel mid -> 31
+caitlyn bot -> 85
+milio sup -> 25
+smolder top -> 3
+talon jng -> 20
+galio mid -> 10
+ziggs bot -> 9
+morgana sup -> 40
+----------------
+sion top -> 10
+xinzhao jng -> 14
+akali mid -> 30
+veigar bot -> 11
+janna sup -> 18
+renekton top -> 22
+shaco jng -> 26
+akshan mid -> 11
+sivir bot -> 14
+lux sup -> 57
+----------------
+darius top -> 40
+diana jng -> 24
+xerath mid -> 19
+vayne bot -> 29
+braum sup -> 24
+renekton top -> 23
+belveth jng -> 12
+taliyah mid -> 5
+ezreal bot -> 46
+rakan sup -> 13
+----------------
+tahmkench top -> 17
+briar jng -> 37
+zed mid -> 25
+caitlyn bot -> 86
+drmundo sup -> 1
+drmundo marked as done (98.8% confidence)
+garen top -> 42
+X
+leblanc mid -> 16
+jinx bot -> 70
+lux sup -> 58
+----------------
+yasuo top -> 11
+malphite jng -> 4
+ryze mid -> 10
+brand bot -> 6
+milio sup -> 26
+garen top -> 43
+zaahen jng -> 3
+velkoz mid -> 13
+yunara bot -> 26
+soraka sup -> 19
+----------------
+aatrox top -> 18
+aatrox marked as done (100.0% confidence)
+wukong jng -> 29
+pyke mid -> 1
+twitch bot -> 28
+senna sup -> 28
+jax top -> 27
+briar jng -> 38
+akali mid -> 31
+ashe bot -> 52
+zilean sup -> 13
+----------------
+tahmkench top -> 18
+kayn jng -> 42
+akshan mid -> 12
+jhin bot -> 47
+lissandra sup -> 1
+irelia top -> 17
+vi jng -> 16
+leblanc mid -> 17
+lucian bot -> 25
+sona sup -> 11
+----------------
+darius top -> 41
+shyvana jng -> 32
+twistedfate mid -> 24
+yunara bot -> 27
+lux sup -> 59
+drmundo top -> 15
+ivern jng -> 3
+katarina mid -> 29
+jinx bot -> 71
+thresh sup -> 51
+----------------
+tryndamere top -> 17
+tryndamere marked as done (100.0% confidence)
+kayn jng -> 43
+fizz mid -> 28
+yasuo bot -> 7
+senna sup -> 29
+teemo top -> 30
+warwick jng -> 32
+viktor mid -> 19
+missfortune bot -> 59
+mel sup -> 8
+----------------
+heimerdinger top -> 13
+viego jng -> 43
+sivir mid -> 1
+ziggs bot -> 10
+rakan sup -> 14
+darius top -> 42
+leesin jng -> 24
+sylas mid -> 19
+mel bot -> 10
+veigar sup -> 5
+----------------
+gwen top -> 8
+graves jng -> 18
+kassadin mid -> 15
+ziggs bot -> 11
+nautilus sup -> 46
+akali top -> 13
+kayn jng -> 44
+ahri mid -> 48
+sivir bot -> 15
+tahmkench sup -> 20
+----------------
+garen top -> 44
+leesin jng -> 25
+veigar mid -> 34
+seraphine bot -> 7
+kayle sup -> 1
+mordekaiser top -> 45
+shaco jng -> 27
+akali mid -> 32
+ashe bot -> 53
+karma sup -> 15
+----------------
+52% THROUGH (1300/2500 API CALLS)
+----------------
+gangplank top -> 16
+taliyah jng -> 4
+galio mid -> 11
+smolder bot -> 31
+brand sup -> 20
+sett top -> 39
+gwen jng -> 2
+zed mid -> 26
+caitlyn bot -> 87
+karma sup -> 16
+----------------
+drmundo top -> 16
+kayn jng -> 45
+kennen mid -> 2
+ezreal bot -> 47
+mel sup -> 9
+wukong top -> 2
+viego jng -> 44
+yasuo mid -> 27
+ashe bot -> 54
+taric sup -> 6
+----------------
+gnar top -> 18
+viego jng -> 45
+yone mid -> 31
+yunara bot -> 28
+veigar sup -> 6
+ornn top -> 14
+qiyana jng -> 8
+sylas mid -> 20
+xerath bot -> 4
+camille sup -> 2
+----------------
+gnar top -> 19
+fiddlesticks jng -> 8
+zed mid -> 27
+yasuo bot -> 8
+zyra sup -> 13
+gwen top -> 9
+jax jng -> 11
+irelia mid -> 11
+mel bot -> 11
+blitzcrank sup -> 24
+----------------
+kayle top -> 20
+chogath jng -> 10
+yone mid -> 32
+tristana bot -> 40
+zyra sup -> 14
+renekton top -> 24
+wukong jng -> 30
+aurelionsol mid -> 11
+ezreal bot -> 48
+neeko sup -> 8
+----------------
+vayne top -> 7
+viego jng -> 46
+zoe mid -> 9
+kaisa bot -> 60
+leona sup -> 47
+xinzhao top -> 3
+darius jng -> 5
+riven mid -> 3
+ezreal bot -> 49
+pyke sup -> 26
+----------------
+sion top -> 11
+karthus jng -> 4
+diana mid -> 15
+vayne bot -> 30
+soraka sup -> 20
+soraka marked as done (100.0% confidence)
+sett top -> 40
+nunu jng -> 14
+neeko mid -> 2
+kaisa bot -> 61
+nautilus sup -> 47
+----------------
+sett top -> 41
+graves jng -> 19
+vladimir mid -> 15
+vladimir marked as done (99.3% confidence)
+ezreal bot -> 50
+thresh sup -> 52
+olaf top -> 15
+olaf marked as done (98.2% confidence)
+zed jng -> 16
+garen mid -> 1
+brand bot -> 7
+bard sup -> 17
+----------------
+zaahen top -> 14
+amumu jng -> 16
+ahri mid -> 49
+missfortune bot -> 60
+seraphine sup -> 47
+fiora top -> 17
+masteryi jng -> 35
+zed mid -> 28
+jinx bot -> 72
+lux sup -> 60
+----------------
+jax top -> 28
+sejuani jng -> 11
+yasuo mid -> 28
+ashe bot -> 55
+hwei sup -> 3
+aatrox top -> 19
+belveth jng -> 13
+katarina mid -> 30
+missfortune bot -> 61
+leona sup -> 48
+----------------
+urgot top -> 14
+nunu jng -> 15
+lux mid -> 14
+caitlyn bot -> 88
+teemo sup -> 6
+mordekaiser top -> 46
+masteryi jng -> 36
+yone mid -> 33
+ashe bot -> 56
+yuumi sup -> 17
+----------------
+ksante top -> 11
+hecarim jng -> 14
+akshan mid -> 13
+ezreal bot -> 51
+nautilus sup -> 48
+twistedfate top -> 4
+kayn jng -> 46
+akali mid -> 33
+velkoz bot -> 2
+thresh sup -> 53
+----------------
+riven top -> 4
+jax jng -> 12
+yasuo mid -> 29
+missfortune bot -> 62
+blitzcrank sup -> 25
+sett top -> 42
+rammus jng -> 14
+katarina mid -> 31
+mel bot -> 12
+lux sup -> 61
+----------------
+mordekaiser top -> 47
+leesin jng -> 26
+zoe mid -> 10
+aphelios bot -> 26
+tahmkench sup -> 21
+fiora top -> 18
+masteryi jng -> 37
+malzahar mid -> 37
+tristana bot -> 41
+swain sup -> 18
+----------------
+akali top -> 14
+viego jng -> 47
+katarina mid -> 32
+caitlyn bot -> 89
+thresh sup -> 54
+gwen top -> 10
+vi jng -> 17
+tryndamere mid -> 4
+varus bot -> 9
+leona sup -> 49
+----------------
+singed top -> 9
+kayn jng -> 47
+akali mid -> 34
+tristana bot -> 42
+thresh sup -> 55
+irelia top -> 18
+viego jng -> 48
+illaoi mid -> 1
+aphelios bot -> 27
+milio sup -> 27
+----------------
+zaahen top -> 15
+qiyana jng -> 9
+malzahar mid -> 38
+kogmaw bot -> 12
+braum sup -> 25
+drmundo top -> 17
+jax jng -> 13
+malphite mid -> 5
+ashe bot -> 57
+pyke sup -> 27
+----------------
+trundle top -> 10
+sylas jng -> 23
+vex mid -> 15
+tristana bot -> 43
+X
+yone top -> 27
+rengar jng -> 13
+syndra mid -> 31
+jhin bot -> 48
+kogmaw sup -> 1
+----------------
+kayle top -> 21
+darius jng -> 6
+katarina mid -> 33
+caitlyn bot -> 90
+milio sup -> 28
+volibear top -> 10
+belveth jng -> 14
+hwei mid -> 13
+ezreal bot -> 52
+sylas sup -> 3
+----------------
+garen top -> 45
+amumu jng -> 17
+mel mid -> 32
+brand bot -> 8
+ashe sup -> 7
+darius top -> 43
+nasus jng -> 12
+leblanc mid -> 18
+jinx bot -> 73
+leona sup -> 50
+----------------
+teemo top -> 31
+nocturne jng -> 32
+viktor mid -> 20
+kaisa bot -> 62
+rakan sup -> 15
+malphite top -> 23
+masteryi jng -> 38
+garen mid -> 2
+veigar bot -> 12
+ashe sup -> 8
+----------------
+Rate limited fetching match ids for puuid zX4tXsLHTuAEL2ZMtD7rFCzY4_9cTwlFBpqlErttYELhEstUjXEm1ib_OmriVIml5dlT9DWIphMN2Q, waiting 74s
+malphite top -> 24
+evelynn jng -> 8
+yasuo mid -> 30
+draven bot -> 13
+nami sup -> 38
+gwen top -> 11
+viego jng -> 49
+zed mid -> 29
+kaisa bot -> 63
+thresh sup -> 56
+----------------
+aatrox top -> 20
+viego jng -> 50
+qiyana mid -> 12
+senna bot -> 9
+morgana sup -> 41
+garen top -> 46
+graves jng -> 20
+graves marked as done (100.0% confidence)
+yasuo mid -> 31
+mel bot -> 13
+lux sup -> 62
+----------------
+jayce top -> 9
+trundle jng -> 6
+irelia mid -> 12
+missfortune bot -> 63
+mel sup -> 10
+yone top -> 28
+viego jng -> 51
+malzahar mid -> 39
+lucian bot -> 26
+renata sup -> 5
+----------------
+aatrox top -> 21
+khazix jng -> 21
+khazix marked as done (100.0% confidence)
+caitlyn mid -> 2
+brand bot -> 9
+bard sup -> 18
+illaoi top -> 12
+briar jng -> 39
+lux mid -> 15
+samira bot -> 19
+rakan sup -> 16
+----------------
+yorick top -> 16
+rammus jng -> 15
+viktor mid -> 21
+caitlyn bot -> 91
+morgana sup -> 42
+renekton top -> 25
+aatrox jng -> 3
+X
+kogmaw bot -> 13
+anivia sup -> 3
+----------------
+aatrox top -> 22
+lillia jng -> 21
+lillia marked as done (100.0% confidence)
+lux mid -> 16
+vayne bot -> 31
+xerath sup -> 14
+garen top -> 47
+nunu jng -> 16
+ahri mid -> 50
+kaisa bot -> 64
+mel sup -> 11
+----------------
+sett top -> 43
+jax jng -> 14
+brand mid -> 8
+kalista bot -> 11
+nautilus sup -> 49
+kayle top -> 22
+briar jng -> 40
+gwen mid -> 4
+lucian bot -> 27
+nami sup -> 39
+----------------
+drmundo top -> 18
+leesin jng -> 27
+galio mid -> 12
+aphelios bot -> 28
+thresh sup -> 57
+chogath top -> 22
+poppy jng -> 4
+viktor mid -> 22
+caitlyn bot -> 92
+morgana sup -> 43
+----------------
+gangplank top -> 17
+tryndamere jng -> 2
+viktor mid -> 23
+smolder bot -> 32
+leona sup -> 51
+singed top -> 10
+shaco jng -> 28
+taliyah mid -> 6
+seraphine bot -> 8
+senna sup -> 30
+----------------
+darius top -> 44
+zed jng -> 17
+lux mid -> 17
+ashe bot -> 58
+seraphine sup -> 48
+yorick top -> 17
+jarvaniv jng -> 15
+mel mid -> 33
+caitlyn bot -> 93
+pantheon sup -> 15
+----------------
+nasus top -> 16
+fiddlesticks jng -> 9
+corki mid -> 3
+brand bot -> 10
+nami sup -> 40
+zilean top -> 1
+leesin jng -> 28
+yasuo mid -> 32
+vayne bot -> 32
+yuumi sup -> 18
+----------------
+jayce top -> 10
+quinn jng -> 7
+hwei mid -> 14
+swain bot -> 7
+braum sup -> 26
+nasus top -> 17
+gwen jng -> 3
+kayle mid -> 3
+caitlyn bot -> 94
+thresh sup -> 58
+----------------
+56% THROUGH (1400/2500 API CALLS)
+----------------
+sett top -> 44
+elise jng -> 10
+syndra mid -> 32
+kaisa bot -> 65
+galio sup -> 6
+yone top -> 29
+evelynn jng -> 9
+mel mid -> 34
+ashe bot -> 59
+morgana sup -> 44
+----------------
+gnar top -> 20
+amumu jng -> 18
+annie mid -> 12
+ezreal bot -> 53
+lux sup -> 63
+rumble top -> 9
+shyvana jng -> 33
+talon mid -> 7
+missfortune bot -> 64
+nautilus sup -> 50
+----------------
+shen top -> 19
+poppy jng -> 5
+akali mid -> 35
+ashe bot -> 60
+milio sup -> 29
+darius top -> 45
+jarvaniv jng -> 16
+hwei mid -> 15
+vladimir bot -> 2
+senna sup -> 31
+----------------
+mordekaiser top -> 48
+talon jng -> 21
+malzahar mid -> 40
+kogmaw bot -> 14
+alistar sup -> 11
+twitch top -> 2
+jax jng -> 15
+brand mid -> 9
+smolder bot -> 33
+lulu sup -> 36
+----------------
+akali top -> 15
+shyvana jng -> 34
+veigar mid -> 35
+yone bot -> 2
+braum sup -> 27
+aatrox top -> 23
+kindred jng -> 6
+cassiopeia mid -> 9
+ezreal bot -> 54
+xerath sup -> 15
+----------------
+fiora top -> 19
+kayn jng -> 48
+sylas mid -> 21
+jhin bot -> 49
+nautilus sup -> 51
+warwick top -> 6
+shaco jng -> 29
+leblanc mid -> 19
+leblanc marked as done (100.0% confidence)
+senna bot -> 10
+seraphine sup -> 49
+----------------
+chogath top -> 23
+naafiri jng -> 13
+fizz mid -> 29
+senna bot -> 11
+seraphine sup -> 50
+yasuo top -> 12
+nunu jng -> 17
+kassadin mid -> 16
+sivir bot -> 16
+malphite sup -> 4
+----------------
+yone top -> 30
+gwen jng -> 4
+viktor mid -> 24
+jinx bot -> 74
+naafiri sup -> 1
+teemo top -> 32
+xinzhao jng -> 15
+xinzhao marked as done (100.0% confidence)
+syndra mid -> 33
+jhin bot -> 50
+seraphine sup -> 51
+----------------
+illaoi top -> 13
+wukong jng -> 31
+ahri mid -> 51
+jhin bot -> 51
+maokai sup -> 12
+nasus top -> 18
+masteryi jng -> 39
+syndra mid -> 34
+draven bot -> 14
+pantheon sup -> 16
+----------------
+camille top -> 9
+talon jng -> 22
+swain mid -> 7
+kaisa bot -> 66
+nami sup -> 41
+fiora top -> 20
+sejuani jng -> 12
+katarina mid -> 34
+jinx bot -> 75
+lulu sup -> 37
+----------------
+gragas top -> 9
+masteryi jng -> 40
+taliyah mid -> 7
+seraphine bot -> 9
+nautilus sup -> 52
+tryndamere top -> 18
+wukong jng -> 32
+ziggs mid -> 5
+tristana bot -> 44
+camille sup -> 3
+----------------
+singed top -> 11
+nocturne jng -> 33
+lux mid -> 18
+jinx bot -> 76
+seraphine sup -> 52
+tahmkench top -> 19
+shaco jng -> 30
+zed mid -> 30
+caitlyn bot -> 95
+nautilus sup -> 53
+----------------
+garen top -> 48
+amumu jng -> 19
+syndra mid -> 35
+jinx bot -> 77
+nami sup -> 42
+kayle top -> 23
+viego jng -> 52
+heimerdinger mid -> 4
+ezreal bot -> 55
+milio sup -> 30
+----------------
+zaahen top -> 16
+warwick jng -> 33
+yasuo mid -> 33
+xerath bot -> 5
+brand sup -> 21
+yorick top -> 18
+shyvana jng -> 35
+sylas mid -> 22
+mel bot -> 14
+morgana sup -> 45
+----------------
+yone top -> 31
+qiyana jng -> 10
+azir mid -> 4
+ezreal bot -> 56
+zilean sup -> 14
+trundle top -> 11
+rengar jng -> 14
+fizz mid -> 30
+tristana bot -> 45
+neeko sup -> 9
+----------------
+sett top -> 45
+chogath jng -> 11
+yasuo mid -> 34
+yunara bot -> 29
+bard sup -> 19
+fiora top -> 21
+fiora marked as done (100.0% confidence)
+briar jng -> 41
+ekko mid -> 20
+caitlyn bot -> 96
+lux sup -> 64
+----------------
+gnar top -> 21
+gnar marked as done (100.0% confidence)
+hecarim jng -> 15
+diana mid -> 16
+nasus bot -> 1
+veigar sup -> 7
+sett top -> 46
+khazix jng -> 22
+anivia mid -> 11
+smolder bot -> 34
+thresh sup -> 59
+----------------
+sylas top -> 4
+amumu jng -> 20
+amumu marked as done (100.0% confidence)
+kassadin mid -> 17
+jinx bot -> 78
+pyke sup -> 28
+garen top -> 49
+diana jng -> 25
+zed mid -> 31
+vayne bot -> 33
+lulu sup -> 38
+----------------
+mordekaiser top -> 49
+talon jng -> 23
+tristana mid -> 1
+garen bot -> 1
+jax sup -> 1
+renekton top -> 26
+viego jng -> 53
+yasuo mid -> 35
+mel bot -> 15
+karma sup -> 17
+----------------
+nasus top -> 19
+jax jng -> 16
+zed mid -> 32
+lucian bot -> 28
+nami sup -> 43
+zaahen top -> 17
+zaahen marked as done (100.0% confidence)
+amumu jng -> 21
+xerath mid -> 20
+jinx bot -> 79
+lulu sup -> 39
+----------------
+yorick top -> 19
+yorick marked as done (100.0% confidence)
+kayn jng -> 49
+viktor mid -> 25
+jinx bot -> 80
+leona sup -> 52
+garen top -> 50
+warwick jng -> 34
+malzahar mid -> 41
+tristana bot -> 46
+nautilus sup -> 54
+----------------
+yone top -> 32
+shaco jng -> 31
+fiora mid -> 1
+ashe bot -> 61
+maokai sup -> 13
+kled top -> 12
+reksai jng -> 2
+akshan mid -> 14
+vladimir bot -> 3
+zilean sup -> 15
+----------------
+yasuo top -> 13
+fiddlesticks jng -> 10
+veigar mid -> 36
+caitlyn bot -> 97
+karma sup -> 18
+yorick top -> 20
+volibear jng -> 12
+akali mid -> 36
+tristana bot -> 47
+seraphine sup -> 53
+----------------
+gwen top -> 12
+briar jng -> 42
+yorick mid -> 2
+tristana bot -> 48
+lux sup -> 65
+vladimir top -> 6
+chogath jng -> 12
+aurelionsol mid -> 12
+yasuo bot -> 9
+mel sup -> 12
+----------------
+urgot top -> 15
+chogath jng -> 13
+katarina mid -> 35
+syndra bot -> 4
+pantheon sup -> 17
+aatrox top -> 24
+hecarim jng -> 16
+aurora mid -> 12
+swain bot -> 8
+sona sup -> 12
+----------------
+garen top -> 51
+vi jng -> 18
+akshan mid -> 15
+jhin bot -> 52
+malphite sup -> 5
+volibear top -> 11
+jax jng -> 17
+naafiri mid -> 16
+ezreal bot -> 57
+seraphine sup -> 54
+----------------
+smolder top -> 4
+X
+syndra mid -> 36
+ezreal bot -> 58
+seraphine sup -> 55
+teemo top -> 33
+kayn jng -> 50
+viktor mid -> 26
+sivir bot -> 17
+karma sup -> 19
+----------------
+riven top -> 5
+qiyana jng -> 11
+hwei mid -> 16
+hwei marked as done (100.0% confidence)
+swain bot -> 9
+blitzcrank sup -> 26
+tryndamere top -> 19
+shyvana jng -> 36
+xerath mid -> 21
+lucian bot -> 29
+rakan sup -> 17
+----------------
+trundle top -> 12
+zac jng -> 14
+ziggs mid -> 6
+ezreal bot -> 59
+leona sup -> 53
+ambessa top -> 15
+ambessa marked as done (96.2% confidence)
+rammus jng -> 16
+naafiri mid -> 17
+aphelios bot -> 29
+morgana sup -> 46
+----------------
+aatrox top -> 25
+shyvana jng -> 37
+akali mid -> 37
+missfortune bot -> 65
+tahmkench sup -> 22
+malzahar top -> 5
+warwick jng -> 35
+katarina mid -> 36
+jhin bot -> 53
+seraphine sup -> 56
+----------------
+poppy top -> 2
+skarner jng -> 4
+akshan mid -> 16
+caitlyn bot -> 98
+seraphine sup -> 57
+camille top -> 10
+ekko jng -> 16
+viktor mid -> 27
+missfortune bot -> 66
+blitzcrank sup -> 27
+----------------
+malphite top -> 25
+zyra jng -> 5
+syndra mid -> 37
+jhin bot -> 54
+bard sup -> 20
+vladimir top -> 7
+viego jng -> 54
+akshan mid -> 17
+varus bot -> 10
+mel sup -> 13
+----------------
+60% THROUGH (1500/2500 API CALLS)
+----------------
+rumble top -> 10
+gragas jng -> 1
+akshan mid -> 18
+ahri bot -> 2
+nami sup -> 44
+ornn top -> 15
+amumu jng -> 22
+leblanc mid -> 20
+vayne bot -> 34
+milio sup -> 31
+----------------
+shen top -> 20
+sylas jng -> 24
+yasuo mid -> 36
+kaisa bot -> 67
+nautilus sup -> 55
+mordekaiser top -> 50
+shyvana jng -> 38
+vladimir mid -> 16
+lucian bot -> 30
+braum sup -> 28
+----------------
+riven top -> 6
+zed jng -> 18
+fizz mid -> 31
+tristana bot -> 49
+nautilus sup -> 56
+volibear top -> 12
+nocturne jng -> 34
+yone mid -> 34
+twitch bot -> 29
+swain sup -> 19
+----------------
+mordekaiser top -> 51
+viego jng -> 55
+mel mid -> 35
+jinx bot -> 81
+alistar sup -> 12
+akali top -> 16
+sejuani jng -> 13
+locke mid -> 16
+vayne bot -> 35
+rell sup -> 18
+----------------
+garen top -> 52
+kindred jng -> 7
+annie mid -> 13
+ezreal bot -> 60
+brand sup -> 22
+gangplank top -> 18
+zac jng -> 15
+pantheon mid -> 5
+kaisa bot -> 68
+karma sup -> 20
+karma marked as done (100.0% confidence)
+----------------
+irelia top -> 19
+vi jng -> 19
+katarina mid -> 37
+corki bot -> 6
+nautilus sup -> 57
+tryndamere top -> 20
+wukong jng -> 33
+orianna mid -> 15
+kaisa bot -> 69
+senna sup -> 32
+----------------
+Rate limited fetching match ids for puuid 5Ymrs-xD0b5OCjGHlItEie15sfSBNihSnYPDvg-vAUVDVzfhPK2K-Hu8NfCWyvjdIWHC0ooA8heX6g, waiting 62s
+darius top -> 46
+nocturne jng -> 35
+vladimir mid -> 17
+jhin bot -> 55
+pyke sup -> 29
+sett top -> 47
+rengar jng -> 15
+ahri mid -> 52
+lucian bot -> 31
+nami sup -> 45
+----------------
+riven top -> 7
+jarvaniv jng -> 17
+akshan mid -> 19
+akshan marked as done (100.0% confidence)
+kaisa bot -> 70
+nautilus sup -> 58
+camille top -> 11
+vi jng -> 20
+orianna mid -> 16
+missfortune bot -> 67
+rell sup -> 19
+----------------
+shen top -> 21
+fizz jng -> 2
+locke mid -> 17
+smolder bot -> 35
+hwei sup -> 4
+jax top -> 29
+nocturne jng -> 36
+lissandra mid -> 20
+lissandra marked as done (100.0% confidence)
+missfortune bot -> 68
+kogmaw sup -> 2
+----------------
+wukong top -> 3
+elise jng -> 11
+locke mid -> 18
+jinx bot -> 82
+seraphine sup -> 58
+darius top -> 47
+briar jng -> 43
+hwei mid -> 17
+missfortune bot -> 69
+anivia sup -> 4
+----------------
+gnar top -> 22
+gwen jng -> 5
+gwen marked as done (96.3% confidence)
+yone mid -> 35
+draven bot -> 15
+pyke sup -> 30
+tryndamere top -> 21
+teemo jng -> 6
+lissandra mid -> 21
+sivir bot -> 18
+seraphine sup -> 59
+----------------
+yasuo top -> 14
+kayn jng -> 51
+ahri mid -> 53
+ezreal bot -> 61
+sona sup -> 13
+sion top -> 12
+zyra jng -> 6
+sylas mid -> 23
+jhin bot -> 56
+senna sup -> 33
+----------------
+ambessa top -> 16
+amumu jng -> 23
+qiyana mid -> 13
+veigar bot -> 13
+blitzcrank sup -> 28
+heimerdinger top -> 14
+warwick jng -> 36
+viktor mid -> 28
+hwei bot -> 2
+soraka sup -> 21
+----------------
+trundle top -> 13
+shyvana jng -> 39
+syndra mid -> 38
+jhin bot -> 57
+lux sup -> 66
+gangplank top -> 19
+gangplank marked as done (100.0% confidence)
+rengar jng -> 16
+galio mid -> 13
+sivir bot -> 19
+brand sup -> 23
+----------------
+teemo top -> 34
+darius jng -> 7
+aurora mid -> 13
+shaco bot -> 1
+maokai sup -> 14
+drmundo top -> 19
+jax jng -> 18
+ahri mid -> 54
+caitlyn bot -> 99
+thresh sup -> 60
+----------------
+sett top -> 48
+diana jng -> 26
+leblanc mid -> 21
+jinx bot -> 83
+pyke sup -> 31
+varus top -> 6
+vi jng -> 21
+vi marked as done (100.0% confidence)
+yasuo mid -> 37
+heimerdinger bot -> 2
+heimerdinger marked as done (99.7% confidence)
+yuumi sup -> 19
+----------------
+chogath top -> 24
+qiyana jng -> 12
+zoe mid -> 11
+tristana bot -> 50
+pantheon sup -> 18
+gnar top -> 23
+kayn jng -> 52
+orianna mid -> 17
+zeri bot -> 19
+yuumi sup -> 20
+----------------
+mordekaiser top -> 52
+nidalee jng -> 10
+yasuo mid -> 38
+jinx bot -> 84
+zilean sup -> 16
+ryze top -> 2
+wukong jng -> 34
+malzahar mid -> 42
+draven bot -> 16
+lux sup -> 67
+----------------
+teemo top -> 35
+masteryi jng -> 41
+zed mid -> 33
+jinx bot -> 85
+tahmkench sup -> 23
+sion top -> 13
+nocturne jng -> 37
+mel mid -> 36
+aphelios bot -> 30
+bard sup -> 21
+bard marked as done (100.0% confidence)
+----------------
+vladimir top -> 8
+wukong jng -> 35
+nasus mid -> 2
+samira bot -> 20
+zilean sup -> 17
+zilean marked as done (100.0% confidence)
+garen top -> 53
+rengar jng -> 17
+locke mid -> 19
+sivir bot -> 20
+sivir marked as done (100.0% confidence)
+janna sup -> 19
+----------------
+ambessa top -> 17
+elise jng -> 12
+yone mid -> 36
+jinx bot -> 86
+bard sup -> 22
+kennen top -> 6
+masteryi jng -> 42
+zed mid -> 34
+varus bot -> 11
+lulu sup -> 40
+----------------
+shen top -> 22
+viego jng -> 56
+kennen mid -> 3
+kaisa bot -> 71
+soraka sup -> 22
+darius top -> 48
+lillia jng -> 22
+katarina mid -> 38
+tristana bot -> 51
+nautilus sup -> 59
+----------------
+teemo top -> 36
+khazix jng -> 23
+galio mid -> 14
+galio marked as done (97.0% confidence)
+caitlyn bot -> 100
+brand sup -> 24
+yorick top -> 21
+amumu jng -> 24
+vex mid -> 16
+tristana bot -> 52
+rell sup -> 20
+----------------
+wukong top -> 4
+teemo jng -> 7
+diana mid -> 17
+caitlyn bot -> 101
+senna sup -> 34
+malphite top -> 26
+rammus jng -> 17
+lux mid -> 19
+tristana bot -> 53
+pyke sup -> 32
+----------------
+fiora top -> 22
+talon jng -> 24
+kassadin mid -> 18
+veigar bot -> 14
+pyke sup -> 33
+twistedfate top -> 5
+shyvana jng -> 40
+viktor mid -> 29
+ezreal bot -> 62
+mel sup -> 14
+----------------
+garen top -> 54
+brand jng -> 4
+yone mid -> 37
+vayne bot -> 36
+thresh sup -> 61
+tryndamere top -> 22
+belveth jng -> 15
+yasuo mid -> 39
+tristana bot -> 54
+karma sup -> 21
+----------------
+aurora top -> 1
+masteryi jng -> 43
+brand mid -> 10
+caitlyn bot -> 102
+lulu sup -> 41
+lillia top -> 1
+trundle jng -> 7
+irelia mid -> 13
+mel bot -> 16
+alistar sup -> 13
+----------------
+ornn top -> 16
+shen jng -> 8
+swain mid -> 8
+lucian bot -> 32
+braum sup -> 29
+nautilus top -> 1
+viego jng -> 57
+viktor mid -> 30
+xayah bot -> 13
+blitzcrank sup -> 29
+----------------
+yone top -> 33
+nunu jng -> 18
+hwei mid -> 18
+missfortune bot -> 70
+seraphine sup -> 60
+singed top -> 12
+ekko jng -> 17
+zed mid -> 35
+jhin bot -> 58
+galio sup -> 7
+----------------
+teemo top -> 37
+fiddlesticks jng -> 11
+zed mid -> 36
+missfortune bot -> 71
+rell sup -> 21
+rell marked as done (100.0% confidence)
+ornn top -> 17
+belveth jng -> 16
+gwen mid -> 5
+jhin bot -> 59
+X
+----------------
+gragas top -> 10
+viego jng -> 58
+yone mid -> 38
+vayne bot -> 37
+seraphine sup -> 61
+heimerdinger top -> 15
+caitlyn jng -> 1
+xerath mid -> 22
+lux bot -> 3
+nautilus sup -> 60
+----------------
+mordekaiser top -> 53
+vi jng -> 22
+yone mid -> 39
+yunara bot -> 30
+tahmkench sup -> 24
+riven top -> 8
+masteryi jng -> 44
+yasuo mid -> 40
+veigar bot -> 15
+poppy sup -> 13
+----------------
+jax top -> 30
+kayn jng -> 53
+yone mid -> 40
+kaisa bot -> 72
+swain sup -> 20
+tryndamere top -> 23
+sylas jng -> 25
+malzahar mid -> 43
+lucian bot -> 33
+braum sup -> 30
+----------------
+64% THROUGH (1600/2500 API CALLS)
+----------------
+fiora top -> 23
+amumu jng -> 25
+fizz mid -> 32
+mel bot -> 17
+thresh sup -> 62
+trundle top -> 14
+lillia jng -> 23
+viktor mid -> 31
+jhin bot -> 60
+renata sup -> 6
+----------------
+teemo top -> 38
+shyvana jng -> 41
+naafiri mid -> 18
+smolder bot -> 36
+veigar sup -> 8
+malphite top -> 27
+vi jng -> 23
+akali mid -> 38
+kaisa bot -> 73
+braum sup -> 31
+----------------
+sett top -> 49
+shaco jng -> 32
+galio mid -> 15
+veigar bot -> 16
+rell sup -> 22
+irelia top -> 20
+shyvana jng -> 42
+brand mid -> 11
+missfortune bot -> 72
+sona sup -> 14
+----------------
+tryndamere top -> 24
+shaco jng -> 33
+lux mid -> 20
+missfortune bot -> 73
+leona sup -> 54
+swain top -> 6
+jarvaniv jng -> 18
+katarina mid -> 39
+aphelios bot -> 31
+rell sup -> 23
+----------------
+riven top -> 9
+zaahen jng -> 4
+ryze mid -> 11
+jinx bot -> 87
+pyke sup -> 34
+vayne top -> 8
+diana jng -> 27
+kassadin mid -> 19
+smolder bot -> 37
+pantheon sup -> 19
+----------------
+shen top -> 23
+nasus jng -> 13
+zed mid -> 37
+ashe bot -> 62
+braum sup -> 32
+gwen top -> 13
+leesin jng -> 29
+fizz mid -> 33
+yasuo bot -> 10
+brand sup -> 25
+----------------
+camille top -> 12
+masteryi jng -> 45
+ryze mid -> 12
+caitlyn bot -> 103
+morgana sup -> 47
+yorick top -> 22
+rammus jng -> 18
+yone mid -> 41
+syndra bot -> 5
+xerath sup -> 16
+----------------
+drmundo top -> 20
+wukong jng -> 36
+lux mid -> 21
+vayne bot -> 38
+pyke sup -> 35
+fiora top -> 24
+jarvaniv jng -> 19
+ahri mid -> 55
+caitlyn bot -> 104
+leona sup -> 55
+----------------
+mordekaiser top -> 54
+aatrox jng -> 4
+yasuo mid -> 41
+tristana bot -> 55
+zyra sup -> 15
+zyra marked as done (98.2% confidence)
+illaoi top -> 14
+briar jng -> 44
+gwen mid -> 6
+ezreal bot -> 63
+karma sup -> 22
+----------------
+riven top -> 10
+fiddlesticks jng -> 12
+malzahar mid -> 44
+caitlyn bot -> 105
+senna sup -> 35
+ambessa top -> 18
+diana jng -> 28
+zed mid -> 38
+kaisa bot -> 74
+nautilus sup -> 61
+----------------
+malphite top -> 28
+amumu jng -> 26
+vex mid -> 17
+jhin bot -> 61
+nautilus sup -> 62
+darius top -> 49
+masteryi jng -> 46
+yone mid -> 42
+ezreal bot -> 64
+lux sup -> 68
+----------------
+riven top -> 11
+sylas jng -> 26
+lissandra mid -> 22
+jinx bot -> 88
+galio sup -> 8
+renekton top -> 27
+evelynn jng -> 10
+yone mid -> 43
+smolder bot -> 38
+nami sup -> 46
+----------------
+fiora top -> 25
+viego jng -> 59
+ahri mid -> 56
+caitlyn bot -> 106
+taric sup -> 7
+chogath top -> 25
+graves jng -> 21
+yone mid -> 44
+ziggs bot -> 12
+soraka sup -> 23
+----------------
+varus top -> 7
+viego jng -> 60
+akshan mid -> 20
+samira bot -> 21
+samira marked as done (100.0% confidence)
+thresh sup -> 63
+yasuo top -> 15
+diana jng -> 29
+viktor mid -> 32
+corki bot -> 7
+lulu sup -> 42
+----------------
+varus top -> 8
+aatrox jng -> 5
+syndra mid -> 39
+yasuo bot -> 11
+gragas sup -> 1
+zaahen top -> 18
+teemo jng -> 8
+zed mid -> 39
+caitlyn bot -> 107
+thresh sup -> 64
+----------------
+singed top -> 13
+masteryi jng -> 47
+aurora mid -> 14
+missfortune bot -> 74
+leona sup -> 56
+jax top -> 31
+belveth jng -> 17
+vex mid -> 18
+caitlyn bot -> 108
+morgana sup -> 48
+----------------
+varus top -> 9
+kindred jng -> 8
+malzahar mid -> 45
+jhin bot -> 62
+maokai sup -> 15
+garen top -> 55
+xinzhao jng -> 16
+smolder mid -> 6
+kaisa bot -> 75
+senna sup -> 36
+----------------
+volibear top -> 13
+malphite jng -> 5
+kindred mid -> 1
+ezreal bot -> 65
+mel sup -> 15
+yone top -> 34
+poppy jng -> 6
+poppy marked as done (95.3% confidence)
+zyra mid -> 1
+caitlyn bot -> 109
+thresh sup -> 65
+----------------
+yone top -> 35
+leesin jng -> 30
+xerath mid -> 23
+ashe bot -> 63
+hwei sup -> 5
+tahmkench top -> 20
+wukong jng -> 37
+viktor mid -> 33
+smolder bot -> 39
+morgana sup -> 49
+----------------
+mordekaiser top -> 55
+chogath jng -> 14
+ekko mid -> 21
+vayne bot -> 39
+pyke sup -> 36
+heimerdinger top -> 16
+vi jng -> 24
+akali mid -> 39
+yunara bot -> 31
+lux sup -> 69
+----------------
+smolder top -> 5
+naafiri jng -> 14
+cassiopeia mid -> 10
+jhin bot -> 63
+nami sup -> 47
+malphite top -> 29
+masteryi jng -> 48
+fizz mid -> 34
+xayah bot -> 14
+leona sup -> 57
+----------------
+darius top -> 50
+belveth jng -> 18
+mel mid -> 37
+tristana bot -> 56
+nautilus sup -> 63
+sett top -> 50
+viego jng -> 61
+sylas mid -> 24
+kaisa bot -> 76
+seraphine sup -> 62
+----------------
+gragas top -> 11
+ambessa jng -> 8
+akali mid -> 40
+varus bot -> 12
+blitzcrank sup -> 30
+yone top -> 36
+nocturne jng -> 38
+fizz mid -> 35
+jinx bot -> 89
+ashe sup -> 9
+----------------
+Rate limited fetching match ids for puuid 2Y_zFpiJBk3yB__XtGnV2XNfu0MkL09aDblXFEb9TWFwGqqbhEfzP-WNRC3W2UnfOE4W0K749_mLDA, waiting 72s
+illaoi top -> 15
+shyvana jng -> 43
+veigar mid -> 37
+jinx bot -> 90
+milio sup -> 32
+chogath top -> 26
+kayn jng -> 54
+malzahar mid -> 46
+varus bot -> 13
+neeko sup -> 10
+----------------
+illaoi top -> 16
+zaahen jng -> 5
+malzahar mid -> 47
+kaisa bot -> 77
+pantheon sup -> 20
+nasus top -> 20
+darius jng -> 8
+yone mid -> 45
+aphelios bot -> 32
+blitzcrank sup -> 31
+----------------
+malphite top -> 30
+shyvana jng -> 44
+viktor mid -> 34
+missfortune bot -> 75
+seraphine sup -> 63
+sett top -> 51
+lillia jng -> 24
+ekko mid -> 22
+samira bot -> 22
+sylas sup -> 4
+----------------
+kled top -> 13
+talon jng -> 25
+yasuo mid -> 42
+jhin bot -> 64
+swain sup -> 21
+yone top -> 37
+viego jng -> 62
+ahri mid -> 57
+kaisa bot -> 78
+lulu sup -> 43
+----------------
+garen top -> 56
+rengar jng -> 18
+katarina mid -> 40
+smolder bot -> 40
+teemo sup -> 7
+aurora top -> 2
+tryndamere jng -> 3
+vladimir mid -> 18
+sivir bot -> 21
+soraka sup -> 24
+----------------
+nasus top -> 21
+kayn jng -> 55
+viktor mid -> 35
+missfortune bot -> 76
+tahmkench sup -> 25
+malphite top -> 31
+naafiri jng -> 15
+cassiopeia mid -> 11
+vayne bot -> 40
+teemo sup -> 8
+----------------
+viego top -> 1
+nocturne jng -> 39
+nidalee mid -> 1
+ashe bot -> 64
+ahri sup -> 1
+urgot top -> 16
+zaahen jng -> 6
+yasuo mid -> 43
+kaisa bot -> 79
+senna sup -> 37
+----------------
+tahmkench top -> 21
+masteryi jng -> 49
+lux mid -> 22
+smolder bot -> 41
+seraphine sup -> 64
+udyr top -> 6
+nocturne jng -> 40
+sylas mid -> 25
+senna sup -> 38
+yasuo bot -> 12
+----------------
+kayle top -> 24
+masteryi jng -> 50
+twitch mid -> 1
+kalista bot -> 12
+vex sup -> 1
+mordekaiser top -> 56
+kindred jng -> 9
+viktor mid -> 36
+lucian bot -> 34
+taric sup -> 8
+----------------
+ornn top -> 18
+belveth jng -> 19
+leblanc mid -> 22
+yunara bot -> 32
+galio sup -> 9
+gangplank top -> 20
+udyr jng -> 8
+X
+lucian bot -> 35
+sona sup -> 15
+----------------
+68% THROUGH (1700/2500 API CALLS)
+----------------
+vladimir top -> 9
+nasus jng -> 14
+velkoz mid -> 14
+ashe bot -> 65
+nami sup -> 48
+teemo top -> 39
+kayn jng -> 56
+veigar mid -> 38
+jhin bot -> 65
+bard sup -> 23
+----------------
+gangplank top -> 21
+diana jng -> 30
+talon mid -> 8
+varus bot -> 14
+mel sup -> 16
+cassiopeia top -> 3
+briar jng -> 45
+irelia mid -> 14
+samira bot -> 23
+heimerdinger sup -> 2
+----------------
+udyr top -> 7
+volibear jng -> 13
+twistedfate mid -> 25
+yunara bot -> 33
+annie sup -> 1
+sion top -> 14
+nasus jng -> 15
+veigar mid -> 39
+caitlyn bot -> 110
+morgana sup -> 50
+----------------
+illaoi top -> 17
+viego jng -> 63
+aurora mid -> 15
+yunara bot -> 34
+nami sup -> 49
+volibear top -> 14
+shaco jng -> 34
+diana mid -> 18
+samira bot -> 24
+nautilus sup -> 64
+----------------
+zaahen top -> 19
+zed jng -> 19
+malzahar mid -> 48
+heimerdinger bot -> 3
+thresh sup -> 66
+yone top -> 38
+shyvana jng -> 45
+xerath mid -> 24
+kaisa bot -> 80
+senna sup -> 39
+----------------
+rumble top -> 11
+nocturne jng -> 41
+galio mid -> 16
+missfortune bot -> 77
+blitzcrank sup -> 32
+smolder top -> 6
+gragas jng -> 2
+orianna mid -> 18
+caitlyn bot -> 111
+lux sup -> 70
+----------------
+mordekaiser top -> 57
+volibear jng -> 14
+lissandra mid -> 23
+kalista bot -> 13
+leona sup -> 58
+yone top -> 39
+fizz jng -> 3
+talon mid -> 9
+smolder bot -> 42
+zyra sup -> 16
+----------------
+volibear top -> 15
+kindred jng -> 10
+brand mid -> 12
+vayne bot -> 41
+pantheon sup -> 21
+shen top -> 24
+masteryi jng -> 51
+cassiopeia mid -> 12
+missfortune bot -> 78
+thresh sup -> 67
+----------------
+jayce top -> 11
+viego jng -> 64
+annie mid -> 14
+kaisa bot -> 81
+nautilus sup -> 65
+gwen top -> 14
+leesin jng -> 31
+zed mid -> 40
+ezreal bot -> 66
+lux sup -> 71
+----------------
+heimerdinger top -> 17
+volibear jng -> 15
+malzahar mid -> 49
+caitlyn bot -> 112
+seraphine sup -> 65
+illaoi top -> 18
+kindred jng -> 11
+ekko mid -> 23
+missfortune bot -> 79
+lux sup -> 72
+----------------
+drmundo top -> 21
+vi jng -> 25
+viktor mid -> 37
+ashe bot -> 66
+morgana sup -> 51
+garen top -> 57
+rammus jng -> 19
+rammus marked as done (100.0% confidence)
+annie mid -> 15
+caitlyn bot -> 113
+leona sup -> 59
+----------------
+garen top -> 58
+volibear jng -> 16
+aurelionsol mid -> 13
+caitlyn bot -> 114
+karma sup -> 23
+tahmkench top -> 22
+masteryi jng -> 52
+akali mid -> 41
+tristana bot -> 57
+shen sup -> 4
+----------------
+trundle top -> 15
+trundle marked as done (96.2% confidence)
+nocturne jng -> 42
+yasuo mid -> 44
+veigar bot -> 17
+seraphine sup -> 66
+sett top -> 52
+amumu jng -> 27
+yone mid -> 46
+mel bot -> 18
+morgana sup -> 52
+----------------
+olaf top -> 16
+shaco jng -> 35
+twistedfate mid -> 26
+irelia bot -> 2
+janna sup -> 20
+drmundo top -> 22
+rengar jng -> 19
+rengar marked as done (100.0% confidence)
+katarina mid -> 41
+jhin bot -> 66
+morgana sup -> 53
+----------------
+darius top -> 51
+graves jng -> 22
+leblanc mid -> 23
+twitch bot -> 30
+lulu sup -> 44
+yorick top -> 23
+ekko jng -> 18
+akshan mid -> 21
+seraphine bot -> 10
+janna sup -> 21
+janna marked as done (100.0% confidence)
+----------------
+kayle top -> 25
+nidalee jng -> 11
+hwei mid -> 19
+caitlyn bot -> 115
+missfortune sup -> 1
+aurora top -> 3
+shaco jng -> 36
+yasuo mid -> 45
+ziggs bot -> 13
+neeko sup -> 11
+----------------
+yorick top -> 24
+briar jng -> 46
+xerath mid -> 25
+kaisa bot -> 82
+lux sup -> 73
+mordekaiser top -> 58
+xinzhao jng -> 17
+irelia mid -> 15
+viktor bot -> 6
+morgana sup -> 54
+----------------
+shen top -> 25
+shyvana jng -> 46
+leblanc mid -> 24
+senna bot -> 12
+tahmkench sup -> 26
+anivia top -> 5
+kayn jng -> 57
+veigar mid -> 40
+ashe bot -> 67
+nami sup -> 50
+----------------
+irelia top -> 21
+shyvana jng -> 47
+lux mid -> 23
+yunara bot -> 35
+seraphine sup -> 67
+gangplank top -> 22
+kindred jng -> 12
+vex mid -> 19
+sivir bot -> 22
+twitch sup -> 2
+----------------
+sion top -> 15
+aatrox jng -> 6
+yasuo mid -> 46
+veigar bot -> 18
+swain sup -> 22
+darius top -> 52
+viego jng -> 65
+ryze mid -> 13
+varus bot -> 15
+rell sup -> 24
+----------------
+tryndamere top -> 25
+udyr jng -> 9
+xerath mid -> 26
+jhin bot -> 67
+jarvaniv sup -> 1
+yone top -> 40
+viego jng -> 66
+kassadin mid -> 20
+kassadin marked as done (100.0% confidence)
+lucian bot -> 36
+nami sup -> 51
+----------------
+vladimir top -> 10
+vi jng -> 26
+taliyah mid -> 8
+caitlyn bot -> 116
+poppy sup -> 14
+pantheon top -> 6
+belveth jng -> 20
+aurora mid -> 16
+seraphine bot -> 11
+renata sup -> 7
+----------------
+tahmkench top -> 23
+evelynn jng -> 11
+akshan mid -> 22
+swain bot -> 10
+brand sup -> 26
+gangplank top -> 23
+xinzhao jng -> 18
+kennen mid -> 4
+draven bot -> 17
+nami sup -> 52
+----------------
+kayle top -> 26
+viego jng -> 67
+ezreal mid -> 1
+jhin bot -> 68
+nautilus sup -> 66
+camille top -> 13
+nunu jng -> 19
+nunu marked as done (100.0% confidence)
+naafiri mid -> 19
+twitch bot -> 31
+nami sup -> 53
+----------------
+garen top -> 59
+amumu jng -> 28
+lissandra mid -> 24
+ezreal bot -> 67
+seraphine sup -> 68
+anivia top -> 6
+maokai jng -> 5
+fizz mid -> 36
+jinx bot -> 91
+milio sup -> 33
+----------------
+darius top -> 53
+elise jng -> 13
+irelia mid -> 16
+sivir bot -> 23
+shen sup -> 5
+zaahen top -> 20
+drmundo jng -> 6
+diana mid -> 19
+senna bot -> 13
+swain sup -> 23
+----------------
+pantheon top -> 7
+mordekaiser jng -> 5
+leblanc mid -> 25
+yunara bot -> 36
+lux sup -> 74
+renekton top -> 28
+elise jng -> 14
+orianna mid -> 19
+lucian bot -> 37
+milio sup -> 34
+----------------
+ornn top -> 19
+drmundo jng -> 7
+vladimir mid -> 19
+jhin bot -> 69
+anivia sup -> 5
+ksante top -> 12
+shaco jng -> 37
+fizz mid -> 37
+swain bot -> 11
+senna sup -> 40
+----------------
+olaf top -> 17
+kayn jng -> 58
+diana mid -> 20
+samira bot -> 25
+leona sup -> 60
+akali top -> 17
+fiddlesticks jng -> 13
+jayce mid -> 8
+sivir bot -> 24
+nami sup -> 54
+----------------
+malphite top -> 32
+rengar jng -> 20
+lux mid -> 24
+jhin bot -> 70
+annie sup -> 2
+gangplank top -> 24
+sejuani jng -> 14
+galio mid -> 17
+caitlyn bot -> 117
+zoe sup -> 2
+----------------
+sion top -> 16
+volibear jng -> 17
+ahri mid -> 58
+ashe bot -> 68
+lux sup -> 75
+camille top -> 14
+diana jng -> 31
+syndra mid -> 40
+jhin bot -> 71
+blitzcrank sup -> 33
+----------------
+kennen top -> 7
+leesin jng -> 32
+yasuo mid -> 47
+shaco bot -> 2
+lux sup -> 76
+garen top -> 60
+diana jng -> 32
+qiyana mid -> 14
+jhin bot -> 72
+tahmkench sup -> 27
+----------------
+72% THROUGH (1800/2500 API CALLS)
+----------------
+jax top -> 32
+evelynn jng -> 12
+pantheon mid -> 6
+fiora bot -> 1
+malphite sup -> 6
+teemo top -> 40
+masteryi jng -> 53
+yasuo mid -> 48
+kaisa bot -> 83
+alistar sup -> 14
+----------------
+yorick top -> 25
+jax jng -> 19
+fizz mid -> 38
+caitlyn bot -> 118
+janna sup -> 22
+gwen top -> 15
+rengar jng -> 21
+galio mid -> 18
+samira bot -> 26
+nautilus sup -> 67
+----------------
+shen top -> 26
+briar jng -> 47
+mel mid -> 38
+katarina bot -> 4
+karma sup -> 24
+garen top -> 61
+jayce jng -> 3
+kassadin mid -> 21
+swain bot -> 12
+leona sup -> 61
+----------------
+yorick top -> 26
+belveth jng -> 21
+belveth marked as done (100.0% confidence)
+xerath mid -> 27
+xerath marked as done (95.7% confidence)
+tristana bot -> 58
+sona sup -> 16
+gwen top -> 16
+kayn jng -> 59
+akali mid -> 42
+kogmaw bot -> 15
+hwei sup -> 6
+----------------
+teemo top -> 41
+skarner jng -> 5
+elise mid -> 1
+veigar bot -> 19
+seraphine sup -> 69
+mordekaiser top -> 59
+masteryi jng -> 54
+viktor mid -> 38
+sivir bot -> 25
+zyra sup -> 17
+----------------
+gwen top -> 17
+nocturne jng -> 43
+lux mid -> 25
+ashe bot -> 69
+pantheon sup -> 22
+warwick top -> 7
+volibear jng -> 18
+malzahar mid -> 50
+veigar bot -> 20
+seraphine sup -> 70
+----------------
+darius top -> 54
+amumu jng -> 29
+kassadin mid -> 22
+yasuo bot -> 13
+yuumi sup -> 21
+yuumi marked as done (100.0% confidence)
+ivern top -> 1
+viego jng -> 68
+kayle mid -> 4
+jhin bot -> 73
+nautilus sup -> 68
+----------------
+kayle top -> 27
+shaco jng -> 38
+yone mid -> 47
+kaisa bot -> 84
+milio sup -> 35
+fiora top -> 26
+lillia jng -> 25
+sion mid -> 3
+sion marked as done (100.0% confidence)
+sivir bot -> 26
+mel sup -> 17
+----------------
+Rate limited fetching match ids for puuid I0MNvHLv3FrmQnggZmjuKnaHyUlrjWXJQDwZt6MUqeQ5QDQQjjvTZqLI8ytmocrFO0iHNx-YUTnYTg, waiting 63s
+zaahen top -> 21
+talon jng -> 26
+sylas mid -> 26
+jinx bot -> 92
+swain sup -> 24
+twistedfate top -> 6
+wukong jng -> 38
+yone mid -> 48
+ziggs bot -> 14
+ziggs marked as done (97.0% confidence)
+braum sup -> 33
+----------------
+chogath top -> 27
+warwick jng -> 37
+veigar mid -> 41
+tristana bot -> 59
+seraphine sup -> 71
+yone top -> 41
+graves jng -> 23
+xinzhao mid -> 4
+lux bot -> 4
+morgana sup -> 55
+----------------
+gragas top -> 12
+jarvaniv jng -> 20
+jarvaniv marked as done (100.0% confidence)
+aurora mid -> 17
+ashe bot -> 70
+pyke sup -> 37
+sett top -> 53
+viego jng -> 69
+akshan mid -> 23
+aphelios bot -> 33
+malphite sup -> 7
+----------------
+kayle top -> 28
+briar jng -> 48
+swain mid -> 9
+samira bot -> 27
+pantheon sup -> 23
+tryndamere top -> 26
+wukong jng -> 39
+ziggs mid -> 7
+ezreal bot -> 68
+lux sup -> 77
+----------------
+sett top -> 54
+volibear jng -> 19
+nidalee mid -> 2
+samira bot -> 28
+rell sup -> 25
+olaf top -> 18
+briar jng -> 49
+zyra mid -> 2
+caitlyn bot -> 119
+pyke sup -> 38
+----------------
+vayne top -> 9
+malphite jng -> 6
+zed mid -> 41
+ashe bot -> 71
+seraphine sup -> 72
+poppy top -> 3
+aatrox jng -> 7
+sylas mid -> 27
+senna bot -> 14
+tahmkench sup -> 28
+----------------
+ornn top -> 20
+ornn marked as done (100.0% confidence)
+fiddlesticks jng -> 14
+fizz mid -> 39
+zeri bot -> 20
+zeri marked as done (100.0% confidence)
+karma sup -> 25
+sett top -> 55
+trundle jng -> 8
+malzahar mid -> 51
+missfortune bot -> 80
+bard sup -> 24
+----------------
+mordekaiser top -> 60
+malphite jng -> 7
+vladimir mid -> 20
+mel bot -> 19
+poppy sup -> 15
+sett top -> 56
+belveth jng -> 22
+syndra mid -> 41
+jhin bot -> 74
+skarner sup -> 1
+----------------
+zaahen top -> 22
+viego jng -> 70
+lux mid -> 26
+sivir bot -> 27
+rakan sup -> 18
+sett top -> 57
+amumu jng -> 30
+fizz mid -> 40
+twitch bot -> 32
+morgana sup -> 56
+----------------
+tryndamere top -> 27
+ekko jng -> 19
+sylas mid -> 28
+tristana bot -> 60
+tahmkench sup -> 29
+nasus top -> 22
+zac jng -> 16
+zac marked as done (100.0% confidence)
+fizz mid -> 41
+kalista bot -> 14
+seraphine sup -> 73
+----------------
+drmundo top -> 23
+masteryi jng -> 55
+aurelionsol mid -> 14
+lucian bot -> 38
+zyra sup -> 18
+rumble top -> 12
+leesin jng -> 33
+yasuo mid -> 49
+caitlyn bot -> 120
+morgana sup -> 57
+----------------
+tryndamere top -> 28
+nunu jng -> 20
+qiyana mid -> 15
+mel bot -> 20
+blitzcrank sup -> 34
+singed top -> 14
+warwick jng -> 38
+yone mid -> 49
+caitlyn bot -> 121
+thresh sup -> 68
+----------------
+illaoi top -> 19
+illaoi marked as done (100.0% confidence)
+jax jng -> 20
+syndra mid -> 42
+ashe bot -> 72
+seraphine sup -> 74
+lillia top -> 2
+xinzhao jng -> 19
+vladimir mid -> 21
+jinx bot -> 93
+xerath sup -> 17
+----------------
+kayle top -> 29
+viego jng -> 71
+sion mid -> 4
+yunara bot -> 37
+thresh sup -> 69
+garen top -> 62
+jax jng -> 21
+qiyana mid -> 16
+tristana bot -> 61
+seraphine sup -> 75
+----------------
+anivia top -> 7
+kayn jng -> 60
+orianna mid -> 20
+missfortune bot -> 81
+morgana sup -> 58
+fizz top -> 2
+jarvaniv jng -> 21
+talon mid -> 10
+caitlyn bot -> 122
+nami sup -> 55
+----------------
+zaahen top -> 23
+rammus jng -> 20
+ekko mid -> 24
+kaisa bot -> 85
+pantheon sup -> 24
+garen top -> 63
+briar jng -> 50
+fizz mid -> 42
+jhin bot -> 75
+leona sup -> 62
+----------------
+heimerdinger top -> 18
+masteryi jng -> 56
+zed mid -> 42
+smolder bot -> 43
+bard sup -> 25
+mordekaiser top -> 61
+kayn jng -> 61
+cassiopeia mid -> 13
+jinx bot -> 94
+tahmkench sup -> 30
+----------------
+fiora top -> 27
+darius jng -> 9
+lux mid -> 27
+ziggs bot -> 15
+senna sup -> 41
+akali top -> 18
+jax jng -> 22
+yone mid -> 50
+caitlyn bot -> 123
+veigar sup -> 9
+----------------
+sett top -> 58
+zed jng -> 20
+chogath mid -> 5
+ezreal bot -> 69
+tahmkench sup -> 31
+urgot top -> 17
+lillia jng -> 26
+irelia mid -> 17
+caitlyn bot -> 124
+morgana sup -> 59
+----------------
+gangplank top -> 25
+diana jng -> 33
+kassadin mid -> 23
+jinx bot -> 95
+mel sup -> 18
+urgot top -> 18
+kayn jng -> 62
+ryze mid -> 14
+jhin bot -> 76
+lux sup -> 78
+----------------
+drmundo top -> 24
+briar jng -> 51
+orianna mid -> 21
+orianna marked as done (100.0% confidence)
+ashe bot -> 73
+neeko sup -> 12
+masteryi top -> 6
+shyvana jng -> 48
+diana mid -> 21
+yunara bot -> 38
+xerath sup -> 18
+----------------
+tryndamere top -> 29
+zac jng -> 17
+mel mid -> 39
+missfortune bot -> 82
+leona sup -> 63
+gragas top -> 13
+chogath jng -> 15
+vex mid -> 20
+vex marked as done (100.0% confidence)
+ashe bot -> 74
+velkoz sup -> 14
+----------------
+fiora top -> 28
+udyr jng -> 10
+annie mid -> 16
+twitch bot -> 33
+nami sup -> 56
+darius top -> 55
+ekko jng -> 20
+syndra mid -> 43
+kogmaw bot -> 16
+kogmaw marked as done (100.0% confidence)
+pyke sup -> 39
+----------------
+singed top -> 15
+qiyana jng -> 13
+katarina mid -> 42
+samira bot -> 29
+leona sup -> 64
+darius top -> 56
+belveth jng -> 23
+veigar mid -> 42
+jinx bot -> 96
+lulu sup -> 45
+----------------
+illaoi top -> 20
+nocturne jng -> 44
+heimerdinger mid -> 5
+vayne bot -> 42
+mel sup -> 19
+drmundo top -> 25
+briar jng -> 52
+locke mid -> 20
+rengar bot -> 2
+camille sup -> 4
+camille marked as done (99.7% confidence)
+----------------
+76% THROUGH (1900/2500 API CALLS)
+----------------
+vladimir top -> 11
+kayn jng -> 63
+kassadin mid -> 24
+ashe bot -> 75
+braum sup -> 34
+tahmkench top -> 24
+masteryi jng -> 57
+xerath mid -> 28
+jhin bot -> 77
+taric sup -> 9
+----------------
+kled top -> 14
+mordekaiser jng -> 6
+sylas mid -> 29
+tahmkench bot -> 2
+senna sup -> 42
+darius top -> 57
+kindred jng -> 13
+cassiopeia mid -> 14
+ashe bot -> 76
+lux sup -> 79
+----------------
+drmundo top -> 26
+quinn jng -> 8
+talon mid -> 11
+ashe bot -> 77
+bard sup -> 26
+urgot top -> 19
+volibear jng -> 20
+yasuo mid -> 50
+zeri bot -> 21
+lux sup -> 80
+----------------
+urgot top -> 20
+urgot marked as done (100.0% confidence)
+sylas jng -> 27
+akali mid -> 43
+samira bot -> 30
+thresh sup -> 70
+illaoi top -> 21
+diana jng -> 34
+xerath mid -> 29
+missfortune bot -> 83
+soraka sup -> 25
+----------------
+garen top -> 64
+kayn jng -> 64
+yasuo mid -> 51
+jhin bot -> 78
+shaco sup -> 5
+aurora top -> 4
+aurora marked as done (100.0% confidence)
+masteryi jng -> 58
+jayce mid -> 9
+ashe bot -> 78
+sett sup -> 1
+----------------
+quinn top -> 5
+warwick jng -> 39
+viktor mid -> 39
+missfortune bot -> 84
+brand sup -> 27
+garen top -> 65
+jarvaniv jng -> 22
+fizz mid -> 43
+jhin bot -> 79
+seraphine sup -> 76
+----------------
+tryndamere top -> 30
+hecarim jng -> 17
+sylas mid -> 30
+missfortune bot -> 85
+alistar sup -> 15
+riven top -> 12
+elise jng -> 15
+X
+vayne bot -> 43
+pyke sup -> 40
+----------------
+irelia top -> 22
+rammus jng -> 21
+ahri mid -> 59
+yunara bot -> 39
+thresh sup -> 71
+volibear top -> 16
+sylas jng -> 28
+cassiopeia mid -> 15
+twitch bot -> 34
+zyra sup -> 19
+----------------
+swain top -> 7
+masteryi jng -> 59
+naafiri mid -> 20
+vayne bot -> 44
+braum sup -> 35
+gwen top -> 18
+zaahen jng -> 7
+velkoz mid -> 15
+yunara bot -> 40
+nami sup -> 57
+----------------
+swain top -> 8
+volibear jng -> 21
+malzahar mid -> 52
+tristana bot -> 62
+shen sup -> 6
+teemo top -> 42
+briar jng -> 53
+veigar mid -> 43
+missfortune bot -> 86
+nautilus sup -> 69
+----------------
+irelia top -> 23
+zed jng -> 21
+X
+kaisa bot -> 86
+leona sup -> 65
+aatrox top -> 26
+udyr jng -> 11
+syndra mid -> 44
+xayah bot -> 15
+thresh sup -> 72
+----------------
+teemo top -> 43
+ivern jng -> 4
+ahri mid -> 60
+caitlyn bot -> 125
+karma sup -> 26
+kayle top -> 30
+amumu jng -> 31
+sylas mid -> 31
+nilah bot -> 11
+senna sup -> 43
+----------------
+drmundo top -> 27
+masteryi jng -> 60
+yasuo mid -> 52
+jinx bot -> 97
+morgana sup -> 60
+fiora top -> 29
+warwick jng -> 40
+mel mid -> 40
+caitlyn bot -> 126
+lux sup -> 81
+----------------
+anivia top -> 8
+masteryi jng -> 61
+ekko mid -> 25
+jhin bot -> 80
+nautilus sup -> 70
+irelia top -> 24
+lillia jng -> 27
+chogath mid -> 6
+caitlyn bot -> 127
+rakan sup -> 19
+----------------
+wukong top -> 5
+kayn jng -> 65
+katarina mid -> 43
+ashe bot -> 79
+morgana sup -> 61
+zaahen top -> 24
+teemo jng -> 9
+kassadin mid -> 25
+twistedfate bot -> 1
+lux sup -> 82
+----------------
+sion top -> 17
+viego jng -> 72
+akshan mid -> 24
+swain bot -> 13
+xerath sup -> 19
+yasuo top -> 16
+sylas jng -> 29
+diana mid -> 22
+zeri bot -> 22
+morgana sup -> 62
+----------------
+sett top -> 59
+leesin jng -> 34
+ekko mid -> 26
+X
+zilean sup -> 18
+ambessa top -> 19
+shen jng -> 9
+ahri mid -> 61
+kaisa bot -> 87
+senna sup -> 44
+----------------
+gwen top -> 19
+skarner jng -> 6
+velkoz mid -> 16
+samira bot -> 31
+rell sup -> 26
+tahmkench top -> 25
+khazix jng -> 24
+ahri mid -> 62
+vayne bot -> 45
+renata sup -> 8
+----------------
+kennen top -> 8
+jarvaniv jng -> 23
+smolder mid -> 7
+jinx bot -> 98
+karma sup -> 27
+chogath top -> 28
+wukong jng -> 40
+syndra mid -> 45
+ziggs bot -> 16
+teemo sup -> 9
+----------------
+teemo top -> 44
+viego jng -> 73
+cassiopeia mid -> 16
+cassiopeia marked as done (100.0% confidence)
+samira bot -> 32
+nautilus sup -> 71
+zed top -> 1
+lillia jng -> 28
+twistedfate mid -> 27
+viktor bot -> 7
+tahmkench sup -> 32
+----------------
+garen top -> 66
+viego jng -> 74
+yasuo mid -> 53
+ashe bot -> 80
+nidalee sup -> 1
+teemo top -> 45
+shaco jng -> 39
+fizz mid -> 44
+smolder bot -> 44
+nautilus sup -> 72
+----------------
+shaco top -> 1
+briar jng -> 54
+veigar mid -> 44
+xayah bot -> 16
+thresh sup -> 73
+darius top -> 58
+viego jng -> 75
+yasuo mid -> 54
+senna bot -> 15
+pyke sup -> 41
+----------------
+sett top -> 60
+ambessa jng -> 9
+leblanc mid -> 26
+jinx bot -> 99
+lux sup -> 83
+nasus top -> 23
+jarvaniv jng -> 24
+syndra mid -> 46
+jhin bot -> 81
+velkoz sup -> 15
+----------------
+vayne top -> 10
+drmundo jng -> 8
+vex mid -> 21
+jhin bot -> 82
+yuumi sup -> 22
+darius top -> 59
+gwen jng -> 6
+zoe mid -> 12
+smolder bot -> 45
+velkoz sup -> 16
+----------------
+nasus top -> 24
+tryndamere jng -> 4
+sion mid -> 5
+mel bot -> 21
+thresh sup -> 74
+volibear top -> 17
+warwick jng -> 41
+yone mid -> 51
+missfortune bot -> 87
+zyra sup -> 20
+----------------
+Rate limited fetching match ids for puuid c9jIJJETI_b7vyAZusPH3XiBABD7H6nAjmfeHhhO8An4u8XckbpIteLq3SsqUGB5knGIxkM_wsxpzg, waiting 74s
+nasus top -> 25
+viego jng -> 76
+yasuo mid -> 55
+ezreal bot -> 70
+ahri sup -> 2
+volibear top -> 18
+vi jng -> 27
+yone mid -> 52
+swain bot -> 14
+rell sup -> 27
+----------------
+garen top -> 67
+gragas jng -> 3
+hwei mid -> 20
+aphelios bot -> 34
+soraka sup -> 26
+shen top -> 27
+zac jng -> 18
+katarina mid -> 44
+missfortune bot -> 88
+seraphine sup -> 77
+----------------
+mordekaiser top -> 62
+aatrox jng -> 8
+yasuo mid -> 56
+missfortune bot -> 89
+maokai sup -> 16
+maokai marked as done (99.7% confidence)
+drmundo top -> 28
+reksai jng -> 3
+veigar mid -> 45
+kaisa bot -> 88
+tahmkench sup -> 33
+----------------
+garen top -> 68
+briar jng -> 55
+heimerdinger mid -> 6
+ezreal bot -> 71
+lux sup -> 84
+quinn top -> 6
+mordekaiser jng -> 7
+zed mid -> 43
+varus bot -> 16
+senna sup -> 45
+----------------
+darius top -> 60
+elise jng -> 16
+syndra mid -> 47
+missfortune bot -> 90
+lux sup -> 85
+urgot top -> 21
+lillia jng -> 29
+samira mid -> 1
+mel bot -> 22
+seraphine sup -> 78
+----------------
+chogath top -> 29
+nocturne jng -> 45
+lissandra mid -> 25
+caitlyn bot -> 128
+senna sup -> 46
+nasus top -> 26
+nasus marked as done (96.1% confidence)
+brand jng -> 5
+kassadin mid -> 26
+ezreal bot -> 72
+hwei sup -> 7
+----------------
+illaoi top -> 22
+briar jng -> 56
+naafiri mid -> 21
+kaisa bot -> 89
+seraphine sup -> 79
+varus top -> 10
+drmundo jng -> 9
+vladimir mid -> 22
+veigar bot -> 21
+mel sup -> 20
+----------------
+irelia top -> 25
+khazix jng -> 25
+xerath mid -> 30
+kaisa bot -> 90
+thresh sup -> 75
+gnar top -> 24
+warwick jng -> 42
+ryze mid -> 15
+jinx bot -> 100
+nami sup -> 58
+----------------
+80% THROUGH (2000/2500 API CALLS)
+----------------
+garen top -> 69
+zaahen jng -> 8
+naafiri mid -> 22
+jinx bot -> 101
+brand sup -> 28
+darius top -> 61
+malphite jng -> 8
+akshan mid -> 25
+veigar bot -> 22
+mel sup -> 21
+----------------
+illaoi top -> 23
+sejuani jng -> 15
+qiyana mid -> 17
+caitlyn bot -> 129
+seraphine sup -> 80
+gangplank top -> 26
+nocturne jng -> 46
+volibear mid -> 1
+missfortune bot -> 91
+janna sup -> 23
+----------------
+drmundo top -> 29
+volibear jng -> 22
+syndra mid -> 48
+kogmaw bot -> 17
+nami sup -> 59
+talon top -> 1
+viego jng -> 77
+aurora mid -> 18
+tahmkench bot -> 3
+thresh sup -> 76
+----------------
+vayne top -> 11
+viego jng -> 78
+veigar mid -> 46
+missfortune bot -> 92
+bard sup -> 27
+kled top -> 15
+xinzhao jng -> 20
+xerath mid -> 31
+varus bot -> 17
+soraka sup -> 27
+----------------
+mordekaiser top -> 63
+khazix jng -> 26
+lissandra mid -> 26
+corki bot -> 8
+blitzcrank sup -> 35
+yone top -> 42
+kindred jng -> 14
+malzahar mid -> 53
+yunara bot -> 41
+lulu sup -> 46
+----------------
+vayne top -> 12
+amumu jng -> 32
+ahri mid -> 63
+tristana bot -> 63
+seraphine sup -> 81
+kayle top -> 31
+zac jng -> 19
+naafiri mid -> 23
+yunara bot -> 42
+braum sup -> 36
+----------------
+singed top -> 16
+kayn jng -> 66
+aurora mid -> 19
+missfortune bot -> 93
+malphite sup -> 8
+heimerdinger top -> 19
+vi jng -> 28
+orianna mid -> 22
+ashe bot -> 81
+pyke sup -> 42
+----------------
+aatrox top -> 27
+leesin jng -> 35
+vex mid -> 22
+tristana bot -> 64
+lux sup -> 86
+darius top -> 62
+zac jng -> 20
+ahri mid -> 64
+jinx bot -> 102
+milio sup -> 36
+----------------
+gwen top -> 20
+xinzhao jng -> 21
+lissandra mid -> 27
+ezreal bot -> 73
+lulu sup -> 47
+kayle top -> 32
+masteryi jng -> 62
+kassadin mid -> 27
+yasuo bot -> 14
+poppy sup -> 16
+----------------
+garen top -> 70
+wukong jng -> 41
+ryze mid -> 16
+tristana bot -> 65
+shen sup -> 7
+xinzhao top -> 4
+sylas jng -> 30
+aurelionsol mid -> 15
+kaisa bot -> 91
+soraka sup -> 28
+----------------
+jayce top -> 12
+diana jng -> 35
+twistedfate mid -> 28
+xayah bot -> 17
+janna sup -> 24
+malphite top -> 33
+briar jng -> 57
+akshan mid -> 26
+jinx bot -> 103
+galio sup -> 10
+----------------
+renekton top -> 29
+briar jng -> 58
+kassadin mid -> 28
+sona bot -> 1
+senna sup -> 47
+jax top -> 33
+talon jng -> 27
+yasuo mid -> 57
+veigar bot -> 23
+brand sup -> 29
+----------------
+gangplank top -> 27
+graves jng -> 24
+ahri mid -> 65
+samira bot -> 33
+braum sup -> 37
+gnar top -> 25
+zac jng -> 21
+talon mid -> 12
+smolder bot -> 46
+sona sup -> 17
+----------------
+jayce top -> 13
+sylas jng -> 31
+yone mid -> 53
+tristana bot -> 66
+camille sup -> 5
+gangplank top -> 28
+hecarim jng -> 18
+galio mid -> 19
+kaisa bot -> 92
+lulu sup -> 48
+----------------
+darius top -> 63
+briar jng -> 59
+katarina mid -> 45
+ezreal bot -> 74
+senna sup -> 48
+camille top -> 15
+jarvaniv jng -> 25
+ahri mid -> 66
+smolder bot -> 47
+pyke sup -> 43
+----------------
+jax top -> 34
+viego jng -> 79
+qiyana mid -> 18
+samira bot -> 34
+blitzcrank sup -> 36
+teemo top -> 46
+briar jng -> 60
+veigar mid -> 47
+jinx bot -> 104
+thresh sup -> 77
+----------------
+kayle top -> 33
+kayn jng -> 67
+naafiri mid -> 24
+yunara bot -> 43
+nautilus sup -> 73
+jax top -> 35
+drmundo jng -> 10
+syndra mid -> 49
+jinx bot -> 105
+rell sup -> 28
+----------------
+urgot top -> 22
+zyra jng -> 7
+syndra mid -> 50
+kaisa bot -> 93
+yuumi sup -> 23
+tahmkench top -> 26
+kayn jng -> 68
+zed mid -> 44
+ashe bot -> 82
+velkoz sup -> 17
+----------------
+akshan top -> 1
+teemo jng -> 10
+diana mid -> 23
+jinx bot -> 106
+galio sup -> 11
+jax top -> 36
+zyra jng -> 8
+velkoz mid -> 17
+vayne bot -> 46
+lux sup -> 87
+----------------
+yone top -> 43
+viego jng -> 80
+lux mid -> 28
+ezreal bot -> 75
+nami sup -> 60
+garen top -> 71
+aatrox jng -> 9
+malzahar mid -> 54
+yunara bot -> 44
+nautilus sup -> 74
+----------------
+masteryi top -> 7
+nocturne jng -> 47
+brand mid -> 13
+xayah bot -> 18
+blitzcrank sup -> 37
+fiddlesticks top -> 4
+jarvaniv jng -> 26
+qiyana mid -> 19
+jinx bot -> 107
+zyra sup -> 21
+----------------
+irelia top -> 26
+ambessa jng -> 10
+ekko mid -> 27
+smolder bot -> 48
+braum sup -> 38
+sett top -> 61
+shaco jng -> 40
+neeko mid -> 3
+varus bot -> 18
+thresh sup -> 78
+----------------
+garen top -> 72
+teemo jng -> 11
+anivia mid -> 12
+seraphine bot -> 12
+sona sup -> 18
+olaf top -> 19
+zed jng -> 22
+galio mid -> 20
+mel bot -> 23
+xerath sup -> 20
+----------------
+drmundo top -> 30
+shaco jng -> 41
+shen mid -> 1
+caitlyn bot -> 130
+leona sup -> 66
+darius top -> 64
+talon jng -> 28
+varus mid -> 1
+aphelios bot -> 35
+malzahar sup -> 1
+----------------
+yone top -> 44
+belveth jng -> 24
+mel mid -> 41
+smolder bot -> 49
+senna sup -> 49
+teemo top -> 47
+warwick jng -> 43
+yasuo mid -> 58
+draven bot -> 18
+pantheon sup -> 25
+----------------
+riven top -> 13
+X
+naafiri mid -> 25
+smolder bot -> 50
+thresh sup -> 79
+heimerdinger top -> 20
+nunu jng -> 21
+ahri mid -> 67
+neeko bot -> 1
+shaco sup -> 6
+----------------
+yorick top -> 27
+wukong jng -> 42
+ryze mid -> 17
+vayne bot -> 47
+milio sup -> 37
+fizz top -> 3
+leesin jng -> 36
+kassadin mid -> 29
+kaisa bot -> 94
+pantheon sup -> 26
+----------------
+ornn top -> 21
+amumu jng -> 33
+leblanc mid -> 27
+caitlyn bot -> 131
+pantheon sup -> 27
+sion top -> 18
+viego jng -> 81
+zed mid -> 45
+tristana bot -> 67
+leona sup -> 67
+----------------
+yone top -> 45
+nocturne jng -> 48
+yasuo mid -> 59
+veigar bot -> 24
+senna sup -> 50
+malphite top -> 34
+nunu jng -> 22
+mel mid -> 42
+samira bot -> 35
+morgana sup -> 63
+----------------
+garen top -> 73
+viego jng -> 82
+ziggs mid -> 8
+ashe bot -> 83
+seraphine sup -> 82
+akshan top -> 2
+zac jng -> 22
+anivia mid -> 13
+jinx bot -> 108
+nami sup -> 61
+----------------
+jax top -> 37
+shyvana jng -> 49
+viktor mid -> 40
+smolder bot -> 51
+leona sup -> 68
+urgot top -> 23
+shen jng -> 10
+ahri mid -> 68
+ezreal bot -> 76
+karma sup -> 28
+----------------
+zac top -> 4
+khazix jng -> 27
+galio mid -> 21
+masteryi bot -> 1
+pantheon sup -> 28
+illaoi top -> 24
+zaahen jng -> 9
+akshan mid -> 27
+ahri bot -> 3
+velkoz sup -> 18
+----------------
+vladimir top -> 12
+zaahen jng -> 10
+yasuo mid -> 60
+jinx bot -> 109
+rakan sup -> 20
+tryndamere top -> 31
+karthus jng -> 5
+velkoz mid -> 18
+draven bot -> 19
+leona sup -> 69
+----------------
+84% THROUGH (2100/2500 API CALLS)
+----------------
+teemo top -> 48
+leesin jng -> 37
+vex mid -> 23
+caitlyn bot -> 132
+thresh sup -> 80
+xinzhao top -> 5
+sylas jng -> 32
+katarina mid -> 46
+veigar bot -> 25
+milio sup -> 38
+----------------
+jax top -> 38
+briar jng -> 61
+irelia mid -> 18
+kalista bot -> 15
+leona sup -> 70
+kayle top -> 34
+ambessa jng -> 11
+malzahar mid -> 55
+jinx bot -> 110
+thresh sup -> 81
+----------------
+gangplank top -> 29
+kayn jng -> 69
+syndra mid -> 51
+caitlyn bot -> 133
+nami sup -> 62
+tahmkench top -> 27
+zac jng -> 23
+yasuo mid -> 61
+senna bot -> 16
+morgana sup -> 64
+----------------
+ornn top -> 22
+kayn jng -> 70
+kennen mid -> 5
+caitlyn bot -> 134
+nautilus sup -> 75
+reksai top -> 2
+taric jng -> 1
+sylas mid -> 32
+samira bot -> 36
+pyke sup -> 44
+----------------
+sett top -> 62
+sejuani jng -> 16
+ahri mid -> 69
+corki bot -> 9
+taric sup -> 10
+fiora top -> 30
+briar jng -> 62
+viktor mid -> 41
+caitlyn bot -> 135
+nautilus sup -> 76
+----------------
+trundle top -> 16
+shaco jng -> 42
+ahri mid -> 70
+yasuo bot -> 15
+swain sup -> 25
+veigar top -> 2
+masteryi jng -> 63
+malzahar mid -> 56
+X
+brand sup -> 30
+----------------
+kassadin top -> 2
+pantheon jng -> 10
+soraka mid -> 1
+karthus bot -> 2
+leona sup -> 71
+olaf top -> 20
+graves jng -> 25
+syndra mid -> 52
+yunara bot -> 45
+nautilus sup -> 77
+----------------
+vladimir top -> 13
+sylas jng -> 33
+veigar mid -> 48
+lucian bot -> 39
+seraphine sup -> 83
+nasus top -> 27
+vi jng -> 29
+ahri mid -> 71
+kaisa bot -> 95
+nami sup -> 63
+----------------
+sion top -> 19
+jarvaniv jng -> 27
+locke mid -> 21
+jhin bot -> 83
+hwei sup -> 8
+camille top -> 16
+volibear jng -> 23
+lissandra mid -> 28
+lucian bot -> 40
+sona sup -> 19
+----------------
+Rate limited fetching match ids for puuid MuEvcc13voRjm2yrnaUn3Krd-OTL43DhechsoeywuV3uDuM2LyhiLfgFzbgD2XDeYPjc_bUATIVOJQ, waiting 65s
+yorick top -> 28
+kayn jng -> 71
+lux mid -> 29
+ziggs bot -> 17
+brand sup -> 31
+urgot top -> 24
+pantheon jng -> 11
+velkoz mid -> 19
+caitlyn bot -> 136
+senna sup -> 51
+----------------
+yasuo top -> 17
+belveth jng -> 25
+veigar mid -> 49
+brand bot -> 11
+thresh sup -> 82
+jhin top -> 2
+warwick jng -> 44
+xerath mid -> 32
+sivir bot -> 28
+leona sup -> 72
+----------------
+gwen top -> 21
+viego jng -> 83
+ekko mid -> 28
+caitlyn bot -> 137
+pantheon sup -> 29
+lissandra top -> 1
+drmundo jng -> 11
+ziggs mid -> 9
+jhin bot -> 84
+bard sup -> 28
+----------------
+renekton top -> 30
+olaf jng -> 7
+locke mid -> 22
+lucian bot -> 41
+nami sup -> 64
+jax top -> 39
+shyvana jng -> 50
+galio mid -> 22
+jhin bot -> 85
+velkoz sup -> 19
+----------------
+gangplank top -> 30
+vi jng -> 30
+veigar mid -> 50
+caitlyn bot -> 138
+taric sup -> 11
+ornn top -> 23
+viego jng -> 84
+leblanc mid -> 28
+missfortune bot -> 94
+lux sup -> 88
+----------------
+quinn top -> 7
+briar jng -> 63
+xerath mid -> 33
+mel bot -> 24
+sylas sup -> 5
+mordekaiser top -> 64
+kayn jng -> 72
+ekko mid -> 29
+jinx bot -> 111
+blitzcrank sup -> 38
+----------------
+teemo top -> 49
+khazix jng -> 28
+jhin mid -> 4
+kaisa bot -> 96
+leona sup -> 73
+gragas top -> 14
+xinzhao jng -> 22
+zed mid -> 46
+sivir bot -> 29
+rakan sup -> 21
+rakan marked as done (100.0% confidence)
+----------------
+mordekaiser top -> 65
+vi jng -> 31
+xerath mid -> 34
+jinx bot -> 112
+rakan sup -> 22
+darius top -> 65
+qiyana jng -> 14
+locke mid -> 23
+smolder bot -> 52
+zilean sup -> 19
+----------------
+mordekaiser top -> 66
+nidalee jng -> 12
+yone mid -> 54
+kaisa bot -> 97
+neeko sup -> 13
+garen top -> 74
+khazix jng -> 29
+qiyana mid -> 20
+ashe bot -> 84
+blitzcrank sup -> 39
+----------------
+darius top -> 66
+vi jng -> 32
+brand mid -> 14
+jinx bot -> 113
+orianna sup -> 1
+sett top -> 63
+qiyana jng -> 15
+locke mid -> 24
+viktor bot -> 8
+lux sup -> 89
+----------------
+irelia top -> 27
+ekko jng -> 21
+diana mid -> 24
+kaisa bot -> 98
+leona sup -> 74
+teemo top -> 50
+aatrox jng -> 10
+katarina mid -> 47
+smolder bot -> 53
+tahmkench sup -> 34
+----------------
+sylas top -> 5
+zaahen jng -> 11
+yasuo mid -> 62
+ezreal bot -> 77
+leona sup -> 75
+drmundo top -> 31
+shyvana jng -> 51
+qiyana mid -> 21
+smolder bot -> 54
+briar sup -> 2
+----------------
+teemo top -> 51
+shyvana jng -> 52
+brand mid -> 15
+caitlyn bot -> 139
+leona sup -> 76
+veigar top -> 3
+jax jng -> 23
+yasuo mid -> 63
+ezreal bot -> 78
+sona sup -> 20
+sona marked as done (100.0% confidence)
+----------------
+singed top -> 17
+graves jng -> 26
+diana mid -> 25
+vayne bot -> 48
+rell sup -> 29
+gwen top -> 22
+khazix jng -> 30
+lux mid -> 30
+kaisa bot -> 99
+leona sup -> 77
+----------------
+kled top -> 16
+viego jng -> 85
+syndra mid -> 53
+varus bot -> 19
+varus marked as done (95.8% confidence)
+galio sup -> 12
+zaahen top -> 25
+ekko jng -> 22
+lux mid -> 31
+karthus bot -> 3
+janna sup -> 25
+----------------
+veigar top -> 4
+khazix jng -> 31
+xinzhao mid -> 5
+ashe bot -> 85
+seraphine sup -> 84
+teemo top -> 52
+kayn jng -> 73
+yone mid -> 55
+jhin bot -> 86
+galio sup -> 13
+----------------
+mordekaiser top -> 67
+ambessa jng -> 12
+yasuo mid -> 64
+ashe bot -> 86
+leona sup -> 78
+ornn top -> 24
+diana jng -> 36
+swain mid -> 10
+jhin bot -> 87
+wukong sup -> 1
+----------------
+olaf top -> 21
+viego jng -> 86
+orianna mid -> 23
+ashe bot -> 87
+pantheon sup -> 30
+teemo top -> 53
+khazix jng -> 32
+veigar mid -> 51
+samira bot -> 37
+janna sup -> 26
+----------------
+sion top -> 20
+shyvana jng -> 53
+aurora mid -> 20
+jinx bot -> 114
+seraphine sup -> 85
+shen top -> 28
+jarvaniv jng -> 28
+katarina mid -> 48
+yone bot -> 3
+pantheon sup -> 31
+----------------
+poppy top -> 4
+fizz jng -> 4
+qiyana mid -> 22
+jinx bot -> 115
+soraka sup -> 29
+kogmaw top -> 1
+darius jng -> 10
+lissandra mid -> 29
+samira bot -> 38
+karma sup -> 29
+----------------
+tryndamere top -> 32
+leesin jng -> 38
+malzahar mid -> 57
+senna bot -> 17
+soraka sup -> 30
+yone top -> 46
+naafiri jng -> 16
+brand mid -> 16
+fiora bot -> 2
+seraphine sup -> 86
+----------------
+darius top -> 67
+masteryi jng -> 64
+yasuo mid -> 65
+ashe bot -> 88
+leona sup -> 79
+teemo top -> 54
+warwick jng -> 45
+akshan mid -> 28
+caitlyn bot -> 140
+tahmkench sup -> 35
+----------------
+renekton top -> 31
+lillia jng -> 30
+vex mid -> 24
+draven bot -> 20
+draven marked as done (100.0% confidence)
+nautilus sup -> 78
+tryndamere top -> 33
+warwick jng -> 46
+naafiri mid -> 26
+yunara bot -> 46
+thresh sup -> 83
+----------------
+yone top -> 47
+masteryi jng -> 65
+katarina mid -> 49
+corki bot -> 10
+bard sup -> 29
+sion top -> 21
+kayn jng -> 74
+aurelionsol mid -> 16
+smolder bot -> 55
+amumu sup -> 2
+----------------
+88% THROUGH (2200/2500 API CALLS)
+----------------
+malphite top -> 35
+graves jng -> 27
+lux mid -> 32
+jhin bot -> 88
+janna sup -> 27
+mordekaiser top -> 68
+leesin jng -> 39
+fizz mid -> 45
+caitlyn bot -> 141
+thresh sup -> 84
+----------------
+jax top -> 40
+sylas jng -> 34
+naafiri mid -> 27
+naafiri marked as done (95.7% confidence)
+jhin bot -> 89
+zyra sup -> 22
+ambessa top -> 20
+diana jng -> 37
+veigar mid -> 52
+aphelios bot -> 36
+mel sup -> 22
+----------------
+garen top -> 75
+shaco jng -> 43
+yasuo mid -> 66
+kaisa bot -> 100
+thresh sup -> 85
+drmundo top -> 32
+warwick jng -> 47
+velkoz mid -> 20
+jhin bot -> 90
+leona sup -> 80
+----------------
+pantheon top -> 8
+mordekaiser jng -> 8
+malzahar mid -> 58
+jinx bot -> 116
+ashe sup -> 10
+teemo top -> 55
+drmundo jng -> 12
+brand mid -> 17
+caitlyn bot -> 142
+sona sup -> 21
+----------------
+darius top -> 68
+volibear jng -> 24
+fizz mid -> 46
+caitlyn bot -> 143
+pyke sup -> 45
+trundle top -> 17
+hecarim jng -> 19
+katarina mid -> 50
+missfortune bot -> 95
+mel sup -> 23
+----------------
+fiora top -> 31
+shyvana jng -> 54
+viktor mid -> 42
+vladimir bot -> 4
+bard sup -> 30
+yone top -> 48
+chogath jng -> 16
+galio mid -> 23
+jinx bot -> 117
+nautilus sup -> 79
+----------------
+irelia top -> 28
+sion jng -> 1
+ahri mid -> 72
+caitlyn bot -> 144
+senna sup -> 52
+renekton top -> 32
+ekko jng -> 23
+heimerdinger mid -> 7
+yunara bot -> 47
+milio sup -> 39
+----------------
+darius top -> 69
+masteryi jng -> 66
+velkoz mid -> 21
+caitlyn bot -> 145
+nautilus sup -> 80
+tryndamere top -> 34
+shaco jng -> 44
+xerath mid -> 35
+kogmaw bot -> 18
+veigar sup -> 10
+----------------
+nasus top -> 28
+lillia jng -> 31
+naafiri mid -> 28
+vayne bot -> 49
+thresh sup -> 86
+volibear top -> 19
+hecarim jng -> 20
+hecarim marked as done (100.0% confidence)
+malzahar mid -> 59
+kaisa bot -> 101
+tahmkench sup -> 36
+----------------
+yasuo top -> 18
+elise jng -> 17
+elise marked as done (100.0% confidence)
+diana mid -> 26
+tristana bot -> 68
+ornn sup -> 1
+yone top -> 49
+nocturne jng -> 49
+veigar mid -> 53
+zeri bot -> 23
+leona sup -> 81
+----------------
+drmundo top -> 33
+trundle jng -> 9
+kogmaw mid -> 4
+caitlyn bot -> 146
+zyra sup -> 23
+yasuo top -> 19
+nunu jng -> 23
+ahri mid -> 73
+twitch bot -> 35
+velkoz sup -> 20
+----------------
+jax top -> 41
+nocturne jng -> 50
+velkoz mid -> 22
+yunara bot -> 48
+thresh sup -> 87
+yone top -> 50
+shyvana jng -> 55
+viktor mid -> 43
+ashe bot -> 89
+lulu sup -> 49
+----------------
+yorick top -> 29
+rammus jng -> 22
+yasuo mid -> 67
+tristana bot -> 69
+seraphine sup -> 87
+renekton top -> 33
+sejuani jng -> 17
+twistedfate mid -> 29
+kaisa bot -> 102
+braum sup -> 39
+----------------
+olaf top -> 22
+vi jng -> 33
+lux mid -> 33
+jhin bot -> 91
+blitzcrank sup -> 40
+volibear top -> 20
+chogath jng -> 17
+sylas mid -> 33
+jinx bot -> 118
+milio sup -> 40
+----------------
+tryndamere top -> 35
+sylas jng -> 35
+akali mid -> 44
+vayne bot -> 50
+xerath sup -> 21
+volibear top -> 21
+rammus jng -> 23
+syndra mid -> 54
+sivir bot -> 30
+pyke sup -> 46
+----------------
+xinzhao top -> 6
+viego jng -> 87
+kassadin mid -> 30
+jinx bot -> 119
+blitzcrank sup -> 41
+olaf top -> 23
+rengar jng -> 22
+diana mid -> 27
+katarina bot -> 5
+poppy sup -> 17
+----------------
+teemo top -> 56
+fiddlesticks jng -> 15
+fiddlesticks marked as done (99.8% confidence)
+annie mid -> 17
+xayah bot -> 19
+nami sup -> 65
+malphite top -> 36
+shen jng -> 11
+leblanc mid -> 29
+jinx bot -> 120
+lulu sup -> 50
+----------------
+tahmkench top -> 28
+naafiri jng -> 17
+fizz mid -> 47
+caitlyn bot -> 147
+bard sup -> 31
+yorick top -> 30
+kayn jng -> 75
+lissandra mid -> 30
+ezreal bot -> 79
+milio sup -> 41
+----------------
+tryndamere top -> 36
+jax jng -> 24
+sylas mid -> 34
+smolder bot -> 56
+lulu sup -> 51
+nasus top -> 29
+vi jng -> 34
+ahri mid -> 74
+olaf bot -> 1
+morgana sup -> 65
+----------------
+fiora top -> 32
+jax jng -> 25
+mel mid -> 43
+jinx bot -> 121
+yuumi sup -> 24
+illaoi top -> 25
+ekko jng -> 24
+anivia mid -> 14
+caitlyn bot -> 148
+lux sup -> 90
+----------------
+vayne top -> 13
+ekko jng -> 25
+fizz mid -> 48
+jinx bot -> 122
+lulu sup -> 52
+shyvana top -> 4
+poppy jng -> 7
+malzahar mid -> 60
+caitlyn bot -> 149
+tahmkench sup -> 37
+----------------
+camille top -> 17
+nidalee jng -> 13
+mel mid -> 44
+jhin bot -> 92
+rakan sup -> 23
+smolder top -> 7
+nautilus jng -> 5
+vladimir mid -> 23
+vayne bot -> 51
+lux sup -> 91
+----------------
+garen top -> 76
+naafiri jng -> 18
+kassadin mid -> 31
+ezreal bot -> 80
+xerath sup -> 22
+aurora top -> 5
+nasus jng -> 16
+X
+tristana bot -> 70
+velkoz sup -> 21
+----------------
+twistedfate top -> 7
+sylas jng -> 36
+yasuo mid -> 68
+kaisa bot -> 103
+leona sup -> 82
+pantheon top -> 9
+hecarim jng -> 21
+yone mid -> 56
+kogmaw bot -> 19
+braum sup -> 40
+----------------
+ornn top -> 25
+evelynn jng -> 13
+yasuo mid -> 69
+tristana bot -> 71
+alistar sup -> 16
+kayle top -> 35
+naafiri jng -> 19
+veigar mid -> 54
+jhin bot -> 93
+leona sup -> 83
+----------------
+gangplank top -> 31
+malphite jng -> 9
+swain mid -> 11
+jinx bot -> 123
+leona sup -> 84
+darius top -> 70
+diana jng -> 38
+sylas mid -> 35
+ezreal bot -> 81
+bard sup -> 32
+----------------
+Rate limited fetching match ids for puuid tED11EsqFfr2-tA_wmiZKK48GJApFI86VyWA_Y4KZ-FkxQSFjDI6g2NQNjC-esucpmpZT_o7hqZPMw, waiting 75s
+shen top -> 29
+nunu jng -> 24
+sion mid -> 6
+tristana bot -> 72
+karma sup -> 30
+tryndamere top -> 37
+gwen jng -> 7
+lissandra mid -> 31
+ashe bot -> 90
+lux sup -> 92
+----------------
+camille top -> 18
+kayn jng -> 76
+vex mid -> 25
+smolder bot -> 57
+lux sup -> 93
+garen top -> 77
+rengar jng -> 23
+ahri mid -> 75
+yasuo bot -> 16
+zyra sup -> 24
+----------------
+garen top -> 78
+amumu jng -> 34
+leblanc mid -> 30
+smolder bot -> 58
+janna sup -> 28
+shen top -> 30
+kayn jng -> 77
+mel mid -> 45
+tristana bot -> 73
+ashe sup -> 11
+----------------
+shaco top -> 2
+zyra jng -> 9
+yasuo mid -> 70
+ashe bot -> 91
+syndra sup -> 1
+mordekaiser top -> 69
+xinzhao jng -> 23
+malzahar mid -> 61
+caitlyn bot -> 150
+seraphine sup -> 88
+----------------
+malphite top -> 37
+diana jng -> 39
+katarina mid -> 51
+tristana bot -> 74
+karma sup -> 31
+reksai top -> 3
+khazix jng -> 33
+sylas mid -> 36
+smolder bot -> 59
+morgana sup -> 66
+----------------
+drmundo top -> 34
+masteryi jng -> 67
+annie mid -> 18
+missfortune bot -> 96
+leona sup -> 85
+fiora top -> 33
+rammus jng -> 24
+yasuo mid -> 71
+velkoz bot -> 3
+nami sup -> 66
+----------------
+92% THROUGH (2300/2500 API CALLS)
+----------------
+olaf top -> 24
+nasus jng -> 17
+vex mid -> 26
+viktor bot -> 9
+leona sup -> 86
+gangplank top -> 32
+warwick jng -> 48
+mel mid -> 46
+syndra bot -> 6
+zyra sup -> 25
+----------------
+riven top -> 14
+briar jng -> 64
+katarina mid -> 52
+lucian bot -> 42
+rell sup -> 30
+wukong top -> 6
+khazix jng -> 34
+galio mid -> 24
+zeri bot -> 24
+soraka sup -> 31
+----------------
+jax top -> 42
+jarvaniv jng -> 29
+ekko mid -> 30
+xerath bot -> 6
+senna sup -> 53
+malphite top -> 38
+gragas jng -> 4
+zed mid -> 47
+jhin bot -> 94
+nami sup -> 67
+----------------
+gragas top -> 15
+gragas marked as done (99.8% confidence)
+lillia jng -> 32
+zoe mid -> 13
+yasuo bot -> 17
+bard sup -> 33
+shen top -> 31
+kayn jng -> 78
+locke mid -> 25
+jinx bot -> 124
+nautilus sup -> 81
+----------------
+yasuo top -> 20
+rengar jng -> 24
+orianna mid -> 24
+swain bot -> 15
+leona sup -> 87
+illaoi top -> 26
+shaco jng -> 45
+lux mid -> 34
+caitlyn bot -> 151
+senna sup -> 54
+----------------
+kled top -> 17
+malphite jng -> 10
+fizz mid -> 49
+ashe bot -> 92
+braum sup -> 41
+sion top -> 22
+viego jng -> 88
+viktor mid -> 44
+caitlyn bot -> 152
+malzahar sup -> 2
+----------------
+tryndamere top -> 38
+xinzhao jng -> 24
+cassiopeia mid -> 17
+missfortune bot -> 97
+pantheon sup -> 32
+teemo top -> 57
+jax jng -> 26
+neeko mid -> 4
+caitlyn bot -> 153
+ashe sup -> 12
+----------------
+quinn top -> 8
+rammus jng -> 25
+cassiopeia mid -> 18
+yunara bot -> 49
+thresh sup -> 88
+garen top -> 79
+naafiri jng -> 20
+mel mid -> 47
+ezreal bot -> 82
+rakan sup -> 24
+----------------
+yasuo top -> 21
+lillia jng -> 33
+viktor mid -> 45
+jhin bot -> 95
+janna sup -> 29
+zaahen top -> 26
+drmundo jng -> 13
+qiyana mid -> 23
+ashe bot -> 93
+morgana sup -> 67
+----------------
+malphite top -> 39
+graves jng -> 28
+qiyana mid -> 24
+smolder bot -> 60
+nami sup -> 68
+vladimir top -> 14
+gnar jng -> 1
+zed mid -> 48
+jinx bot -> 125
+renata sup -> 9
+----------------
+gnar top -> 26
+sylas jng -> 37
+mel mid -> 48
+senna bot -> 18
+zoe sup -> 3
+tahmkench top -> 29
+jax jng -> 27
+viktor mid -> 46
+draven bot -> 21
+milio sup -> 42
+----------------
+yorick top -> 31
+diana jng -> 40
+velkoz mid -> 23
+sivir bot -> 31
+bard sup -> 34
+gragas top -> 16
+pantheon jng -> 12
+syndra mid -> 55
+varus bot -> 20
+nami sup -> 69
+----------------
+aatrox top -> 28
+lillia jng -> 34
+qiyana mid -> 25
+missfortune bot -> 98
+renata sup -> 10
+darius top -> 71
+poppy jng -> 8
+locke mid -> 26
+xayah bot -> 20
+rakan sup -> 25
+----------------
+renekton top -> 34
+viego jng -> 89
+viktor mid -> 47
+jhin bot -> 96
+braum sup -> 42
+tryndamere top -> 39
+qiyana jng -> 16
+ekko mid -> 31
+draven bot -> 22
+pyke sup -> 47
+----------------
+sett top -> 64
+viego jng -> 90
+diana mid -> 28
+smolder bot -> 61
+zyra sup -> 26
+yone top -> 51
+warwick jng -> 49
+leblanc mid -> 31
+twitch bot -> 36
+lux sup -> 94
+----------------
+volibear top -> 22
+ekko jng -> 26
+malzahar mid -> 62
+jhin bot -> 97
+lux sup -> 95
+sett top -> 65
+shaco jng -> 46
+mel mid -> 49
+missfortune bot -> 99
+leona sup -> 88
+----------------
+yone top -> 52
+evelynn jng -> 14
+orianna mid -> 25
+caitlyn bot -> 154
+leona sup -> 89
+ryze top -> 3
+gwen jng -> 8
+zed mid -> 49
+jhin bot -> 98
+nami sup -> 70
+----------------
+yorick top -> 32
+kayle jng -> 1
+ahri mid -> 76
+missfortune bot -> 100
+malphite sup -> 9
+garen top -> 80
+amumu jng -> 35
+katarina mid -> 53
+ziggs bot -> 18
+ashe sup -> 13
+----------------
+shyvana top -> 5
+jarvaniv jng -> 30
+lissandra mid -> 32
+kaisa bot -> 104
+nautilus sup -> 82
+olaf top -> 25
+xinzhao jng -> 25
+yone mid -> 57
+lucian bot -> 43
+milio sup -> 43
+----------------
+camille top -> 19
+reksai jng -> 4
+yasuo mid -> 72
+ziggs bot -> 19
+milio sup -> 44
+irelia top -> 29
+elise jng -> 18
+riven mid -> 4
+varus bot -> 21
+thresh sup -> 89
+----------------
+zac top -> 5
+darius jng -> 11
+lissandra mid -> 33
+samira bot -> 39
+nautilus sup -> 83
+drmundo top -> 35
+masteryi jng -> 68
+yasuo mid -> 73
+xayah bot -> 21
+xayah marked as done (100.0% confidence)
+neeko sup -> 14
+----------------
+malzahar top -> 6
+nocturne jng -> 51
+galio mid -> 25
+caitlyn bot -> 155
+malphite sup -> 10
+gwen top -> 23
+kayn jng -> 79
+yasuo mid -> 74
+ezreal bot -> 83
+maokai sup -> 17
+----------------
+warwick top -> 8
+leesin jng -> 40
+irelia mid -> 19
+kaisa bot -> 105
+pyke sup -> 48
+mordekaiser top -> 70
+khazix jng -> 35
+syndra mid -> 56
+caitlyn bot -> 156
+alistar sup -> 17
+----------------
+urgot top -> 25
+xinzhao jng -> 26
+veigar mid -> 55
+kaisa bot -> 106
+bard sup -> 35
+sett top -> 66
+belveth jng -> 26
+ryze mid -> 18
+ryze marked as done (100.0% confidence)
+missfortune bot -> 101
+brand sup -> 32
+----------------
+yone top -> 53
+briar jng -> 65
+xerath mid -> 36
+twitch bot -> 37
+lux sup -> 96
+garen top -> 81
+zyra jng -> 10
+X
+ashe bot -> 94
+yuumi sup -> 25
+----------------
+sett top -> 67
+viego jng -> 91
+briar mid -> 2
+tristana bot -> 75
+neeko sup -> 15
+ornn top -> 26
+ekko jng -> 27
+katarina mid -> 54
+ezreal bot -> 84
+zyra sup -> 27
+----------------
+shen top -> 32
+qiyana jng -> 17
+varus mid -> 2
+ziggs bot -> 20
+galio sup -> 14
+urgot top -> 26
+khazix jng -> 36
+aurelionsol mid -> 17
+missfortune bot -> 102
+soraka sup -> 32
+----------------
+malzahar top -> 7
+graves jng -> 29
+azir mid -> 5
+jinx bot -> 126
+thresh sup -> 90
+illaoi top -> 27
+evelynn jng -> 15
+lux mid -> 35
+kaisa bot -> 107
+nautilus sup -> 84
+----------------
+yone top -> 54
+warwick jng -> 50
+veigar mid -> 56
+tristana bot -> 76
+seraphine sup -> 89
+ashe top -> 1
+wukong jng -> 43
+cassiopeia mid -> 19
+jhin bot -> 99
+leona sup -> 90
+----------------
+gangplank top -> 33
+olaf jng -> 8
+zed mid -> 50
+jinx bot -> 127
+thresh sup -> 91
+sion top -> 23
+graves jng -> 30
+yasuo mid -> 75
+jhin bot -> 100
+lux sup -> 97
+----------------
+jax top -> 43
+ekko jng -> 28
+yasuo mid -> 76
+smolder bot -> 62
+brand sup -> 33
+X
+vi jng -> 35
+diana mid -> 29
+karthus bot -> 4
+soraka sup -> 33
+----------------
+olaf top -> 26
+viego jng -> 92
+zoe mid -> 14
+jhin bot -> 101
+nami sup -> 71
+aatrox top -> 29
+trundle jng -> 10
+katarina mid -> 55
+tristana bot -> 77
+bard sup -> 36
+----------------
+mordekaiser top -> 71
+kindred jng -> 15
+ahri mid -> 77
+hwei bot -> 3
+brand sup -> 34
+yasuo top -> 22
+shaco jng -> 47
+anivia mid -> 15
+vayne bot -> 52
+nami sup -> 72
+----------------
+teemo top -> 58
+wukong jng -> 44
+locke mid -> 27
+samira bot -> 40
+pyke sup -> 49
+yone top -> 55
+warwick jng -> 51
+yasuo mid -> 77
+ashe bot -> 95
+morgana sup -> 68
+----------------
+96% THROUGH (2400/2500 API CALLS)
+----------------
+sett top -> 68
+briar jng -> 66
+yone mid -> 58
+ashe bot -> 96
+leona sup -> 91
+sion top -> 24
+nunu jng -> 25
+mel mid -> 50
+jinx bot -> 128
+morgana sup -> 69
+----------------
+ambessa top -> 21
+jax jng -> 28
+xerath mid -> 37
+lucian bot -> 44
+nami sup -> 73
+poppy top -> 5
+viego jng -> 93
+vex mid -> 27
+yunara bot -> 50
+soraka sup -> 34
+----------------
+darius top -> 72
+chogath jng -> 18
+nasus mid -> 3
+yasuo bot -> 18
+thresh sup -> 92
+urgot top -> 27
+khazix jng -> 37
+lissandra mid -> 34
+jhin bot -> 102
+bard sup -> 37
+----------------
+ambessa top -> 22
+khazix jng -> 38
+diana mid -> 30
+kaisa bot -> 108
+rakan sup -> 26
+sion top -> 25
+jarvaniv jng -> 31
+quinn mid -> 1
+ezreal bot -> 85
+yuumi sup -> 26
+----------------
+sett top -> 69
+evelynn jng -> 16
+katarina mid -> 56
+jhin bot -> 103
+thresh sup -> 93
+gangplank top -> 34
+warwick jng -> 52
+ekko mid -> 32
+kaisa bot -> 109
+tahmkench sup -> 38
+----------------
+garen top -> 82
+trundle jng -> 11
+aurelionsol mid -> 18
+kaisa bot -> 110
+rell sup -> 31
+drmundo top -> 36
+belveth jng -> 27
+orianna mid -> 26
+twitch bot -> 38
+blitzcrank sup -> 42
+----------------
+irelia top -> 30
+shyvana jng -> 56
+yone mid -> 59
+mel bot -> 25
+rell sup -> 32
+nasus top -> 30
+kayn jng -> 80
+yasuo mid -> 78
+ezreal bot -> 86
+velkoz sup -> 22
+----------------
+veigar top -> 5
+viego jng -> 94
+pyke mid -> 2
+ezreal bot -> 87
+senna sup -> 55
+kayle top -> 36
+trundle jng -> 12
+ashe mid -> 2
+vayne bot -> 53
+alistar sup -> 18
+----------------
+nasus top -> 31
+teemo jng -> 12
+aurora mid -> 21
+zeri bot -> 25
+taric sup -> 12
+gnar top -> 27
+khazix jng -> 39
+lux mid -> 36
+tahmkench bot -> 4
+nautilus sup -> 85
+----------------
+cassiopeia top -> 4
+udyr jng -> 12
+mel mid -> 51
+jinx bot -> 129
+nautilus sup -> 86
+gwen top -> 24
+briar jng -> 67
+qiyana mid -> 26
+jhin bot -> 104
+thresh sup -> 94
+----------------
+Rate limited fetching match ids for puuid rqF8_fGG8G0qOxKA5GOF9NflGuf-4vNAJmNaWwByTKEfplK-pHF6ngaQOUBsvxB0l1d7yXsxsubQYQ, waiting 74s
+gangplank top -> 35
+warwick jng -> 53
+morgana mid -> 6
+missfortune bot -> 103
+pyke sup -> 50
+ornn top -> 27
+diana jng -> 41
+tryndamere mid -> 5
+varus bot -> 22
+bard sup -> 38
+----------------
+ryze top -> 4
+graves jng -> 31
+ahri mid -> 78
+ezreal bot -> 88
+alistar sup -> 19
+masteryi top -> 8
+udyr jng -> 13
+malzahar mid -> 63
+kaisa bot -> 111
+thresh sup -> 95
+----------------
+nasus top -> 32
+chogath jng -> 19
+viktor mid -> 48
+ashe bot -> 97
+seraphine sup -> 90
+aatrox top -> 30
+leesin jng -> 41
+galio mid -> 26
+zeri bot -> 26
+lux sup -> 98
+----------------
+mordekaiser top -> 72
+wukong jng -> 45
+malzahar mid -> 64
+caitlyn bot -> 157
+brand sup -> 35
+garen top -> 83
+aatrox jng -> 11
+yone mid -> 60
+swain bot -> 16
+seraphine sup -> 91
+----------------
+garen top -> 84
+talon jng -> 29
+ziggs mid -> 10
+jinx bot -> 130
+thresh sup -> 96
+yasuo top -> 23
+viego jng -> 95
+zed mid -> 51
+viktor bot -> 10
+lux sup -> 99
+----------------
+illaoi top -> 28
+aatrox jng -> 12
+twistedfate mid -> 30
+jhin bot -> 105
+velkoz sup -> 23
+gwen top -> 25
+rengar jng -> 25
+malzahar mid -> 65
+missfortune bot -> 104
+leona sup -> 92
+----------------
+sion top -> 26
+nocturne jng -> 52
+yone mid -> 61
+draven bot -> 23
+poppy sup -> 18
+teemo top -> 59
+shyvana jng -> 57
+sona mid -> 1
+kalista bot -> 16
+nautilus sup -> 87
+----------------
+gnar top -> 28
+sylas jng -> 38
+galio mid -> 27
+kaisa bot -> 112
+soraka sup -> 35
+shen top -> 33
+malphite jng -> 11
+syndra mid -> 57
+draven bot -> 24
+thresh sup -> 97
+----------------
+olaf top -> 27
+rengar jng -> 26
+velkoz mid -> 24
+jinx bot -> 131
+bard sup -> 39
+drmundo top -> 37
+X
+syndra mid -> 58
+caitlyn bot -> 158
+blitzcrank sup -> 43
+----------------
+ambessa top -> 23
+briar jng -> 68
+kassadin mid -> 32
+ezreal bot -> 89
+poppy sup -> 19
+mordekaiser top -> 73
+shyvana jng -> 58
+lissandra mid -> 35
+draven bot -> 25
+thresh sup -> 98
+----------------
+tahmkench top -> 30
+reksai jng -> 5
+locke mid -> 28
+missfortune bot -> 105
+lux sup -> 100
+urgot top -> 28
+rammus jng -> 26
+akali mid -> 45
+jhin bot -> 106
+senna sup -> 56
+----------------
+kayle top -> 37
+trundle jng -> 13
+lux mid -> 37
+veigar bot -> 26
+sona sup -> 22
+malphite top -> 40
+hecarim jng -> 22
+velkoz mid -> 25
+sivir bot -> 32
+bard sup -> 40
+----------------
+ornn top -> 28
+graves jng -> 32
+zed mid -> 52
+ashe bot -> 98
+swain sup -> 26
+shen top -> 34
+jax jng -> 29
+locke mid -> 29
+jinx bot -> 132
+soraka sup -> 36
+----------------
+garen top -> 85
+evelynn jng -> 17
+malzahar mid -> 66
+aphelios bot -> 37
+seraphine sup -> 92
+kled top -> 18
+nunu jng -> 26
+ekko mid -> 33
+missfortune bot -> 106
+shen sup -> 8
+----------------
+shen top -> 35
+sylas jng -> 39
+velkoz mid -> 26
+ezreal bot -> 90
+thresh sup -> 99
+galio top -> 1
+masteryi jng -> 69
+veigar mid -> 57
+yunara bot -> 51
+sona sup -> 23
+----------------
+mordekaiser top -> 74
+nunu jng -> 27
+anivia mid -> 16
+anivia marked as done (95.4% confidence)
+ashe bot -> 99
+zilean sup -> 20
+yorick top -> 33
+xinzhao jng -> 27
+ekko mid -> 34
+smolder bot -> 63
+sona sup -> 24
+----------------
+ornn top -> 29
+viego jng -> 96
+syndra mid -> 59
+xayah bot -> 22
+lux sup -> 101
+mordekaiser top -> 75
+masteryi jng -> 70
+xerath mid -> 38
+jinx bot -> 133
+blitzcrank sup -> 44
+----------------
+olaf top -> 28
+sylas jng -> 40
+ahri mid -> 79
+missfortune bot -> 107
+swain sup -> 27
+teemo top -> 60
+reksai jng -> 6
+zed mid -> 53
+shyvana bot -> 1
+lux sup -> 102
+----------------
+gangplank top -> 36
+jarvaniv jng -> 32
+lissandra mid -> 36
+singed bot -> 1
+yuumi sup -> 27
+chogath top -> 30
+wukong jng -> 46
+twistedfate mid -> 31
+samira bot -> 41
+thresh sup -> 100
+----------------
+yasuo top -> 24
+nocturne jng -> 53
+yone mid -> 62
+veigar bot -> 27
+tahmkench sup -> 39
+renekton top -> 35
+masteryi jng -> 71
+galio mid -> 28
+tristana bot -> 78
+zyra sup -> 28
+----------------
+malphite top -> 41
+wukong jng -> 47
+lux mid -> 38
+caitlyn bot -> 159
+seraphine sup -> 93
+gnar top -> 29
+lillia jng -> 35
+diana mid -> 31
+ashe bot -> 100
+nami sup -> 74
+----------------
+quinn top -> 9
+naafiri jng -> 21
+locke mid -> 30
+jhin bot -> 107
+pyke sup -> 51
+urgot top -> 29
+diana jng -> 42
+yone mid -> 63
+yunara bot -> 52
+thresh sup -> 101
+----------------
+yorick top -> 34
+khazix jng -> 40
+ahri mid -> 80
+ashe bot -> 101
+morgana sup -> 70
+irelia top -> 31
+irelia marked as done (95.8% confidence)
+shyvana jng -> 59
+viktor mid -> 49
+varus bot -> 23
+nidalee sup -> 2
+----------------
+100% THROUGH (2500/2500 API CALLS)
+----------------
+sett top -> 70
+amumu jng -> 36
+malphite mid -> 6
+vayne bot -> 54
+pantheon sup -> 33
+tryndamere top -> 40
+lillia jng -> 36
+nasus mid -> 4
+tristana bot -> 79
+lux sup -> 103
+----------------
+Run completed in 1962.9s (2502 API calls)
